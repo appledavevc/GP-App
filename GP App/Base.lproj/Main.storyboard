@@ -12,111 +12,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--New-->
-        <scene sceneID="1Lw-TW-IUg">
-            <objects>
-                <collectionViewController id="oCN-mZ-WyB" customClass="New" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="FhE-pE-enx">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hls-wA-EMH">
-                            <size key="itemSize" width="128" height="128"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Kgk-Rd-neP">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OH7-3E-UQJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionViewCellContentView>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="oCN-mZ-WyB" id="A3v-e9-egE"/>
-                            <outlet property="delegate" destination="oCN-mZ-WyB" id="8tz-4V-ASb"/>
-                        </connections>
-                    </collectionView>
-                    <tabBarItem key="tabBarItem" title="New" image="bell.badge.fill" catalog="system" id="vhu-Ph-YJm"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lQy-Xw-YET" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1888" y="1392"/>
-        </scene>
-        <!--Portrait-->
-        <scene sceneID="3rc-HD-Rrn">
-            <objects>
-                <collectionViewController id="rgW-ks-1n2" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="3L8-eX-RFb">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="D06-Vj-pGl">
-                            <size key="itemSize" width="128" height="128"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7YD-hV-9oj">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="h4x-E0-9Ir">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionViewCellContentView>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="rgW-ks-1n2" id="6Cd-I1-fju"/>
-                            <outlet property="delegate" destination="rgW-ks-1n2" id="oe6-aM-9xh"/>
-                        </connections>
-                    </collectionView>
-                    <tabBarItem key="tabBarItem" title="Portrait" image="iphone" catalog="system" id="UuK-Ic-FkV"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CcR-vI-LTD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1888" y="2079"/>
-        </scene>
-        <!--Landscape-->
-        <scene sceneID="KU4-Jo-FRH">
-            <objects>
-                <collectionViewController id="Zny-df-oWa" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gkb-Kf-wch">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Opy-W9-5yz">
-                            <size key="itemSize" width="128" height="128"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="K9w-5Q-eHG">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="wMt-QR-dpR">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionViewCellContentView>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="Zny-df-oWa" id="men-5V-XBP"/>
-                            <outlet property="delegate" destination="Zny-df-oWa" id="enK-cc-4e5"/>
-                        </connections>
-                    </collectionView>
-                    <tabBarItem key="tabBarItem" title="Landscape" image="iphone.landscape" catalog="system" id="aLJ-bd-4B8"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2cS-c1-WV6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1888" y="2775"/>
-        </scene>
         <!--Privacy policy-->
         <scene sceneID="70x-4l-axu">
             <objects>
@@ -668,14 +563,14 @@ For information about reproduction rights, for any of the images contained on th
                             <tableViewSection headerTitle="E-mail" id="oFK-Dg-RJN">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="U0C-Lk-w8M">
-                                        <rect key="frame" x="0.0" y="38" width="430" height="9.6666669845581055"/>
+                                        <rect key="frame" x="0.0" y="38" width="430" height="9"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U0C-Lk-w8M" id="LNa-0A-ihA">
-                                            <rect key="frame" x="0.0" y="0.0" width="430" height="9.6666669845581055"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="9"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" pointerInteraction="YES" id="jL1-GV-GCk">
-                                                    <rect key="frame" x="20" y="3" width="390" height="1"/>
+                                                    <rect key="frame" x="20" y="3" width="390" height="0.0"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title=" hello@ghentphotography.be">
@@ -690,10 +585,10 @@ For information about reproduction rights, for any of the images contained on th
                             <tableViewSection headerTitle="Facebook" footerTitle="" id="Zoh-qX-x7i">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="e1Y-02-acr">
-                                        <rect key="frame" x="0.0" y="110.99999904632568" width="430" height="6"/>
+                                        <rect key="frame" x="0.0" y="110.33333206176758" width="430" height="5.3333334922790527"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e1Y-02-acr" id="PZu-lf-yYp">
-                                            <rect key="frame" x="0.0" y="0.0" width="430" height="6"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="5.3333334922790527"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="gTF-X4-c7x">
@@ -710,10 +605,10 @@ For information about reproduction rights, for any of the images contained on th
                             <tableViewSection headerTitle="Messenger" id="jaD-Oe-Mag">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="7xZ-wo-W7w">
-                                        <rect key="frame" x="0.0" y="176.99999904632568" width="430" height="10"/>
+                                        <rect key="frame" x="0.0" y="175.66666555404663" width="430" height="10.333333015441895"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7xZ-wo-W7w" id="BOX-jr-HIX">
-                                            <rect key="frame" x="0.0" y="0.0" width="430" height="10"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="10.333333015441895"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Kbg-DK-sTY">
@@ -730,10 +625,10 @@ For information about reproduction rights, for any of the images contained on th
                             <tableViewSection headerTitle="Instagram" id="1Vm-Mv-ddP">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hO5-A8-uCO">
-                                        <rect key="frame" x="0.0" y="242.99999904632568" width="430" height="7"/>
+                                        <rect key="frame" x="0.0" y="241.99999856948853" width="430" height="7.3333334922790527"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hO5-A8-uCO" id="Dlv-ps-xNs">
-                                            <rect key="frame" x="0.0" y="0.0" width="430" height="7"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="7.3333334922790527"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Bvw-ja-2Yg">
@@ -750,14 +645,14 @@ For information about reproduction rights, for any of the images contained on th
                             <tableViewSection headerTitle="Website" id="GGh-oD-Seg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="o61-sF-RN3">
-                                        <rect key="frame" x="0.0" y="305.99999904632568" width="430" height="3"/>
+                                        <rect key="frame" x="0.0" y="305.33333206176758" width="430" height="3.3333332538604736"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o61-sF-RN3" id="Fhq-nN-AAS">
-                                            <rect key="frame" x="0.0" y="0.0" width="430" height="3"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="3.3333332538604736"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="AGq-3W-KXI">
-                                                    <rect key="frame" x="20" y="1" width="390" height="0.0"/>
+                                                    <rect key="frame" x="20" y="1" width="390" height="1"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="at.circle.fill" catalog="system" title=" ghentphotography.be"/>
@@ -770,14 +665,14 @@ For information about reproduction rights, for any of the images contained on th
                             <tableViewSection headerTitle="Notice" id="77m-E8-WWL">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cRt-Yy-O9n">
-                                        <rect key="frame" x="0.0" y="364.99999904632568" width="430" height="44"/>
+                                        <rect key="frame" x="0.0" y="365" width="430" height="43"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cRt-Yy-O9n" id="01a-Fl-kRu">
-                                            <rect key="frame" x="0.0" y="0.0" width="430" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" id="zRJ-tB-tLs">
-                                                    <rect key="frame" x="20" y="-1" width="390" height="50"/>
+                                                    <rect key="frame" x="20" y="-1" width="390" height="49"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <string key="text">Thank you for contacting us.
@@ -2913,7 +2808,6 @@ Cg
         <image name="Thumb5" width="1920" height="1080"/>
         <image name="Thumb6" width="1920" height="1080"/>
         <image name="at.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="bell.badge.fill" catalog="system" width="123" height="128"/>
         <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="99"/>
         <image name="desktopcomputer" catalog="system" width="128" height="101"/>
@@ -2921,8 +2815,6 @@ Cg
         <image name="face.smiling" catalog="system" width="128" height="123"/>
         <image name="hand.raised.circle.fill" catalog="system" width="128" height="123"/>
         <image name="info.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="iphone" catalog="system" width="112" height="128"/>
-        <image name="iphone.landscape" catalog="system" width="128" height="76"/>
         <image name="message.fill" catalog="system" width="128" height="114"/>
         <image name="photo.fill.on.rectangle.fill" catalog="system" width="128" height="98"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
