@@ -5,6 +5,7 @@
 //  Created by Dave Van Cauwenberghe on 08/07/2023.
 //
 
+import OneSignal
 import UIKit
 
 @main
@@ -13,9 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
+        
+        OneSignal.initWithLaunchOptions(launchOptions)
+        OneSignal.setAppId("33d6d6cc-d0f5-41fe-af21-1074df0a1450")
+        
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+          print("User accepted notifications: \(accepted)")
+        })
+        
         return true
-    }
+      }
 
     // MARK: UISceneSession Lifecycle
 
