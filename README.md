@@ -11,10 +11,6 @@ Welcome to the Ghent Photography app repository! This iOS app is designed to sho
 
 - **Event Updates**: Stay informed about upcoming photography exhibitions, workshops, and events happening in Ghent. Never miss an opportunity to expand your skills and explore new artistic horizons.
 
-## Screenshots
-
-![Alt text](https://github.com/appledavevc/GP-App/blob/main/Menu.png "Main menu")
-
 ## Installation
 
 To run the Ghent Photography app on your iOS device:
