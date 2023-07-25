@@ -30,6 +30,7 @@
 		557B968F2A59D9CD0032FDFD /* GP_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B968E2A59D9CD0032FDFD /* GP_AppTests.swift */; };
 		557B96992A59D9CD0032FDFD /* GP_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */; };
 		557B969B2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */; };
+		558EDBA92A7010F000267C6B /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558EDBA82A7010F000267C6B /* Test.swift */; };
 		55A81E5A2A6494D100DB59CF /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A81E592A6494D100DB59CF /* Portfolio.swift */; };
 		55F15CAD2A6962C400D3B089 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F15CAC2A6962C400D3B089 /* About.swift */; };
 /* End PBXBuildFile section */
@@ -100,6 +101,7 @@
 		557B96942A59D9CD0032FDFD /* GP AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GP AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITests.swift; sourceTree = "<group>"; };
 		557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		558EDBA82A7010F000267C6B /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		55A81E592A6494D100DB59CF /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		55F15CAC2A6962C400D3B089 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,6 +211,7 @@
 				557B96802A59D9CD0032FDFD /* Assets.xcassets */,
 				557B96822A59D9CD0032FDFD /* LaunchScreen.storyboard */,
 				557B96852A59D9CD0032FDFD /* Info.plist */,
+				558EDBA82A7010F000267C6B /* Test.swift */,
 			);
 			path = "GP App";
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 			files = (
 				550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */,
 				5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */,
+				558EDBA92A7010F000267C6B /* Test.swift in Sources */,
 				5501C3802A68BC45009B86F6 /* Thanks.swift in Sources */,
 				55A81E5A2A6494D100DB59CF /* Portfolio.swift in Sources */,
 				553CD1972A644CC3006DD667 /* Disclaimers.swift in Sources */,
