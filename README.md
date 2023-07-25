@@ -1,4 +1,4 @@
-# GP-App
+# GP App
 Native iOS app for Ghent Photography
 
 Welcome to the Ghent Photography app repository! This iOS app is designed to showcase the captivating world of Ghent through a curated collection of stunning photographs captured by talented local photographers. The app serves as a visual journey, celebrating the beauty, culture, and hidden gems of the vibrant city of Ghent.
