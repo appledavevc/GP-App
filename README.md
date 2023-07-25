@@ -13,7 +13,7 @@ Welcome to the Ghent Photography app repository! This iOS app is designed to sho
 
 ## Screenshots
 
-![Alt text](/relative/path/to/Simulator Screenshot - iPhone 14 Pro Max - 2023-07-25 at 15.09.06?raw=true "Main menu")
+![Alt text](/relative/path/to/Menu.png?raw=true "Main menu")
 
 ## Installation
 
