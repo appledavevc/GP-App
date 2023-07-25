@@ -18,6 +18,7 @@
 		550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB62A6DFB02001BB700 /* Featured.swift */; };
 		550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */; };
 		551367EA2A64C52E003DF78A /* Release.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551367E92A64C52E003DF78A /* Release.swift */; };
+		5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536EC0F2A6F44DB002A547B /* ContactViewController.swift */; };
 		553CD1972A644CC3006DD667 /* Disclaimers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553CD1962A644CC3006DD667 /* Disclaimers.swift */; };
 		554D36AB2A64878E00D97D81 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554D36AA2A64878E00D97D81 /* Contact.swift */; };
 		557B96782A59D9CC0032FDFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96772A59D9CC0032FDFD /* AppDelegate.swift */; };
@@ -83,6 +84,7 @@
 		550B0AB62A6DFB02001BB700 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
 		550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedDetailViewController.swift; sourceTree = "<group>"; };
 		551367E92A64C52E003DF78A /* Release.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Release.swift; sourceTree = "<group>"; };
+		5536EC0F2A6F44DB002A547B /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		553CD1962A644CC3006DD667 /* Disclaimers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disclaimers.swift; sourceTree = "<group>"; };
 		554D36AA2A64878E00D97D81 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		557B96742A59D9CC0032FDFD /* GP App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GP App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +198,7 @@
 				557B96772A59D9CC0032FDFD /* AppDelegate.swift */,
 				557B96792A59D9CC0032FDFD /* SceneDelegate.swift */,
 				557B967B2A59D9CC0032FDFD /* Home.swift */,
+				5536EC0F2A6F44DB002A547B /* ContactViewController.swift */,
 				557B967D2A59D9CC0032FDFD /* Main.storyboard */,
 				55F15CAC2A6962C400D3B089 /* About.swift */,
 				5501C37F2A68BC45009B86F6 /* Thanks.swift */,
@@ -415,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */,
+				5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */,
 				5501C3802A68BC45009B86F6 /* Thanks.swift in Sources */,
 				55A81E5A2A6494D100DB59CF /* Portfolio.swift in Sources */,
 				553CD1972A644CC3006DD667 /* Disclaimers.swift in Sources */,
