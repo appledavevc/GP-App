@@ -33,7 +33,7 @@ We welcome contributions from the community to make the Ghent Photography app ev
 
 ## Feedback and Support
 
-We value your feedback and would love to hear your thoughts on the Ghent Photography app. If you encounter any issues, have suggestions for improvement, or simply want to get in touch, please [submit an issue](https://github.com/appledavevc/ghent-photography-app/issues) or contact us via our [website](https://www.ghentphotography.be).
+We value your feedback and would love to hear your thoughts on the Ghent Photography app. If you encounter any issues, have suggestions for improvement, or simply want to get in touch, please [submit an issue](https://github.com/appledavevc/GP-App/issues) or contact us via our [website](https://www.ghentphotography.be).
 
 ## License
 
@@ -49,4 +49,4 @@ Thank you for your interest in the Ghent Photography app. We hope you enjoy your
 
 Happy exploring!
 
-The Ghent Photography Team
+Ghent Photography
