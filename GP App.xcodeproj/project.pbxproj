@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5501C3802A68BC45009B86F6 /* Thanks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501C37F2A68BC45009B86F6 /* Thanks.swift */; };
 		5501C3892A68C57B009B86F6 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501C3882A68C57B009B86F6 /* NotificationService.swift */; };
 		5501C38D2A68C57B009B86F6 /* OneSignalNotificationServiceExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5501C3862A68C57B009B86F6 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5501C3942A68C5E5009B86F6 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 5501C3932A68C5E5009B86F6 /* OneSignal */; };
@@ -17,10 +16,7 @@
 		550B0AB52A6DFA3E001BB700 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB42A6DFA3E001BB700 /* FeaturedViewController.swift */; };
 		550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB62A6DFB02001BB700 /* Featured.swift */; };
 		550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */; };
-		551367EA2A64C52E003DF78A /* Release.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551367E92A64C52E003DF78A /* Release.swift */; };
 		5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536EC0F2A6F44DB002A547B /* ContactViewController.swift */; };
-		553CD1972A644CC3006DD667 /* Disclaimers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553CD1962A644CC3006DD667 /* Disclaimers.swift */; };
-		554D36AB2A64878E00D97D81 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554D36AA2A64878E00D97D81 /* Contact.swift */; };
 		557B96782A59D9CC0032FDFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96772A59D9CC0032FDFD /* AppDelegate.swift */; };
 		557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96792A59D9CC0032FDFD /* SceneDelegate.swift */; };
 		557B967C2A59D9CC0032FDFD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B967B2A59D9CC0032FDFD /* Home.swift */; };
@@ -30,9 +26,6 @@
 		557B968F2A59D9CD0032FDFD /* GP_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B968E2A59D9CD0032FDFD /* GP_AppTests.swift */; };
 		557B96992A59D9CD0032FDFD /* GP_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */; };
 		557B969B2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */; };
-		558EDBA92A7010F000267C6B /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558EDBA82A7010F000267C6B /* Test.swift */; };
-		55A81E5A2A6494D100DB59CF /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A81E592A6494D100DB59CF /* Portfolio.swift */; };
-		55F15CAD2A6962C400D3B089 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F15CAC2A6962C400D3B089 /* About.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +67,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5501C37F2A68BC45009B86F6 /* Thanks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thanks.swift; sourceTree = "<group>"; };
 		5501C3812A68C54A009B86F6 /* GP App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GP App.entitlements"; sourceTree = "<group>"; };
 		5501C3862A68C57B009B86F6 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5501C3882A68C57B009B86F6 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
@@ -84,10 +76,7 @@
 		550B0AB42A6DFA3E001BB700 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		550B0AB62A6DFB02001BB700 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
 		550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedDetailViewController.swift; sourceTree = "<group>"; };
-		551367E92A64C52E003DF78A /* Release.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Release.swift; sourceTree = "<group>"; };
 		5536EC0F2A6F44DB002A547B /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
-		553CD1962A644CC3006DD667 /* Disclaimers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disclaimers.swift; sourceTree = "<group>"; };
-		554D36AA2A64878E00D97D81 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		557B96742A59D9CC0032FDFD /* GP App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GP App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B96772A59D9CC0032FDFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		557B96792A59D9CC0032FDFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,9 +90,6 @@
 		557B96942A59D9CD0032FDFD /* GP AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GP AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITests.swift; sourceTree = "<group>"; };
 		557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		558EDBA82A7010F000267C6B /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
-		55A81E592A6494D100DB59CF /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
-		55F15CAC2A6962C400D3B089 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,16 +188,9 @@
 				557B967B2A59D9CC0032FDFD /* Home.swift */,
 				5536EC0F2A6F44DB002A547B /* ContactViewController.swift */,
 				557B967D2A59D9CC0032FDFD /* Main.storyboard */,
-				55F15CAC2A6962C400D3B089 /* About.swift */,
-				5501C37F2A68BC45009B86F6 /* Thanks.swift */,
-				551367E92A64C52E003DF78A /* Release.swift */,
-				55A81E592A6494D100DB59CF /* Portfolio.swift */,
-				554D36AA2A64878E00D97D81 /* Contact.swift */,
-				553CD1962A644CC3006DD667 /* Disclaimers.swift */,
-				557B96802A59D9CD0032FDFD /* Assets.xcassets */,
 				557B96822A59D9CD0032FDFD /* LaunchScreen.storyboard */,
+				557B96802A59D9CD0032FDFD /* Assets.xcassets */,
 				557B96852A59D9CD0032FDFD /* Info.plist */,
-				558EDBA82A7010F000267C6B /* Test.swift */,
 			);
 			path = "GP App";
 			sourceTree = "<group>";
@@ -422,19 +401,12 @@
 			files = (
 				550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */,
 				5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */,
-				558EDBA92A7010F000267C6B /* Test.swift in Sources */,
-				5501C3802A68BC45009B86F6 /* Thanks.swift in Sources */,
-				55A81E5A2A6494D100DB59CF /* Portfolio.swift in Sources */,
-				553CD1972A644CC3006DD667 /* Disclaimers.swift in Sources */,
 				557B967C2A59D9CC0032FDFD /* Home.swift in Sources */,
 				550B0AB52A6DFA3E001BB700 /* FeaturedViewController.swift in Sources */,
-				554D36AB2A64878E00D97D81 /* Contact.swift in Sources */,
 				557B96782A59D9CC0032FDFD /* AppDelegate.swift in Sources */,
 				550B0AB22A6DFA0C001BB700 /* FeaturedViewCell.swift in Sources */,
 				557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */,
 				550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */,
-				55F15CAD2A6962C400D3B089 /* About.swift in Sources */,
-				551367EA2A64C52E003DF78A /* Release.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
