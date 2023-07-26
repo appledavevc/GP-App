@@ -6,17 +6,18 @@
 //
 
 import UIKit
+import Photos
 
 private let reuseIdentifier = "Cell"
 
 class FeaturedViewController: UICollectionViewController {
-    @IBAction func unwindToMain(segue: UIStoryboardSegue){
+    @IBAction func unwindToMain(segue: UIStoryboardSegue) {
            
-       }
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            if let indexPaths = collectionView.indexPathsForSelectedItems{
+            if let indexPaths = collectionView.indexPathsForSelectedItems {
                 let destinationController = segue.destination as! FeaturedDetailViewController
                 destinationController.featured = featured[indexPaths[0].row]
                 collectionView.deselectItem(at: indexPaths[0], animated: false)
@@ -24,14 +25,16 @@ class FeaturedViewController: UICollectionViewController {
         }
     }
     
-    private var featured : [Featured] = [ Featured(image: "F1Sint-Michielshelling", name: "Sint-Michielshelling"),
+    private var featured: [Featured] = [Featured(image: "F1Sint-Michielshelling", name: "Sint-Michielshelling"),
                                         Featured(image: "F2GSP", name: "Gent-Sint-Pieters"),
                                         Featured(image: "F3Dampoort", name: "Dampoort"),
                                         Featured(image: "F4GSP2", name: "Gent-Sint-Pieters"),
                                         Featured(image: "F5Korenmarkt", name: "Korenmarkt"),
                                         Featured(image: "F6Groot-Begijnhof", name: "Groot-Begijnhof"),
                                         Featured(image: "F7DokNoord", name: "Dok-Noord"),
-                                        Featured(image: "F8Belfort", name: "Belfort")]
+                                        Featured(image: "F8Belfort", name: "Belfort"),
+                                        Featured(image: "F9Dampoort", name: "Dampoort"),
+                                        Featured(image: "F10Groot-Begijnhof", name: "Groot-Begijnhof")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,29 +60,60 @@ class FeaturedViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-            return 1
-        }
+        return 1
+    }
 
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return featured.count
+    }
 
-        override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            
-            return featured.count
-        }
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dataCell", for: indexPath) as! FeaturedViewCell
 
-        override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dataCell", for: indexPath) as! FeaturedViewCell
-        
-            
-            let Featured = featured[indexPath.row]
-            cell.featuredImageView.image = UIImage(named: Featured.image)
-            cell.featuredNameLabel.text = Featured.name
-        
-            return cell
-        }
-    
+        let featuredItem = featured[indexPath.row]
+        cell.featuredImageView.image = UIImage(named: featuredItem.image)
+        cell.featuredNameLabel.text = featuredItem.name
+
+        return cell
+    }
+
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-            performSegue(withIdentifier: "showDetail", sender: nil)
+        #if targetEnvironment(simulator)
+            print("Cannot save image to photo album in the simulator.")
+        #else
+            if let cell = collectionView.cellForItem(at: indexPath) as? FeaturedViewCell, let image = cell.featuredImageView.image {
+                saveImageToPhotoAlbum(image)
+            }
+        #endif
+        performSegue(withIdentifier: "showDetail", sender: nil)
+    }
+
+    // MARK: - Photo Save Function
+
+    private func saveImageToPhotoAlbum(_ image: UIImage) {
+        PHPhotoLibrary.requestAuthorization { (status) in
+            switch status {
+            case .authorized:
+                UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.imageSaved(_:didFinishSavingWithError:contextInfo:)), nil)
+            case .denied, .restricted:
+                print("Photo library access denied or restricted.")
+            case .notDetermined:
+                print("Photo library access not determined.")
+            case .limited:
+                print("Photo library access limited.")
+            @unknown default:
+                fatalError("New status added. Update the switch statement.")
+            }
         }
+    }
+
+    @objc private func imageSaved(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            print("Error saving image to photo album: \(error.localizedDescription)")
+        } else {
+            print("Image saved to photo album successfully.")
+        }
+    }
 
     // MARK: UICollectionViewDelegate
 
