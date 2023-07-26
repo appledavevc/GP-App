@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Photos
 
 private let reuseIdentifier = "Cell"
 
@@ -47,16 +46,6 @@ class FeaturedViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -78,41 +67,7 @@ class FeaturedViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        #if targetEnvironment(simulator)
-            print("Cannot save image to photo album in the simulator.")
-        #else
-            if let cell = collectionView.cellForItem(at: indexPath) as? FeaturedViewCell, let image = cell.featuredImageView.image {
-                saveImageToPhotoAlbum(image)
-            }
-        #endif
         performSegue(withIdentifier: "showDetail", sender: nil)
-    }
-
-    // MARK: - Photo Save Function
-
-    private func saveImageToPhotoAlbum(_ image: UIImage) {
-        PHPhotoLibrary.requestAuthorization { (status) in
-            switch status {
-            case .authorized:
-                UIImageWriteToSavedPhotosAlbum(image, self, #selector(self.imageSaved(_:didFinishSavingWithError:contextInfo:)), nil)
-            case .denied, .restricted:
-                print("Photo library access denied or restricted.")
-            case .notDetermined:
-                print("Photo library access not determined.")
-            case .limited:
-                print("Photo library access limited.")
-            @unknown default:
-                fatalError("New status added. Update the switch statement.")
-            }
-        }
-    }
-
-    @objc private func imageSaved(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-        if let error = error {
-            print("Error saving image to photo album: \(error.localizedDescription)")
-        } else {
-            print("Image saved to photo album successfully.")
-        }
     }
 
     // MARK: UICollectionViewDelegate
@@ -147,3 +102,4 @@ class FeaturedViewController: UICollectionViewController {
     */
 
 }
+
