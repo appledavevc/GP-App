@@ -2577,7 +2577,7 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="AppBackground" id="9lx-sg-UNi">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="AppBackground2" id="9lx-sg-UNi">
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -2620,7 +2620,7 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3As-s1-Sv2">
                                 <rect key="frame" x="20" y="216.66666666666666" width="390" height="53.999999999999972"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
+                                <buttonConfiguration key="configuration" style="tinted" image="book.fill" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Facebook"/>
                                     </attributedString>
@@ -2629,7 +2629,7 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zp-bs-jaC">
                                 <rect key="frame" x="20" y="278.66666666666669" width="390" height="53.666666666666686"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
+                                <buttonConfiguration key="configuration" style="tinted" image="message.fill" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Messenger"/>
                                     </attributedString>
@@ -2638,7 +2638,7 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhM-Af-VL1">
                                 <rect key="frame" x="20" y="340.33333333333331" width="390" height="54"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
+                                <buttonConfiguration key="configuration" style="tinted" image="camera.fill" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Instagram"/>
                                     </attributedString>
@@ -2647,7 +2647,7 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdc-t1-SO9">
                                 <rect key="frame" x="20" y="464" width="390" height="54"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
+                                <buttonConfiguration key="configuration" style="tinted" image="gamecontroller.fill" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Ghent Photography"/>
                                     </attributedString>
@@ -2656,7 +2656,7 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRy-Id-2yT">
                                 <rect key="frame" x="20" y="587.66666666666663" width="390" height="54"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
+                                <buttonConfiguration key="configuration" style="tinted" image="swift" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="GP App"/>
                                     </attributedString>
@@ -2665,7 +2665,7 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Er-FI-JAv">
                                 <rect key="frame" x="20" y="711.33333333333337" width="390" height="54"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
+                                <buttonConfiguration key="configuration" style="tinted" image="envelope.fill" catalog="system">
                                     <attributedString key="attributedTitle">
                                         <fragment content="hello@ghentphotography.be"/>
                                     </attributedString>
@@ -3047,6 +3047,7 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="Orange"/>
                         <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="prominent">
                             <color key="shadowColor" name="Orange"/>
                         </tabBarAppearance>
@@ -3061,7 +3062,7 @@ Cg
         </scene>
     </scenes>
     <resources>
-        <image name="AppBackground" width="2048" height="2732"/>
+        <image name="AppBackground2" width="2048" height="2732"/>
         <image name="GPAppIconTW" width="1024" height="1024"/>
         <image name="Infographic" width="3200" height="7812"/>
         <image name="Thanks" width="2048" height="2732"/>
@@ -3071,14 +3072,20 @@ Cg
         <image name="Thumb4" width="1920" height="1080"/>
         <image name="Thumb5" width="1920" height="1080"/>
         <image name="Thumb6" width="1920" height="1080"/>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="99"/>
         <image name="doc.on.doc.fill" catalog="system" width="116" height="128"/>
+        <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="face.smiling" catalog="system" width="128" height="123"/>
+        <image name="gamecontroller.fill" catalog="system" width="128" height="79"/>
         <image name="hand.raised.circle.fill" catalog="system" width="128" height="123"/>
         <image name="info.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="message.fill" catalog="system" width="128" height="114"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <image name="photo.fill.on.rectangle.fill" catalog="system" width="128" height="98"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="swift" catalog="system" width="128" height="108"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

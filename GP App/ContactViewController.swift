@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import AVFoundation
 
 class ContactViewController: UIViewController {
 
@@ -24,8 +23,6 @@ class ContactViewController: UIViewController {
     let emailLink = "mailto:hello@ghentphotography.be"
     let githubLink = "https://github.com/appledavevc/GP-App"
 
-    var tapSoundPlayer: AVAudioPlayer?
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,16 +33,6 @@ class ContactViewController: UIViewController {
         discordButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
         emailButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
         githubButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-
-        // Load the tap sound from the file (e.g., "shuttersound.wav")
-        if let soundURL = Bundle.main.url(forResource: "shuttersound", withExtension: "wav") {
-            do {
-                tapSoundPlayer = try AVAudioPlayer(contentsOf: soundURL)
-                tapSoundPlayer?.prepareToPlay()
-            } catch {
-                print("Error loading tap sound: \(error)")
-            }
-        }
 
         facebookButton.addTarget(self, action: #selector(openFacebook), for: .touchUpInside)
         messengerButton.addTarget(self, action: #selector(openMessenger), for: .touchUpInside)
@@ -76,7 +63,6 @@ class ContactViewController: UIViewController {
     @objc func openFacebook() {
         if let facebookURL = URL(string: "fb://profile/ghentphotographygp") {
             if UIApplication.shared.canOpenURL(facebookURL) {
-                tapSoundPlayer?.play()
                 UIApplication.shared.open(facebookURL, options: [:], completionHandler: nil)
             } else {
                 openLink(urlString: facebookLink)
@@ -89,7 +75,6 @@ class ContactViewController: UIViewController {
     @objc func openMessenger() {
         if let messengerURL = URL(string: "fb-messenger://user-thread/ghentphotographygp") {
             if UIApplication.shared.canOpenURL(messengerURL) {
-                tapSoundPlayer?.play()
                 UIApplication.shared.open(messengerURL, options: [:], completionHandler: nil)
             } else {
                 openLink(urlString: messengerLink)
@@ -102,7 +87,6 @@ class ContactViewController: UIViewController {
     @objc func openInstagram() {
         if let instagramURL = URL(string: "instagram://user?username=ghent_photography") {
             if UIApplication.shared.canOpenURL(instagramURL) {
-                tapSoundPlayer?.play()
                 UIApplication.shared.open(instagramURL, options: [:], completionHandler: nil)
             } else {
                 openLink(urlString: instagramLink)
@@ -113,17 +97,14 @@ class ContactViewController: UIViewController {
     }
 
     @objc func openDiscord() {
-        tapSoundPlayer?.play()
         openLink(urlString: discordLink)
     }
 
     @objc func openEmail() {
-        tapSoundPlayer?.play()
         openLink(urlString: emailLink)
     }
 
     @objc func openGitHub() {
-        tapSoundPlayer?.play()
         openLink(urlString: githubLink)
     }
 
@@ -133,7 +114,3 @@ class ContactViewController: UIViewController {
         }
     }
 }
-
-
-
-
