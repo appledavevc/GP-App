@@ -17,6 +17,7 @@
 		550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB62A6DFB02001BB700 /* Featured.swift */; };
 		550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */; };
 		5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536EC0F2A6F44DB002A547B /* ContactViewController.swift */; };
+		55453CB52A71B93F0044F7E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55453CB42A71B93F0044F7E4 /* SettingsViewController.swift */; };
 		557B96782A59D9CC0032FDFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96772A59D9CC0032FDFD /* AppDelegate.swift */; };
 		557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96792A59D9CC0032FDFD /* SceneDelegate.swift */; };
 		557B967C2A59D9CC0032FDFD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B967B2A59D9CC0032FDFD /* Home.swift */; };
@@ -77,6 +78,7 @@
 		550B0AB62A6DFB02001BB700 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
 		550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedDetailViewController.swift; sourceTree = "<group>"; };
 		5536EC0F2A6F44DB002A547B /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		55453CB42A71B93F0044F7E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		557B96742A59D9CC0032FDFD /* GP App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GP App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B96772A59D9CC0032FDFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		557B96792A59D9CC0032FDFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				557B96822A59D9CD0032FDFD /* LaunchScreen.storyboard */,
 				557B96802A59D9CD0032FDFD /* Assets.xcassets */,
 				557B96852A59D9CD0032FDFD /* Info.plist */,
+				55453CB42A71B93F0044F7E4 /* SettingsViewController.swift */,
 			);
 			path = "GP App";
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				550B0AB22A6DFA0C001BB700 /* FeaturedViewCell.swift in Sources */,
 				557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */,
 				550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */,
+				55453CB52A71B93F0044F7E4 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

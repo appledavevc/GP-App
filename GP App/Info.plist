@@ -2,38 +2,58 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>UIApplicationSceneManifest</key>
-    <dict>
-        <key>UIApplicationSupportsMultipleScenes</key>
-        <false/>
-        <key>UISceneConfigurations</key>
-        <dict>
-            <key>UIWindowSceneSessionRoleApplication</key>
-            <array>
-                <dict>
-                    <key>UISceneConfigurationName</key>
-                    <string>Default Configuration</string>
-                    <key>UISceneDelegateClassName</key>
-                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-                    <key>UISceneStoryboardFile</key>
-                    <string>Main</string>
-                </dict>
-            </array>
-        </dict>
-    </dict>
-    <!-- Add UIContentSizeCategoryLimits key and dictionary -->
-    <key>UIContentSizeCategoryLimits</key>
-    <dict>
-        <key>UIContentSizeCategorySmall</key>
-        <string>14</string>
-        <key>UIContentSizeCategoryMedium</key>
-        <string>16</string>
-        <key>UIContentSizeCategoryLarge</key>
-        <string>18</string>
-        <key>UIContentSizeCategoryExtraLarge</key>
-        <string>20</string>
-        <!-- Add more size category limits if needed -->
-    </dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>CFBundleAlternateIcons</key>
+		<false/>
+		<key>Icon2</key>
+		<false/>
+		<key>Icon1</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIContentSizeCategoryLimits</key>
+	<dict>
+		<key>UIContentSizeCategorySmall</key>
+		<string>14</string>
+		<key>UIContentSizeCategoryMedium</key>
+		<string>16</string>
+		<key>UIContentSizeCategoryLarge</key>
+		<string>18</string>
+		<key>UIContentSizeCategoryExtraLarge</key>
+		<string>20</string>
+	</dict>
+	<key>CFBundleAlternateIcons</key>
+	<dict>
+		<key>Icon1</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>icon1</string>
+			</array>
+		</dict>
+		<key>Icon2</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>icon2</string>
+			</array>
+		</dict>
+	</dict>
 </dict>
 </plist>
-
