@@ -155,6 +155,14 @@
 			path = Featured;
 			sourceTree = "<group>";
 		};
+		552FCF2C2A71429100B13206 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				5536EC0F2A6F44DB002A547B /* ContactViewController.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
 		557B966B2A59D9CC0032FDFD = {
 			isa = PBXGroup;
 			children = (
@@ -181,12 +189,12 @@
 		557B96762A59D9CC0032FDFD /* GP App */ = {
 			isa = PBXGroup;
 			children = (
+				552FCF2C2A71429100B13206 /* Contact */,
 				5580E8552A6C016300072284 /* Portfolio */,
 				5501C3812A68C54A009B86F6 /* GP App.entitlements */,
 				557B96772A59D9CC0032FDFD /* AppDelegate.swift */,
 				557B96792A59D9CC0032FDFD /* SceneDelegate.swift */,
 				557B967B2A59D9CC0032FDFD /* Home.swift */,
-				5536EC0F2A6F44DB002A547B /* ContactViewController.swift */,
 				557B967D2A59D9CC0032FDFD /* Main.storyboard */,
 				557B96822A59D9CD0032FDFD /* LaunchScreen.storyboard */,
 				557B96802A59D9CD0032FDFD /* Assets.xcassets */,
