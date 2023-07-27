@@ -34,7 +34,7 @@ class NewViewController: UICollectionViewController {
                                         New(image: "N8OudeDokken", name: "Bataviapad"),
                                         New(image: "N9OudeDokken", name: "Koopvaardijlaan"),
                                         New(image: "N16Groot-Begijnhof", name: "Groot-Begijnhof"),
-                                        New(image: "N17Sint-Amandsberg", name: "Sint-Amandsberg"),
+                                        New(image: "N17SintAmandsberg", name: "Sint-Amandsberg"),
                                         New(image: "N18Groot-Begijnhof", name: "Groot-Begijnhof"),
                                         New(image: "N15Sint-Pieterskerk", name: "Sint-Pieterskerk"),
                                         New(image: "N14Sint-Michielshelling", name: "Sint-Michielshelling"),

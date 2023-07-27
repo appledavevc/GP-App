@@ -26,6 +26,10 @@
 		557B968F2A59D9CD0032FDFD /* GP_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B968E2A59D9CD0032FDFD /* GP_AppTests.swift */; };
 		557B96992A59D9CD0032FDFD /* GP_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */; };
 		557B969B2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */; };
+		55DF165A2A7316D6000D7681 /* LandscapeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF16592A7316D6000D7681 /* LandscapeViewCell.swift */; };
+		55DF165C2A7317FB000D7681 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF165B2A7317FB000D7681 /* LandscapeViewController.swift */; };
+		55DF165E2A731973000D7681 /* LandscapeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF165D2A731973000D7681 /* LandscapeDetailViewController.swift */; };
+		55DF16602A7319D4000D7681 /* Landscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF165F2A7319D4000D7681 /* Landscape.swift */; };
 		55F105802A72AB9700A64AD1 /* NewViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1057F2A72AB9700A64AD1 /* NewViewCell.swift */; };
 		55F105822A72ABC600A64AD1 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F105812A72ABC600A64AD1 /* NewViewController.swift */; };
 		55F105842A72AC8A00A64AD1 /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F105832A72AC8A00A64AD1 /* New.swift */; };
@@ -94,6 +98,10 @@
 		557B96942A59D9CD0032FDFD /* GP AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GP AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITests.swift; sourceTree = "<group>"; };
 		557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55DF16592A7316D6000D7681 /* LandscapeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewCell.swift; sourceTree = "<group>"; };
+		55DF165B2A7317FB000D7681 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
+		55DF165D2A731973000D7681 /* LandscapeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeDetailViewController.swift; sourceTree = "<group>"; };
+		55DF165F2A7319D4000D7681 /* Landscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landscape.swift; sourceTree = "<group>"; };
 		55F1057F2A72AB9700A64AD1 /* NewViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewCell.swift; sourceTree = "<group>"; };
 		55F105812A72ABC600A64AD1 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		55F105832A72AC8A00A64AD1 /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
@@ -232,6 +240,7 @@
 		5580E8552A6C016300072284 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				55DF16582A73168F000D7681 /* Landscape */,
 				550B0AB32A6DFA1B001BB700 /* Featured */,
 				55B5822A2A71F7BC00449C8A /* New */,
 			);
@@ -254,6 +263,17 @@
 				55F105852A72AE2E00A64AD1 /* NewDetailViewController.swift */,
 			);
 			path = New;
+			sourceTree = "<group>";
+		};
+		55DF16582A73168F000D7681 /* Landscape */ = {
+			isa = PBXGroup;
+			children = (
+				55DF16592A7316D6000D7681 /* LandscapeViewCell.swift */,
+				55DF165B2A7317FB000D7681 /* LandscapeViewController.swift */,
+				55DF165D2A731973000D7681 /* LandscapeDetailViewController.swift */,
+				55DF165F2A7319D4000D7681 /* Landscape.swift */,
+			);
+			path = Landscape;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,12 +460,16 @@
 				557B967C2A59D9CC0032FDFD /* Home.swift in Sources */,
 				550B0AB52A6DFA3E001BB700 /* FeaturedViewController.swift in Sources */,
 				55F105862A72AE2E00A64AD1 /* NewDetailViewController.swift in Sources */,
+				55DF16602A7319D4000D7681 /* Landscape.swift in Sources */,
+				55DF165A2A7316D6000D7681 /* LandscapeViewCell.swift in Sources */,
 				557B96782A59D9CC0032FDFD /* AppDelegate.swift in Sources */,
 				55F105842A72AC8A00A64AD1 /* New.swift in Sources */,
 				550B0AB22A6DFA0C001BB700 /* FeaturedViewCell.swift in Sources */,
 				557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */,
+				55DF165C2A7317FB000D7681 /* LandscapeViewController.swift in Sources */,
 				55F105822A72ABC600A64AD1 /* NewViewController.swift in Sources */,
 				55F105802A72AB9700A64AD1 /* NewViewCell.swift in Sources */,
+				55DF165E2A731973000D7681 /* LandscapeDetailViewController.swift in Sources */,
 				550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
