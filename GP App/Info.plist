@@ -4,13 +4,24 @@
 <dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
 		<key>CFBundleAlternateIcons</key>
-		<false/>
-		<key>Icon2</key>
-		<false/>
-		<key>Icon1</key>
+		<dict>
+			<key>GP Orange</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>AppIcon2</string>
+				</array>
+			</dict>
+			<key>GP Pink</key>
+			<dict>
+				<key>CFBundleAlternateIcons</key>
+				<array>
+					<string>AppIcon3</string>
+				</array>
+			</dict>
+		</dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>
 		<dict>
@@ -37,23 +48,6 @@
 		<string>18</string>
 		<key>UIContentSizeCategoryExtraLarge</key>
 		<string>20</string>
-	</dict>
-	<key>CFBundleAlternateIcons</key>
-	<dict>
-		<key>Icon1</key>
-		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string>icon1</string>
-			</array>
-		</dict>
-		<key>Icon2</key>
-		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string>icon2</string>
-			</array>
-		</dict>
 	</dict>
 </dict>
 </plist>

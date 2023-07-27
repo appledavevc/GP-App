@@ -33,7 +33,9 @@ class FeaturedViewController: UICollectionViewController {
                                         Featured(image: "F7DokNoord", name: "Dok-Noord"),
                                         Featured(image: "F8Belfort", name: "Belfort"),
                                         Featured(image: "F9Dampoort", name: "Dampoort"),
-                                        Featured(image: "F10Groot-Begijnhof", name: "Groot-Begijnhof")]
+                                        Featured(image: "F10Groot-Begijnhof", name: "Groot-Begijnhof"),
+                                        Featured(image: "F11OudeDokken", name: "Oude Dokken"),
+                                        Featured(image: "F12OudeDokken", name: "Oude Dokken")]
 
     override func viewDidLoad() {
         super.viewDidLoad()

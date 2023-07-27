@@ -3133,50 +3133,34 @@ Cg
             </objects>
             <point key="canvasLocation" x="1888" y="-35"/>
         </scene>
-        <!--Configure App Icons-->
-        <scene sceneID="di5-dj-S63">
+        <!--SettingsTableViewController-->
+        <scene sceneID="4KT-No-rnA">
             <objects>
-                <viewController id="nqN-SD-mat" userLabel="Configure App Icons" customClass="SettingsViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ufP-Rt-kZh">
+                <tableViewController id="Npo-i5-W5H" userLabel="SettingsTableViewController" customClass="SettingsTableViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="bIW-u3-DoX">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="om9-uN-fmX">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="appIconCell" id="gRp-vC-4KT">
-                                        <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gRp-vC-4KT" id="Hid-dl-LFU">
-                                            <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="nqN-SD-mat" id="jsQ-On-j8u"/>
-                                    <outlet property="delegate" destination="nqN-SD-mat" id="iUb-aL-zn9"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="pxc-G0-kbk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="om9-uN-fmX" firstAttribute="leading" secondItem="pxc-G0-kbk" secondAttribute="leading" id="BhN-EB-yIL"/>
-                            <constraint firstItem="om9-uN-fmX" firstAttribute="trailing" secondItem="pxc-G0-kbk" secondAttribute="trailing" id="Mhh-bS-j17"/>
-                            <constraint firstAttribute="bottom" secondItem="om9-uN-fmX" secondAttribute="bottom" id="WFZ-8M-Vbe"/>
-                            <constraint firstItem="om9-uN-fmX" firstAttribute="top" secondItem="ufP-Rt-kZh" secondAttribute="top" id="uJc-ZZ-Mr5"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="App Icon" image="app.fill" catalog="system" id="1EJ-fE-qmO"/>
-                    <connections>
-                        <outlet property="TableView" destination="om9-uN-fmX" id="0fd-du-Frv"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="81O-0N-YoF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="appIconCell" id="9fT-io-z3t">
+                                <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fT-io-z3t" id="W8U-U7-BUL">
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Npo-i5-W5H" id="nls-uJ-viS"/>
+                            <outlet property="delegate" destination="Npo-i5-W5H" id="GXe-Ch-tct"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="nw9-Mf-tHW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gx-C6-QXT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1473.4883720930231" y="-35.407725321888414"/>
+            <point key="canvasLocation" x="-1405" y="-35"/>
         </scene>
         <!--Settings-->
         <scene sceneID="1FX-DH-2jt">
@@ -3197,7 +3181,7 @@ Cg
                     <connections>
                         <segue destination="ag8-aJ-0kf" kind="relationship" relationship="viewControllers" id="nfS-4p-K26"/>
                         <segue destination="ywZ-nC-lGb" kind="relationship" relationship="viewControllers" id="VbB-Ea-DVm"/>
-                        <segue destination="nqN-SD-mat" kind="relationship" relationship="viewControllers" id="5AW-co-Bng"/>
+                        <segue destination="Npo-i5-W5H" kind="relationship" relationship="viewControllers" id="pMh-u4-w8J"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0X-ye-S3N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3378,7 +3362,6 @@ Cg
         <image name="Thumb4" width="1920" height="1080"/>
         <image name="Thumb5" width="1920" height="1080"/>
         <image name="Thumb6" width="1920" height="1080"/>
-        <image name="app.fill" catalog="system" width="128" height="114"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="99"/>

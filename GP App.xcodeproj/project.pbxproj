@@ -17,7 +17,6 @@
 		550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB62A6DFB02001BB700 /* Featured.swift */; };
 		550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */; };
 		5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536EC0F2A6F44DB002A547B /* ContactViewController.swift */; };
-		55453CB52A71B93F0044F7E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55453CB42A71B93F0044F7E4 /* SettingsViewController.swift */; };
 		557B96782A59D9CC0032FDFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96772A59D9CC0032FDFD /* AppDelegate.swift */; };
 		557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96792A59D9CC0032FDFD /* SceneDelegate.swift */; };
 		557B967C2A59D9CC0032FDFD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B967B2A59D9CC0032FDFD /* Home.swift */; };
@@ -27,6 +26,9 @@
 		557B968F2A59D9CD0032FDFD /* GP_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B968E2A59D9CD0032FDFD /* GP_AppTests.swift */; };
 		557B96992A59D9CD0032FDFD /* GP_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */; };
 		557B969B2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */; };
+		55B582262A71E81300449C8A /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B582252A71E81300449C8A /* AppIcon.swift */; };
+		55B582282A71E83000449C8A /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B582272A71E83000449C8A /* SettingsTableViewController.swift */; };
+		55B5822C2A71F7CB00449C8A /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B5822B2A71F7CB00449C8A /* New.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +80,6 @@
 		550B0AB62A6DFB02001BB700 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
 		550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedDetailViewController.swift; sourceTree = "<group>"; };
 		5536EC0F2A6F44DB002A547B /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
-		55453CB42A71B93F0044F7E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		557B96742A59D9CC0032FDFD /* GP App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GP App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B96772A59D9CC0032FDFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		557B96792A59D9CC0032FDFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +93,9 @@
 		557B96942A59D9CD0032FDFD /* GP AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GP AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITests.swift; sourceTree = "<group>"; };
 		557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55B582252A71E81300449C8A /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
+		55B582272A71E83000449C8A /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		55B5822B2A71F7CB00449C8A /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,7 @@
 		557B96762A59D9CC0032FDFD /* GP App */ = {
 			isa = PBXGroup;
 			children = (
+				55B582242A71E80700449C8A /* AppIcon */,
 				552FCF2C2A71429100B13206 /* Contact */,
 				5580E8552A6C016300072284 /* Portfolio */,
 				5501C3812A68C54A009B86F6 /* GP App.entitlements */,
@@ -201,7 +206,6 @@
 				557B96822A59D9CD0032FDFD /* LaunchScreen.storyboard */,
 				557B96802A59D9CD0032FDFD /* Assets.xcassets */,
 				557B96852A59D9CD0032FDFD /* Info.plist */,
-				55453CB42A71B93F0044F7E4 /* SettingsViewController.swift */,
 			);
 			path = "GP App";
 			sourceTree = "<group>";
@@ -226,9 +230,27 @@
 		5580E8552A6C016300072284 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				55B5822A2A71F7BC00449C8A /* New */,
 				550B0AB32A6DFA1B001BB700 /* Featured */,
 			);
 			path = Portfolio;
+			sourceTree = "<group>";
+		};
+		55B582242A71E80700449C8A /* AppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				55B582252A71E81300449C8A /* AppIcon.swift */,
+				55B582272A71E83000449C8A /* SettingsTableViewController.swift */,
+			);
+			path = AppIcon;
+			sourceTree = "<group>";
+		};
+		55B5822A2A71F7BC00449C8A /* New */ = {
+			isa = PBXGroup;
+			children = (
+				55B5822B2A71F7CB00449C8A /* New.swift */,
+			);
+			path = New;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,15 +432,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B582262A71E81300449C8A /* AppIcon.swift in Sources */,
 				550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */,
 				5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */,
+				55B582282A71E83000449C8A /* SettingsTableViewController.swift in Sources */,
 				557B967C2A59D9CC0032FDFD /* Home.swift in Sources */,
+				55B5822C2A71F7CB00449C8A /* New.swift in Sources */,
 				550B0AB52A6DFA3E001BB700 /* FeaturedViewController.swift in Sources */,
 				557B96782A59D9CC0032FDFD /* AppDelegate.swift in Sources */,
 				550B0AB22A6DFA0C001BB700 /* FeaturedViewCell.swift in Sources */,
 				557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */,
 				550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */,
-				55453CB52A71B93F0044F7E4 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
