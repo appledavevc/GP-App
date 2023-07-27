@@ -2997,6 +2997,78 @@ Cg
             </objects>
             <point key="canvasLocation" x="207.90697674418604" y="-35.407725321888414"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="1FX-DH-2jt">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="elf-L2-4MU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Settings" id="EEb-3b-wSy"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NPW-ni-DHx">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Orange"/>
+                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="prominent">
+                            <color key="shadowColor" name="Orange"/>
+                            <color key="selectionIndicatorTintColor" name="Orange"/>
+                        </tabBarAppearance>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ag8-aJ-0kf" kind="relationship" relationship="viewControllers" id="nfS-4p-K26"/>
+                        <segue destination="ywZ-nC-lGb" kind="relationship" relationship="viewControllers" id="VbB-Ea-DVm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m0X-ye-S3N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-670" y="-35"/>
+        </scene>
+        <!--About us-->
+        <scene sceneID="ygS-mv-yU3">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="stE-hQ-swK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="About us" id="GYD-gO-Xwu"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yZj-PG-lou">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="Orange"/>
+                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="prominent">
+                            <color key="shadowColor" name="Orange"/>
+                            <color key="selectionIndicatorTintColor" name="Orange"/>
+                        </tabBarAppearance>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8vT-hS-dWr" kind="relationship" relationship="viewControllers" id="N43-EC-X3G"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFS-D1-O7P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="675"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="C8P-FN-ygp">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="m6N-Oq-OTk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Contact" id="7h6-gf-EqA"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WE4-JO-EeG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="Orange"/>
+                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="prominent">
+                            <color key="shadowColor" name="Orange"/>
+                        </tabBarAppearance>
+                    </tabBar>
+                    <connections>
+                        <segue destination="iha-3Q-2We" kind="relationship" relationship="viewControllers" id="dO1-OD-dQh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7n-Ya-Ddh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="208" y="-730"/>
+        </scene>
         <!--Welcome-->
         <scene sceneID="OfV-08-xbP">
             <objects>
@@ -3120,97 +3192,20 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" name="Orange"/>
-                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="prominent" stackedItemPositioning="automatic" stackedItemSpacing="0.0">
+                        <color key="tintColor" name="Orange"/>
+                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="prominent">
                             <color key="shadowColor" name="Orange"/>
+                            <color key="selectionIndicatorTintColor" name="Orange"/>
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <segue destination="sBL-cH-eRE" kind="relationship" relationship="viewControllers" id="Hej-lS-LRS"/>
+                        <segue destination="49g-Cq-p4P" kind="relationship" relationship="viewControllers" id="l0R-Xv-byh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPR-g2-vOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1888" y="-35"/>
-        </scene>
-        <!--SettingsTableViewController-->
-        <scene sceneID="4KT-No-rnA">
-            <objects>
-                <tableViewController id="Npo-i5-W5H" userLabel="SettingsTableViewController" customClass="SettingsTableViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="bIW-u3-DoX">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="appIconCell" id="9fT-io-z3t">
-                                <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fT-io-z3t" id="W8U-U7-BUL">
-                                    <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Npo-i5-W5H" id="nls-uJ-viS"/>
-                            <outlet property="delegate" destination="Npo-i5-W5H" id="GXe-Ch-tct"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="nw9-Mf-tHW"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8gx-C6-QXT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1405" y="-35"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="1FX-DH-2jt">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="elf-L2-4MU" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Settings" id="EEb-3b-wSy"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NPW-ni-DHx">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" name="Orange"/>
-                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="prominent">
-                            <color key="shadowColor" name="Orange"/>
-                            <color key="selectionIndicatorTintColor" name="Orange"/>
-                        </tabBarAppearance>
-                    </tabBar>
-                    <connections>
-                        <segue destination="ag8-aJ-0kf" kind="relationship" relationship="viewControllers" id="nfS-4p-K26"/>
-                        <segue destination="ywZ-nC-lGb" kind="relationship" relationship="viewControllers" id="VbB-Ea-DVm"/>
-                        <segue destination="Npo-i5-W5H" kind="relationship" relationship="viewControllers" id="pMh-u4-w8J"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="m0X-ye-S3N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-670" y="-35"/>
-        </scene>
-        <!--About us-->
-        <scene sceneID="ygS-mv-yU3">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="stE-hQ-swK" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="About us" id="GYD-gO-Xwu"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yZj-PG-lou">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" name="Orange"/>
-                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="prominent">
-                            <color key="shadowColor" name="Orange"/>
-                            <color key="selectionIndicatorTintColor" name="Orange"/>
-                        </tabBarAppearance>
-                    </tabBar>
-                    <connections>
-                        <segue destination="8vT-hS-dWr" kind="relationship" relationship="viewControllers" id="N43-EC-X3G"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fFS-D1-O7P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1051" y="675"/>
         </scene>
         <!--Featured-->
         <scene sceneID="zsq-24-lUd">
@@ -3327,28 +3322,71 @@ Cg
             </objects>
             <point key="canvasLocation" x="2681.8604651162791" y="674.67811158798293"/>
         </scene>
-        <!--Contact-->
-        <scene sceneID="C8P-FN-ygp">
+        <!--New-->
+        <scene sceneID="Fys-S5-m76">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="m6N-Oq-OTk" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Contact" id="7h6-gf-EqA"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WE4-JO-EeG">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" name="Orange"/>
-                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="prominent">
-                            <color key="shadowColor" name="Orange"/>
-                        </tabBarAppearance>
-                    </tabBar>
-                    <connections>
-                        <segue destination="iha-3Q-2We" kind="relationship" relationship="viewControllers" id="dO1-OD-dQh"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7n-Ya-Ddh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <collectionViewController id="49g-Cq-p4P" customClass="NewViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="iZq-nd-dfc">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gnf-Sj-K0o">
+                            <size key="itemSize" width="150" height="230"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dataCell" id="y5b-f3-Rcj" customClass="NewViewCell" customModule="GP_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uRy-U6-sU1">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="230"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CDi-po-3WW">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHE-7o-BeN">
+                                            <rect key="frame" x="0.0" y="200" width="150" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="6fJ-tB-iOi"/>
+                                                <constraint firstAttribute="height" constant="30" id="oBy-v7-83K"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="pHE-7o-BeN" firstAttribute="top" secondItem="uRy-U6-sU1" secondAttribute="top" constant="200" id="91K-qU-LNk"/>
+                                        <constraint firstAttribute="trailing" secondItem="pHE-7o-BeN" secondAttribute="trailing" id="NXv-NR-B6v"/>
+                                        <constraint firstAttribute="bottom" secondItem="pHE-7o-BeN" secondAttribute="bottom" id="PM7-Tq-cro"/>
+                                        <constraint firstItem="CDi-po-3WW" firstAttribute="leading" secondItem="uRy-U6-sU1" secondAttribute="leading" id="Tyj-2t-i8A"/>
+                                        <constraint firstAttribute="trailing" secondItem="CDi-po-3WW" secondAttribute="trailing" id="Xkl-3M-Nn7"/>
+                                        <constraint firstItem="CDi-po-3WW" firstAttribute="top" secondItem="uRy-U6-sU1" secondAttribute="top" id="b3O-Yz-kwj"/>
+                                        <constraint firstAttribute="bottom" secondItem="CDi-po-3WW" secondAttribute="bottom" constant="30" id="pNU-XL-xZs"/>
+                                        <constraint firstItem="pHE-7o-BeN" firstAttribute="leading" secondItem="uRy-U6-sU1" secondAttribute="leading" id="vqt-dV-NvH"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="newImageView" destination="CDi-po-3WW" id="dAb-r0-Yle"/>
+                                    <outlet property="newNameLabel" destination="pHE-7o-BeN" id="PBB-Dz-gMP"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="49g-Cq-p4P" id="Zaw-JG-6e7"/>
+                            <outlet property="delegate" destination="49g-Cq-p4P" id="RmD-ub-VNI"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="New" image="clock.fill" catalog="system" id="JTe-cb-gkt">
+                        <color key="badgeColor" name="Orange"/>
+                    </tabBarItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKq-kg-CVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="208" y="-730"/>
+            <point key="canvasLocation" x="1888" y="1392"/>
         </scene>
     </scenes>
     <resources>
@@ -3365,6 +3403,7 @@ Cg
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="99"/>
+        <image name="clock.fill" catalog="system" width="128" height="123"/>
         <image name="doc.on.doc.fill" catalog="system" width="116" height="128"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="face.smiling" catalog="system" width="128" height="123"/>

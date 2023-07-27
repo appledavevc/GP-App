@@ -1,15 +1,15 @@
 //
-//  FeaturedViewController.swift
+//  NewViewController.swift
 //  GP App
 //
-//  Created by Dave Van Cauwenberghe on 24/07/2023.
+//  Created by Dave Van Cauwenberghe on 27/07/2023.
 //
 
 import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class FeaturedViewController: UICollectionViewController {
+class NewViewController: UICollectionViewController {
     @IBAction func unwindToMain(segue: UIStoryboardSegue) {
            
     }
@@ -17,27 +17,31 @@ class FeaturedViewController: UICollectionViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPaths = collectionView.indexPathsForSelectedItems {
-                let destinationController = segue.destination as! FeaturedDetailViewController
-                destinationController.featured = featured[indexPaths[0].row]
+                let destinationController = segue.destination as! NewDetailViewController
+                destinationController.new = new[indexPaths[0].row]
                 collectionView.deselectItem(at: indexPaths[0], animated: false)
             }
         }
     }
     
-    private var featured: [Featured] = [Featured(image: "F1Sint-Michielshelling", name: "Sint-Michielshelling"),
-                                        Featured(image: "F2GSP", name: "Gent-Sint-Pieters"),
-                                        Featured(image: "F3Dampoort", name: "Dampoort"),
-                                        Featured(image: "F4GSP2", name: "Gent-Sint-Pieters"),
-                                        Featured(image: "F5Korenmarkt", name: "Korenmarkt"),
-                                        Featured(image: "F6Groot-Begijnhof", name: "Groot-Begijnhof"),
-                                        Featured(image: "F7DokNoord", name: "Dok-Noord"),
-                                        Featured(image: "F8Belfort", name: "Belfort"),
-                                        Featured(image: "F9Dampoort", name: "Dampoort"),
-                                        Featured(image: "F10Groot-Begijnhof", name: "Groot-Begijnhof"),
-                                        Featured(image: "F11OudeDokken", name: "Oude Dokken"),
-                                        Featured(image: "F12OudeDokken", name: "Oude Dokken"),
-                                        Featured(image: "F13SintAmandsberg", name: "Sint-Amandsberg"),
-                                        Featured(image: "F14GSP", name: "Gent-Sint-Pieters")]
+    private var new: [New] = [New(image: "N1OudeDokken", name: "Elektriciteitscentrale"),
+                                        New(image: "N2OudeDokken", name: "Bataviabrug"),
+                                        New(image: "N3OudeDokken", name: "Schipperskaai"),
+                                        New(image: "N4OudeDokken", name: "Koopvaardijlaan"),
+                                        New(image: "N5OudeDokken", name: "Dampoort"),
+                                        New(image: "N6OudeDokken", name: "Dok-Noord"),
+                                        New(image: "N7OudeDokken", name: "Bataviabrug"),
+                                        New(image: "N8OudeDokken", name: "Bataviapad"),
+                                        New(image: "N9OudeDokken", name: "Koopvaardijlaan"),
+                                        New(image: "N16Groot-Begijnhof", name: "Groot-Begijnhof"),
+                                        New(image: "N17Sint-Amandsberg", name: "Sint-Amandsberg"),
+                                        New(image: "N18Groot-Begijnhof", name: "Groot-Begijnhof"),
+                                        New(image: "N15Sint-Pieterskerk", name: "Sint-Pieterskerk"),
+                                        New(image: "N14Sint-Michielshelling", name: "Sint-Michielshelling"),
+                                        New(image: "N13GSP", name: "Gent-Sint-Pieters"),
+                                        New(image: "N12GSP", name: "Gent-Sint-Pieters"),
+                                        New(image: "N11Groot-Begijnhof", name: "Groot-Begijnhof"),
+                                        New(image: "N10Korenmarkt", name: "Korenmarkt")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,15 +61,15 @@ class FeaturedViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return featured.count
+        return new.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dataCell", for: indexPath) as! FeaturedViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dataCell", for: indexPath) as! NewViewCell
 
-        let featuredItem = featured[indexPath.row]
-        cell.featuredImageView.image = UIImage(named: featuredItem.image)
-        cell.featuredNameLabel.text = featuredItem.name
+        let newItem = new[indexPath.row]
+        cell.newImageView.image = UIImage(named: newItem.image)
+        cell.newNameLabel.text = newItem.name
 
         return cell
     }
@@ -106,4 +110,3 @@ class FeaturedViewController: UICollectionViewController {
     */
 
 }
-
