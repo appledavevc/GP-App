@@ -17,6 +17,10 @@
 		550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB62A6DFB02001BB700 /* Featured.swift */; };
 		550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */; };
 		5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536EC0F2A6F44DB002A547B /* ContactViewController.swift */; };
+		5558BE482A733D98006CB7BD /* PortraitViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE472A733D98006CB7BD /* PortraitViewCell.swift */; };
+		5558BE4A2A733DB0006CB7BD /* PortraitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE492A733DB0006CB7BD /* PortraitViewController.swift */; };
+		5558BE4C2A733E5D006CB7BD /* Portrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE4B2A733E5D006CB7BD /* Portrait.swift */; };
+		5558BE4E2A733F78006CB7BD /* PortraitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE4D2A733F78006CB7BD /* PortraitDetailViewController.swift */; };
 		557B96782A59D9CC0032FDFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96772A59D9CC0032FDFD /* AppDelegate.swift */; };
 		557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96792A59D9CC0032FDFD /* SceneDelegate.swift */; };
 		557B967C2A59D9CC0032FDFD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B967B2A59D9CC0032FDFD /* Home.swift */; };
@@ -85,6 +89,10 @@
 		550B0AB62A6DFB02001BB700 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
 		550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedDetailViewController.swift; sourceTree = "<group>"; };
 		5536EC0F2A6F44DB002A547B /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		5558BE472A733D98006CB7BD /* PortraitViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitViewCell.swift; sourceTree = "<group>"; };
+		5558BE492A733DB0006CB7BD /* PortraitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitViewController.swift; sourceTree = "<group>"; };
+		5558BE4B2A733E5D006CB7BD /* Portrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portrait.swift; sourceTree = "<group>"; };
+		5558BE4D2A733F78006CB7BD /* PortraitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitDetailViewController.swift; sourceTree = "<group>"; };
 		557B96742A59D9CC0032FDFD /* GP App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GP App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B96772A59D9CC0032FDFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		557B96792A59D9CC0032FDFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +187,17 @@
 			path = Contact;
 			sourceTree = "<group>";
 		};
+		5558BE3A2A733617006CB7BD /* Portrait */ = {
+			isa = PBXGroup;
+			children = (
+				5558BE472A733D98006CB7BD /* PortraitViewCell.swift */,
+				5558BE492A733DB0006CB7BD /* PortraitViewController.swift */,
+				5558BE4B2A733E5D006CB7BD /* Portrait.swift */,
+				5558BE4D2A733F78006CB7BD /* PortraitDetailViewController.swift */,
+			);
+			path = Portrait;
+			sourceTree = "<group>";
+		};
 		557B966B2A59D9CC0032FDFD = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +259,7 @@
 		5580E8552A6C016300072284 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				5558BE3A2A733617006CB7BD /* Portrait */,
 				55DF16582A73168F000D7681 /* Landscape */,
 				550B0AB32A6DFA1B001BB700 /* Featured */,
 				55B5822A2A71F7BC00449C8A /* New */,
@@ -456,7 +476,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */,
+				5558BE4A2A733DB0006CB7BD /* PortraitViewController.swift in Sources */,
+				5558BE4C2A733E5D006CB7BD /* Portrait.swift in Sources */,
 				5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */,
+				5558BE482A733D98006CB7BD /* PortraitViewCell.swift in Sources */,
 				557B967C2A59D9CC0032FDFD /* Home.swift in Sources */,
 				550B0AB52A6DFA3E001BB700 /* FeaturedViewController.swift in Sources */,
 				55F105862A72AE2E00A64AD1 /* NewDetailViewController.swift in Sources */,
@@ -468,6 +491,7 @@
 				557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */,
 				55DF165C2A7317FB000D7681 /* LandscapeViewController.swift in Sources */,
 				55F105822A72ABC600A64AD1 /* NewViewController.swift in Sources */,
+				5558BE4E2A733F78006CB7BD /* PortraitDetailViewController.swift in Sources */,
 				55F105802A72AB9700A64AD1 /* NewViewCell.swift in Sources */,
 				55DF165E2A731973000D7681 /* LandscapeDetailViewController.swift in Sources */,
 				550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */,
