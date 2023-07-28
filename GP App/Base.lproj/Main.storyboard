@@ -3304,6 +3304,14 @@ Cg
                                     <segue destination="Qz7-d5-7tK" kind="unwind" unwindAction="unwindToMainWithSegue:" id="4Fc-LC-cTr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm2-gw-YfV" userLabel="More info">
+                                <rect key="frame" x="340" y="10" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Fg3-ag-jUp"/>
+                                    <constraint firstAttribute="height" constant="30" id="nBY-5j-pnW"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lao-X9-Tl0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -3311,13 +3319,16 @@ Cg
                             <constraint firstItem="lao-X9-Tl0" firstAttribute="trailing" secondItem="u7H-1c-icB" secondAttribute="trailing" constant="10" id="D6P-u3-ZsG"/>
                             <constraint firstItem="cIb-Lp-OWM" firstAttribute="top" secondItem="lao-X9-Tl0" secondAttribute="top" id="S1n-pc-cMl"/>
                             <constraint firstItem="u7H-1c-icB" firstAttribute="top" secondItem="lao-X9-Tl0" secondAttribute="top" constant="10" id="ULA-bW-Eez"/>
+                            <constraint firstItem="u7H-1c-icB" firstAttribute="leading" secondItem="gm2-gw-YfV" secondAttribute="trailing" constant="20" id="X18-YY-c3I"/>
                             <constraint firstItem="cIb-Lp-OWM" firstAttribute="leading" secondItem="lao-X9-Tl0" secondAttribute="leading" id="ZHa-zl-RWn"/>
                             <constraint firstItem="cIb-Lp-OWM" firstAttribute="trailing" secondItem="lao-X9-Tl0" secondAttribute="trailing" id="i8v-qV-VHe"/>
+                            <constraint firstItem="gm2-gw-YfV" firstAttribute="top" secondItem="lao-X9-Tl0" secondAttribute="top" constant="10" id="jnU-zN-JDq"/>
                             <constraint firstItem="cIb-Lp-OWM" firstAttribute="bottom" secondItem="lao-X9-Tl0" secondAttribute="bottom" id="oYw-zv-7JG"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="featuredImageView" destination="cIb-Lp-OWM" id="uTg-dF-5Yx"/>
+                        <outlet property="moreInfoButton" destination="gm2-gw-YfV" id="z3k-8n-hLU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDg-C4-R3k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

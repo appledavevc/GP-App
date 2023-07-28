@@ -16,28 +16,28 @@ class FeaturedViewController: UICollectionViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            if let indexPaths = collectionView.indexPathsForSelectedItems {
-                let destinationController = segue.destination as! FeaturedDetailViewController
+            if let indexPaths = collectionView.indexPathsForSelectedItems,
+               let destinationController = segue.destination as? FeaturedDetailViewController {
                 destinationController.featured = featured[indexPaths[0].row]
                 collectionView.deselectItem(at: indexPaths[0], animated: false)
             }
         }
     }
     
-    private var featured: [Featured] = [Featured(image: "F1Sint-Michielshelling", name: "Sint-Michielshelling"),
-                                        Featured(image: "F2GSP", name: "Gent-Sint-Pieters"),
-                                        Featured(image: "F3Dampoort", name: "Dampoort"),
-                                        Featured(image: "F4GSP2", name: "Gent-Sint-Pieters"),
-                                        Featured(image: "F5Korenmarkt", name: "Korenmarkt"),
-                                        Featured(image: "F6Groot-Begijnhof", name: "Groot-Begijnhof"),
-                                        Featured(image: "F7DokNoord", name: "Dok-Noord"),
-                                        Featured(image: "F8Belfort", name: "Belfort"),
-                                        Featured(image: "F9Dampoort", name: "Dampoort"),
-                                        Featured(image: "F10Groot-Begijnhof", name: "Groot-Begijnhof"),
-                                        Featured(image: "F11OudeDokken", name: "Oude Dokken"),
-                                        Featured(image: "F12OudeDokken", name: "Oude Dokken"),
-                                        Featured(image: "F13SintAmandsberg", name: "Sint-Amandsberg"),
-                                        Featured(image: "F14GSP", name: "Gent-Sint-Pieters")]
+    private var featured: [Featured] = [Featured(image: "F1Sint-Michielshelling", name: "Sint-Michielshelling", information: "This is a test message for the Sint-Michielshelling. \n\n11/03/2023 - 15u00"),
+                                        Featured(image: "F2GSP", name: "Gent-Sint-Pieters", information: "Test"),
+                                        Featured(image: "F3Dampoort", name: "Dampoort", information: "Test"),
+                                        Featured(image: "F4GSP2", name: "Gent-Sint-Pieters", information: "Test"),
+                                        Featured(image: "F5Korenmarkt", name: "Korenmarkt", information: "Test"),
+                                        Featured(image: "F6Groot-Begijnhof", name: "Groot-Begijnhof", information: "Test"),
+                                        Featured(image: "F7DokNoord", name: "Dok-Noord", information: "Test"),
+                                        Featured(image: "F8Belfort", name: "Belfort", information: "Test"),
+                                        Featured(image: "F9Dampoort", name: "Dampoort", information: "Test"),
+                                        Featured(image: "F10Groot-Begijnhof", name: "Groot-Begijnhof", information: "Test"),
+                                        Featured(image: "F11OudeDokken", name: "Oude Dokken", information: "Test"),
+                                        Featured(image: "F12OudeDokken", name: "Oude Dokken", information: "Test"),
+                                        Featured(image: "F13SintAmandsberg", name: "Sint-Amandsberg", information: "Test"),
+                                        Featured(image: "F14GSP", name: "Gent-Sint-Pieters", information: "Test")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,4 +106,3 @@ class FeaturedViewController: UICollectionViewController {
     */
 
 }
-

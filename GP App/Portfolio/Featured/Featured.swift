@@ -6,12 +6,15 @@
 //
 
 import Foundation
+
 struct Featured {
-    var image:String = ""
-    var name:String = ""
-    
-    init(image: String, name: String){
+    var image: String = ""
+    var name: String = ""
+    var information: String = "" // Add this property to hold the additional information
+
+    init(image: String, name: String, information: String) {
         self.image = image
         self.name = name
+        self.information = information
     }
 }
