@@ -24,9 +24,9 @@ class FeaturedViewController: UICollectionViewController {
         }
     }
     
-    private var featured: [Featured] = [Featured(image: "F1Sint-Michielshelling", name: "Sint-Michielshelling", information: "This is a test message for the Sint-Michielshelling. \n\n11/03/2023 - 15u00"),
-                                        Featured(image: "F2GSP", name: "Gent-Sint-Pieters", information: "Test"),
-                                        Featured(image: "F3Dampoort", name: "Dampoort", information: "Test"),
+    private var featured: [Featured] = [Featured(image: "F1Sint-Michielshelling", name: "Sint-Michielshelling", information: "11/03/2023 - 16u24\n\nThe Saint Michael's Bridge is a stone arch bridge located in the center of the Belgian city of Ghent. The bridge spans the River Leie, on the south side of the Graslei and Korenlei. The current monumental bridge was built between 1905 and 1909, following the construction of the post office building.\n\nBoth the Saint Michael's Bridge and the Old Post Office are creations of the architect Louis Cloquet."),
+                                        Featured(image: "F2GSP", name: "Gent-Sint-Pieters", information: "30/01/2023 - 09u47\n\nGent-Sint-Pieters railway station is the main railway station in Ghent. The origins of the railway station is a small station on the Ghent–Ostend line in 1881. At that time, the main railway station of Ghent was the South railway station, built in 1837. \n\nAt the occasion of the 1913 International Exposition in Ghent, a new Sint-Pieters railway station was built.\n\nIt was designed by the architect Louis Cloquet and finished in 1912 just before the World's Fair."),
+                                        Featured(image: "F3Dampoort", name: "Dampoort", information: "27/01/2022 - 06u23\n\nDampoort is a neighbourhood in the city of Ghent in Belgium.\n\nNowadays it is mainly known as the location of the railway station Gent-Dampoort and its major crossroads to including but not limited to the city ring R40, Antwerp and the port.\n\nIn former times it used to be the eastern gate of the city, it opened the city towards the region of Waasland (or Land van Waas) and Antwerp."),
                                         Featured(image: "F4GSP2", name: "Gent-Sint-Pieters", information: "Test"),
                                         Featured(image: "F5Korenmarkt", name: "Korenmarkt", information: "Test"),
                                         Featured(image: "F6Groot-Begijnhof", name: "Groot-Begijnhof", information: "Test"),

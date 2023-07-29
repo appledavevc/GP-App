@@ -37,6 +37,7 @@ class LandscapeViewController: UICollectionViewController {
                                           Landscape(image: "L19Houtdok", name: "Houtdok"),
                                           Landscape(image: "L20Houtdok", name: "Houtdok"),
                                           Landscape(image: "L21Houtdok", name: "Houtdok"),
+                                          Landscape(image: "L24GSP", name: "Gent-Sint-Pieters"),
                                           Landscape(image: "L1OudeDokken", name: "Power plant"),
                                           Landscape(image: "L2OudeDokken", name: "Bataviabrug"),
                                           Landscape(image: "L3OudeDokken", name: "Schipperskaai"),
@@ -45,7 +46,8 @@ class LandscapeViewController: UICollectionViewController {
                                           Landscape(image: "L6OudeDokken", name: "Dok-Noord"),
                                           Landscape(image: "L7OudeDokken", name: "Bataviabrug"),
                                           Landscape(image: "L8OudeDokken", name: "Bataviapad"),
-                                          Landscape(image: "L9OudeDokken", name: "Koopvaardijlaan")]
+                                          Landscape(image: "L9OudeDokken", name: "Koopvaardijlaan"),
+                                          Landscape(image: "L23OudeDokken", name: "Kleindokkaai")]
                                         
     override func viewDidLoad() {
         super.viewDidLoad()

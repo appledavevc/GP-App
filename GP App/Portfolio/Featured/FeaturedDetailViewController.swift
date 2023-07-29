@@ -8,13 +8,13 @@
 import UIKit
 
 class FeaturedDetailViewController: UIViewController {
-    
+
     var featured: Featured?
     
     @IBOutlet var featuredImageView: UIImageView!
     @IBOutlet var featuredNameLabel: UILabel!
     @IBOutlet var moreInfoButton: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,21 +30,54 @@ class FeaturedDetailViewController: UIViewController {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .center
 
+        var fontColor: UIColor
+        if traitCollection.userInterfaceStyle == .dark {
+            // Dark mode is enabled, set font color to white
+            fontColor = .white
+        } else {
+            // Light mode is enabled, set font color to black
+            fontColor = .black
+        }
+
         let attributes: [NSAttributedString.Key: Any] = [
             .font: UIFont.systemFont(ofSize: 16),
-            .foregroundColor: UIColor.black,
+            .foregroundColor: fontColor,
             .paragraphStyle: paragraphStyle
         ]
 
         let attributedText = NSAttributedString(string: information, attributes: attributes)
 
-        let alertController = UIAlertController(title: "More about this photo", message: "", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Photo information", message: "", preferredStyle: .alert)
         alertController.setValue(attributedText, forKey: "attributedMessage")
 
         alertController.addAction(UIAlertAction(title: "Interesting", style: .default, handler: nil))
         present(alertController, animated: true, completion: nil)
     }
     
+    // Add traitCollectionDidChange method to update the font color when appearance mode changes
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        // Update the UIAlertController message text color when appearance mode changes
+        if let alertController = presentedViewController as? UIAlertController {
+            var fontColor: UIColor
+            if traitCollection.userInterfaceStyle == .dark {
+                fontColor = .white
+            } else {
+                fontColor = .black
+            }
+            
+            let attributes: [NSAttributedString.Key: Any] = [
+                .font: UIFont.systemFont(ofSize: 16),
+                .foregroundColor: fontColor,
+                .paragraphStyle: NSMutableParagraphStyle()
+            ]
+            
+            let attributedText = NSAttributedString(string: alertController.message ?? "", attributes: attributes)
+            alertController.setValue(attributedText, forKey: "attributedMessage")
+        }
+    }
+
     /*
     // MARK: - Navigation
 
@@ -54,5 +87,4 @@ class FeaturedDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
