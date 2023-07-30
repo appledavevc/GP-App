@@ -16,39 +16,39 @@ class LandscapeViewController: UICollectionViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            if let indexPaths = collectionView.indexPathsForSelectedItems {
-                let destinationController = segue.destination as! LandscapeDetailViewController
+            if let indexPaths = collectionView.indexPathsForSelectedItems,
+               let destinationController = segue.destination as? LandscapeDetailViewController {
                 destinationController.landscape = landscape[indexPaths[0].row]
                 collectionView.deselectItem(at: indexPaths[0], animated: false)
             }
         }
     }
     
-    private var landscape: [Landscape] = [Landscape(image: "L22Azaleapark", name: "Azaleapark"),
-                                          Landscape(image: "L10Dampoort", name: "Gent-Dampoort"),
-                                          Landscape(image: "L11GSP", name: "Gent-Sint-Pieters"),
-                                          Landscape(image: "L12GSP", name: "Heritage PCC tram"),
-                                          Landscape(image: "L13Korenmarkt", name: "Korenmarkt by night"),
-                                          Landscape(image: "L14Graslei", name: "Graslei"),
-                                          Landscape(image: "L15GSP", name: "Gent-Sint-Pieters"),
-                                          Landscape(image: "L16GSP", name: "Gent-Sint-Pieters"),
-                                          Landscape(image: "L17GrootBegijnhof", name: "Groot-Begijnhof"),
-                                          Landscape(image: "L18Tweebruggen", name: "Tweebruggen"),
-                                          Landscape(image: "L19Houtdok", name: "Houtdok"),
-                                          Landscape(image: "L20Houtdok", name: "Houtdok"),
-                                          Landscape(image: "L21Houtdok", name: "Houtdok"),
-                                          Landscape(image: "L24GSP", name: "Gent-Sint-Pieters"),
-                                          Landscape(image: "L1OudeDokken", name: "Power plant"),
-                                          Landscape(image: "L2OudeDokken", name: "Bataviabrug"),
-                                          Landscape(image: "L3OudeDokken", name: "Schipperskaai"),
-                                          Landscape(image: "L4OudeDokken", name: "Koopvaardijlaan"),
-                                          Landscape(image: "L5OudeDokken", name: "Dampoort"),
-                                          Landscape(image: "L6OudeDokken", name: "Dok-Noord"),
-                                          Landscape(image: "L7OudeDokken", name: "Bataviabrug"),
-                                          Landscape(image: "L8OudeDokken", name: "Bataviapad"),
-                                          Landscape(image: "L9OudeDokken", name: "Koopvaardijlaan"),
-                                          Landscape(image: "L23OudeDokken", name: "Kleindokkaai")]
-                                        
+    private var landscape: [Landscape] = [Landscape(image: "L22Azaleapark", name: "Azaleapark", information: "Test\n\nLandscape"),
+                                          Landscape(image: "L10Dampoort", name: "Gent-Dampoort", information: "Test"),
+                                          Landscape(image: "L11GSP", name: "Gent-Sint-Pieters", information: "Test"),
+                                          Landscape(image: "L12GSP", name: "Heritage PCC tram", information: "Test"),
+                                          Landscape(image: "L13Korenmarkt", name: "Korenmarkt by night", information: "Test"),
+                                          Landscape(image: "L14Graslei", name: "Graslei", information: "Test"),
+                                          Landscape(image: "L15GSP", name: "Gent-Sint-Pieters", information: "Test"),
+                                          Landscape(image: "L16GSP", name: "Gent-Sint-Pieters", information: "Test"),
+                                          Landscape(image: "L17GrootBegijnhof", name: "Groot-Begijnhof", information: "Test"),
+                                          Landscape(image: "L18Tweebruggen", name: "Tweebruggen", information: "Test"),
+                                          Landscape(image: "L19Houtdok", name: "Houtdok", information: "Test"),
+                                          Landscape(image: "L20Houtdok", name: "Houtdok", information: "Test"),
+                                          Landscape(image: "L21Houtdok", name: "Houtdok", information: "Test"),
+                                          Landscape(image: "L24GSP", name: "Gent-Sint-Pieters", information: "Test"),
+                                          Landscape(image: "L1OudeDokken", name: "Power plant", information: "Test"),
+                                          Landscape(image: "L2OudeDokken", name: "Bataviabrug", information: "Test"),
+                                          Landscape(image: "L3OudeDokken", name: "Schipperskaai", information: "Test"),
+                                          Landscape(image: "L4OudeDokken", name: "Koopvaardijlaan", information: "Test"),
+                                          Landscape(image: "L5OudeDokken", name: "Dampoort", information: "Test"),
+                                          Landscape(image: "L6OudeDokken", name: "Dok-Noord", information: "Test"),
+                                          Landscape(image: "L7OudeDokken", name: "Bataviabrug", information: "Test"),
+                                          Landscape(image: "L8OudeDokken", name: "Bataviapad", information: "Test"),
+                                          Landscape(image: "L9OudeDokken", name: "Koopvaardijlaan", information: "Test"),
+                                          Landscape(image: "L23OudeDokken", name: "Kleindokkaai", information: "Test")]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

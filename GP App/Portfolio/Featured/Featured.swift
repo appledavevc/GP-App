@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 struct Featured {
     var image: String = ""
     var name: String = ""

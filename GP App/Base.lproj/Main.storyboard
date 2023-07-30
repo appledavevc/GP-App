@@ -3591,6 +3591,7 @@ Cg
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="moreInfoButton" destination="v9D-od-ro5" id="tHx-Ca-xBP"/>
                         <outlet property="portraitImageView" destination="Nt3-Dr-gbq" id="BrL-b4-wuZ"/>
                     </connections>
                 </viewController>
@@ -3650,6 +3651,7 @@ Cg
                     </view>
                     <connections>
                         <outlet property="landscapeImageView" destination="PEj-1f-7cK" id="Ues-UY-hi9"/>
+                        <outlet property="moreInfoButton" destination="UxW-bb-ZyI" id="KVY-Mk-hbh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o5l-lJ-BHl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3707,6 +3709,7 @@ Cg
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="moreInfoButton" destination="ghE-uW-VcI" id="FkC-pc-BJL"/>
                         <outlet property="newImageView" destination="AMP-b4-lQG" id="6Al-bF-QyX"/>
                     </connections>
                 </viewController>

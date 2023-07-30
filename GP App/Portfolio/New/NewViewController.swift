@@ -16,32 +16,32 @@ class NewViewController: UICollectionViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            if let indexPaths = collectionView.indexPathsForSelectedItems {
-                let destinationController = segue.destination as! NewDetailViewController
+            if let indexPaths = collectionView.indexPathsForSelectedItems,
+               let destinationController = segue.destination as? NewDetailViewController {
                 destinationController.new = new[indexPaths[0].row]
                 collectionView.deselectItem(at: indexPaths[0], animated: false)
             }
         }
     }
     
-    private var new: [New] = [New(image: "N1OudeDokken", name: "Power Plant"),
-                              New(image: "N2OudeDokken", name: "Bataviabrug"),
-                              New(image: "N3OudeDokken", name: "Schipperskaai"),
-                              New(image: "N4OudeDokken", name: "Koopvaardijlaan"),
-                              New(image: "N5OudeDokken", name: "Dampoort"),
-                              New(image: "N6OudeDokken", name: "Dok-Noord"),
-                              New(image: "N7OudeDokken", name: "Bataviabrug"),
-                              New(image: "N8OudeDokken", name: "Bataviapad"),
-                              New(image: "N9OudeDokken", name: "Koopvaardijlaan"),
-                              New(image: "N16Groot-Begijnhof", name: "Groot-Begijnhof"),
-                              New(image: "N17SintAmandsberg", name: "Sint-Amandsberg"),
-                              New(image: "N18Groot-Begijnhof", name: "Groot-Begijnhof"),
-                              New(image: "N15Sint-Pieterskerk", name: "Sint-Pieterskerk"),
-                              New(image: "N14Sint-Michielshelling", name: "Sint-Michielshelling"),
-                              New(image: "N13GSP", name: "Gent-Sint-Pieters"),
-                              New(image: "N12GSP", name: "Gent-Sint-Pieters"),
-                              New(image: "N11Groot-Begijnhof", name: "Groot-Begijnhof"),
-                              New(image: "N10Korenmarkt", name: "Korenmarkt")]
+    private var new: [New] = [New(image: "N1OudeDokken", name: "Power Plant", information: "Test\n\nNew"),
+                              New(image: "N2OudeDokken", name: "Bataviabrug", information: "Test"),
+                              New(image: "N3OudeDokken", name: "Schipperskaai", information: "Test"),
+                              New(image: "N4OudeDokken", name: "Koopvaardijlaan", information: "Test"),
+                              New(image: "N5OudeDokken", name: "Dampoort", information: "Test"),
+                              New(image: "N6OudeDokken", name: "Dok-Noord", information: "Test"),
+                              New(image: "N7OudeDokken", name: "Bataviabrug", information: "Test"),
+                              New(image: "N8OudeDokken", name: "Bataviapad", information: "Test"),
+                              New(image: "N9OudeDokken", name: "Koopvaardijlaan", information: "Test"),
+                              New(image: "N16Groot-Begijnhof", name: "Groot-Begijnhof", information: "Test"),
+                              New(image: "N17SintAmandsberg", name: "Sint-Amandsberg", information: "Test"),
+                              New(image: "N18Groot-Begijnhof", name: "Groot-Begijnhof", information: "Test"),
+                              New(image: "N15Sint-Pieterskerk", name: "Sint-Pieterskerk", information: "Test"),
+                              New(image: "N14Sint-Michielshelling", name: "Sint-Michielshelling", information: "Test"),
+                              New(image: "N13GSP", name: "Gent-Sint-Pieters", information: "Test"),
+                              New(image: "N12GSP", name: "Gent-Sint-Pieters", information: "Test"),
+                              New(image: "N11Groot-Begijnhof", name: "Groot-Begijnhof", information: "Test"),
+                              New(image: "N10Korenmarkt", name: "Korenmarkt", information: "Test")]
 
     override func viewDidLoad() {
         super.viewDidLoad()

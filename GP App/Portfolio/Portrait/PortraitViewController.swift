@@ -16,26 +16,26 @@ class PortraitViewController: UICollectionViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            if let indexPaths = collectionView.indexPathsForSelectedItems {
-                let destinationController = segue.destination as! PortraitDetailViewController
+            if let indexPaths = collectionView.indexPathsForSelectedItems,
+               let destinationController = segue.destination as? PortraitDetailViewController {
                 destinationController.portrait = portrait[indexPaths[0].row]
                 collectionView.deselectItem(at: indexPaths[0], animated: false)
             }
         }
     }
     
-    private var portrait: [Portrait] = [Portrait(image: "P1GrootBegijnhof", name: "Groot-Begijnhof"),
-                                        Portrait(image: "P2SintAmandsberg", name: "Sint-Amandsberg"),
-                                        Portrait(image: "P3Sint-Pieterskerk", name: "Sint-Pieterskerk"),
-                                        Portrait(image: "P4Sint-Michielshelling", name: "Sint-Michielshelling"),
-                                        Portrait(image: "P5GSP", name: "Gent-Sint-Pieters"),
-                                        Portrait(image: "P6GSP", name: "Gent-Sint-Pieters"),
-                                        Portrait(image: "P8Korenmarkt", name: "Korenmarkt"),
-                                        Portrait(image: "P9Sint-Jacobs", name: "Sint-Jacobs"),
-                                        Portrait(image: "P10Dok-Noord", name: "Dok-Noord"),
-                                        Portrait(image: "P11Dampoort", name: "Antwerpenplein"),
-                                        Portrait(image: "P12Dampoort", name: "Dampoort"),
-                                        Portrait(image: "P13Belfort", name: "Belfort")]
+    private var portrait: [Portrait] = [Portrait(image: "P1GrootBegijnhof", name: "Groot-Begijnhof", information: "Test\n\nPortrait"),
+                                        Portrait(image: "P2SintAmandsberg", name: "Sint-Amandsberg", information: "Test"),
+                                        Portrait(image: "P3Sint-Pieterskerk", name: "Sint-Pieterskerk", information: "Test"),
+                                        Portrait(image: "P4Sint-Michielshelling", name: "Sint-Michielshelling", information: "Test"),
+                                        Portrait(image: "P5GSP", name: "Gent-Sint-Pieters", information: "Test"),
+                                        Portrait(image: "P6GSP", name: "Gent-Sint-Pieters", information: "Test"),
+                                        Portrait(image: "P8Korenmarkt", name: "Korenmarkt", information: "Test"),
+                                        Portrait(image: "P9Sint-Jacobs", name: "Sint-Jacobs", information: "Test"),
+                                        Portrait(image: "P10Dok-Noord", name: "Dok-Noord", information: "Test"),
+                                        Portrait(image: "P11Dampoort", name: "Antwerpenplein", information: "Test"),
+                                        Portrait(image: "P12Dampoort", name: "Dampoort", information: "Test"),
+                                        Portrait(image: "P13Belfort", name: "Belfort", information: "Test")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
