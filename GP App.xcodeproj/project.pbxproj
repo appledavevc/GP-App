@@ -34,6 +34,8 @@
 		557B968F2A59D9CD0032FDFD /* GP_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B968E2A59D9CD0032FDFD /* GP_AppTests.swift */; };
 		557B96992A59D9CD0032FDFD /* GP_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */; };
 		557B969B2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */; };
+		55A1B4B12A76E79800E47B40 /* VaultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B4B02A76E79800E47B40 /* VaultTableViewController.swift */; };
+		55A1B4B32A76E7BD00E47B40 /* VaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B4B22A76E7BD00E47B40 /* VaultTableViewCell.swift */; };
 		55DF165A2A7316D6000D7681 /* LandscapeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF16592A7316D6000D7681 /* LandscapeViewCell.swift */; };
 		55DF165C2A7317FB000D7681 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF165B2A7317FB000D7681 /* LandscapeViewController.swift */; };
 		55DF165E2A731973000D7681 /* LandscapeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF165D2A731973000D7681 /* LandscapeDetailViewController.swift */; };
@@ -114,6 +116,8 @@
 		557B96942A59D9CD0032FDFD /* GP AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GP AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITests.swift; sourceTree = "<group>"; };
 		557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55A1B4B02A76E79800E47B40 /* VaultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultTableViewController.swift; sourceTree = "<group>"; };
+		55A1B4B22A76E7BD00E47B40 /* VaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultTableViewCell.swift; sourceTree = "<group>"; };
 		55DF16592A7316D6000D7681 /* LandscapeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewCell.swift; sourceTree = "<group>"; };
 		55DF165B2A7317FB000D7681 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
 		55DF165D2A731973000D7681 /* LandscapeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeDetailViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 				553B76092A76C1F80041FF87 /* Vault.swift */,
 				553B760B2A76C3AD0041FF87 /* VaultViewController.swift */,
 				553B760D2A76C3BB0041FF87 /* VaultDetailViewController.swift */,
+				55A1B4B02A76E79800E47B40 /* VaultTableViewController.swift */,
+				55A1B4B22A76E7BD00E47B40 /* VaultTableViewCell.swift */,
 			);
 			path = Vault;
 			sourceTree = "<group>";
@@ -487,6 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A1B4B32A76E7BD00E47B40 /* VaultTableViewCell.swift in Sources */,
 				553B760E2A76C3BB0041FF87 /* VaultDetailViewController.swift in Sources */,
 				550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */,
 				5558BE4A2A733DB0006CB7BD /* PortraitViewController.swift in Sources */,
@@ -507,6 +514,7 @@
 				55DF165C2A7317FB000D7681 /* LandscapeViewController.swift in Sources */,
 				553B760C2A76C3AD0041FF87 /* VaultViewController.swift in Sources */,
 				55F105822A72ABC600A64AD1 /* NewViewController.swift in Sources */,
+				55A1B4B12A76E79800E47B40 /* VaultTableViewController.swift in Sources */,
 				5558BE4E2A733F78006CB7BD /* PortraitDetailViewController.swift in Sources */,
 				55F105802A72AB9700A64AD1 /* NewViewCell.swift in Sources */,
 				55DF165E2A731973000D7681 /* LandscapeDetailViewController.swift in Sources */,
