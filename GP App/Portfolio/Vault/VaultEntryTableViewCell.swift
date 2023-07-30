@@ -13,7 +13,7 @@ class VaultTableViewCell: UITableViewCell {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         // Set your image for the icon here
-        imageView.image = UIImage(named: "lock.shield.fill")
+        imageView.image = UIImage(systemName: "lock.shield.fill")
         return imageView
     }()
 

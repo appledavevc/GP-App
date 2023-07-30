@@ -3917,27 +3917,21 @@ Cg
             </objects>
             <point key="canvasLocation" x="1888" y="2782"/>
         </scene>
-        <!--The Vault-->
+        <!--The Vault Entry-->
         <scene sceneID="eKE-cE-mQe">
             <objects>
-                <tableViewController id="8ha-t0-htA" customClass="VaultTableViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="8ha-t0-htA" userLabel="The Vault Entry" customClass="VaultTableViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="59G-tE-oQw">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="vaultCell" rowHeight="637" id="GM8-Mm-Zz4" customClass="VaultTableViewCell" customModule="GP_App" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="430" height="637"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="vaultCell" rowHeight="65" id="GM8-Mm-Zz4" customClass="VaultTableViewCell" customModule="GP_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="430" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GM8-Mm-Zz4" id="RZ1-uP-0JZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="430" height="637"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="65"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gNg-ep-7i8">
-                                            <rect key="frame" x="95" y="11" width="240" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -3947,6 +3941,9 @@ Cg
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="The Vault" image="lock.shield.fill" catalog="system" id="Rup-hM-f3q"/>
+                    <connections>
+                        <segue destination="r3F-Zq-QcE" kind="show" identifier="showVault" id="Wmj-5r-wfi"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5Y-Up-fid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3974,7 +3971,7 @@ Cg
                                     <rect key="frame" x="0.0" y="0.0" width="150" height="230"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zBq-8c-0dr">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zBq-8c-0dr">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDT-UO-uNQ">
@@ -4011,13 +4008,14 @@ Cg
                         </connections>
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="The Vault" image="lock.shield.fill" catalog="system" id="f7I-Fa-kfq"/>
+                    <navigationItem key="navigationItem" title="The Vault" id="cm7-in-lrz"/>
                     <connections>
                         <segue destination="v6c-Sp-nEk" kind="presentation" identifier="showDetail" id="lVr-P5-OSJ"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PL8-S9-F4S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2682" y="3491"/>
+            <point key="canvasLocation" x="3572" y="3491"/>
         </scene>
         <!--Vault Detail View Controller-->
         <scene sceneID="SDS-nI-mwc">
@@ -4027,7 +4025,7 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-PH-mNx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-PH-mNx">
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9L-2T-4cd">
@@ -4076,7 +4074,7 @@ Cg
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Cx-xU-Z0b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="tN3-sP-smo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3533" y="3491"/>
+            <point key="canvasLocation" x="4390" y="3491"/>
         </scene>
         <!--Portrait Detail View Controller-->
         <scene sceneID="gAa-pO-lOV">
@@ -4254,6 +4252,24 @@ Cg
                 <exit id="AmD-5b-7qc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2681.8604651162791" y="1391.8454935622319"/>
+        </scene>
+        <!--The Vault-->
+        <scene sceneID="eBM-Bd-Vzu">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="r3F-Zq-QcE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="The Vault" id="ffe-b6-JtQ"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RHW-Bd-qSc">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="icJ-pp-Oxy" kind="relationship" relationship="viewControllers" id="6aq-WT-T8S"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ifb-4b-b6t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2682" y="3491"/>
         </scene>
     </scenes>
     <resources>

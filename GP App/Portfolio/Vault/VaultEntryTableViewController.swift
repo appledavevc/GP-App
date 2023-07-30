@@ -28,15 +28,24 @@ class VaultTableViewController: UITableViewController {
         // Configure the cell
         cell.titleLabel.text = "The Vault"
         cell.descriptionLabel.text = "This is where we keep the most treasured photos."
-        cell.vaultButton.setTitle("Open Vault", for: .normal)
+        cell.vaultButton.setTitle("Open The Vault", for: .normal)
         cell.vaultButton.addTarget(self, action: #selector(openVaultButtonTapped), for: .touchUpInside)
 
         return cell
     }
 
     @objc func openVaultButtonTapped() {
-        // Handle opening the vault, e.g., navigate to the VaultCollectionViewController
-        // Implement your navigation logic here
-        print("Open the Vault!")
+        // Perform the segue programmatically using the identifier you set in the storyboard
+        performSegue(withIdentifier: "showVault", sender: nil)
+    }
+
+    // MARK: - Navigation
+
+    // Prepare for segue (if needed)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showVault" {
+            // Implement any preparation for the segue if needed
+        }
     }
 }
+
