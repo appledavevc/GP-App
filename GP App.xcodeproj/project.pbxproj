@@ -17,6 +17,10 @@
 		550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB62A6DFB02001BB700 /* Featured.swift */; };
 		550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */; };
 		5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536EC0F2A6F44DB002A547B /* ContactViewController.swift */; };
+		553B76062A76C1650041FF87 /* VaultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B76052A76C1650041FF87 /* VaultViewCell.swift */; };
+		553B760A2A76C1F80041FF87 /* Vault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B76092A76C1F80041FF87 /* Vault.swift */; };
+		553B760C2A76C3AD0041FF87 /* VaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B760B2A76C3AD0041FF87 /* VaultViewController.swift */; };
+		553B760E2A76C3BB0041FF87 /* VaultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B760D2A76C3BB0041FF87 /* VaultDetailViewController.swift */; };
 		5558BE482A733D98006CB7BD /* PortraitViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE472A733D98006CB7BD /* PortraitViewCell.swift */; };
 		5558BE4A2A733DB0006CB7BD /* PortraitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE492A733DB0006CB7BD /* PortraitViewController.swift */; };
 		5558BE4C2A733E5D006CB7BD /* Portrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE4B2A733E5D006CB7BD /* Portrait.swift */; };
@@ -89,6 +93,10 @@
 		550B0AB62A6DFB02001BB700 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
 		550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedDetailViewController.swift; sourceTree = "<group>"; };
 		5536EC0F2A6F44DB002A547B /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		553B76052A76C1650041FF87 /* VaultViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultViewCell.swift; sourceTree = "<group>"; };
+		553B76092A76C1F80041FF87 /* Vault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vault.swift; sourceTree = "<group>"; };
+		553B760B2A76C3AD0041FF87 /* VaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultViewController.swift; sourceTree = "<group>"; };
+		553B760D2A76C3BB0041FF87 /* VaultDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultDetailViewController.swift; sourceTree = "<group>"; };
 		5558BE472A733D98006CB7BD /* PortraitViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitViewCell.swift; sourceTree = "<group>"; };
 		5558BE492A733DB0006CB7BD /* PortraitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitViewController.swift; sourceTree = "<group>"; };
 		5558BE4B2A733E5D006CB7BD /* Portrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portrait.swift; sourceTree = "<group>"; };
@@ -187,6 +195,17 @@
 			path = Contact;
 			sourceTree = "<group>";
 		};
+		553B76042A76C0E50041FF87 /* Vault */ = {
+			isa = PBXGroup;
+			children = (
+				553B76052A76C1650041FF87 /* VaultViewCell.swift */,
+				553B76092A76C1F80041FF87 /* Vault.swift */,
+				553B760B2A76C3AD0041FF87 /* VaultViewController.swift */,
+				553B760D2A76C3BB0041FF87 /* VaultDetailViewController.swift */,
+			);
+			path = Vault;
+			sourceTree = "<group>";
+		};
 		5558BE3A2A733617006CB7BD /* Portrait */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +277,7 @@
 		5580E8552A6C016300072284 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
+				553B76042A76C0E50041FF87 /* Vault */,
 				5558BE3A2A733617006CB7BD /* Portrait */,
 				55DF16582A73168F000D7681 /* Landscape */,
 				550B0AB32A6DFA1B001BB700 /* Featured */,
@@ -467,6 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				553B760E2A76C3BB0041FF87 /* VaultDetailViewController.swift in Sources */,
 				550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */,
 				5558BE4A2A733DB0006CB7BD /* PortraitViewController.swift in Sources */,
 				5558BE4C2A733E5D006CB7BD /* Portrait.swift in Sources */,
@@ -478,10 +499,13 @@
 				55DF16602A7319D4000D7681 /* Landscape.swift in Sources */,
 				55DF165A2A7316D6000D7681 /* LandscapeViewCell.swift in Sources */,
 				557B96782A59D9CC0032FDFD /* AppDelegate.swift in Sources */,
+				553B76062A76C1650041FF87 /* VaultViewCell.swift in Sources */,
 				55F105842A72AC8A00A64AD1 /* New.swift in Sources */,
 				550B0AB22A6DFA0C001BB700 /* FeaturedViewCell.swift in Sources */,
 				557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */,
+				553B760A2A76C1F80041FF87 /* Vault.swift in Sources */,
 				55DF165C2A7317FB000D7681 /* LandscapeViewController.swift in Sources */,
+				553B760C2A76C3AD0041FF87 /* VaultViewController.swift in Sources */,
 				55F105822A72ABC600A64AD1 /* NewViewController.swift in Sources */,
 				5558BE4E2A733F78006CB7BD /* PortraitDetailViewController.swift in Sources */,
 				55F105802A72AB9700A64AD1 /* NewViewCell.swift in Sources */,
@@ -552,7 +576,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -565,7 +589,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.5.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App.OneSignalNotificationServiceExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -581,7 +605,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -594,7 +618,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.5.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App.OneSignalNotificationServiceExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -727,7 +751,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";
@@ -744,7 +768,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.5.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -761,7 +785,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 23;
+				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";
@@ -778,7 +802,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.5.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
