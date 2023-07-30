@@ -36,6 +36,7 @@
 		557B969B2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */; };
 		55A1B4B12A76E79800E47B40 /* VaultEntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B4B02A76E79800E47B40 /* VaultEntryTableViewController.swift */; };
 		55A1B4B32A76E7BD00E47B40 /* VaultEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B4B22A76E7BD00E47B40 /* VaultEntryTableViewCell.swift */; };
+		55D81D772A77070B00F67E08 /* VaultEntryParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D81D762A77070B00F67E08 /* VaultEntryParentViewController.swift */; };
 		55DF165A2A7316D6000D7681 /* LandscapeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF16592A7316D6000D7681 /* LandscapeViewCell.swift */; };
 		55DF165C2A7317FB000D7681 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF165B2A7317FB000D7681 /* LandscapeViewController.swift */; };
 		55DF165E2A731973000D7681 /* LandscapeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF165D2A731973000D7681 /* LandscapeDetailViewController.swift */; };
@@ -118,6 +119,7 @@
 		557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		55A1B4B02A76E79800E47B40 /* VaultEntryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultEntryTableViewController.swift; sourceTree = "<group>"; };
 		55A1B4B22A76E7BD00E47B40 /* VaultEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultEntryTableViewCell.swift; sourceTree = "<group>"; };
+		55D81D762A77070B00F67E08 /* VaultEntryParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultEntryParentViewController.swift; sourceTree = "<group>"; };
 		55DF16592A7316D6000D7681 /* LandscapeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewCell.swift; sourceTree = "<group>"; };
 		55DF165B2A7317FB000D7681 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
 		55DF165D2A731973000D7681 /* LandscapeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeDetailViewController.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				55DF16582A73168F000D7681 /* Landscape */,
 				550B0AB32A6DFA1B001BB700 /* Featured */,
 				55B5822A2A71F7BC00449C8A /* New */,
+				55D81D762A77070B00F67E08 /* VaultEntryParentViewController.swift */,
 			);
 			path = Portfolio;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				553B760A2A76C1F80041FF87 /* Vault.swift in Sources */,
 				55DF165C2A7317FB000D7681 /* LandscapeViewController.swift in Sources */,
 				553B760C2A76C3AD0041FF87 /* VaultViewController.swift in Sources */,
+				55D81D772A77070B00F67E08 /* VaultEntryParentViewController.swift in Sources */,
 				55F105822A72ABC600A64AD1 /* NewViewController.swift in Sources */,
 				55A1B4B12A76E79800E47B40 /* VaultEntryTableViewController.swift in Sources */,
 				5558BE4E2A733F78006CB7BD /* PortraitDetailViewController.swift in Sources */,

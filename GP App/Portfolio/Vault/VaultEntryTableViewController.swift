@@ -14,6 +14,10 @@ class VaultTableViewController: UITableViewController {
 
         // Register custom cell
         tableView.register(VaultTableViewCell.self, forCellReuseIdentifier: "vaultCell")
+
+        // Set automatic cell height calculation
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableView.automaticDimension
     }
 
     // MARK: - Table view data source
@@ -28,7 +32,7 @@ class VaultTableViewController: UITableViewController {
         // Configure the cell
         cell.titleLabel.text = "The Vault"
         cell.descriptionLabel.text = "This is where we keep the most treasured photos."
-        cell.vaultButton.setTitle("Open The Vault", for: .normal)
+        cell.vaultButton.setTitle("Enter The Vault", for: .normal)
         cell.vaultButton.addTarget(self, action: #selector(openVaultButtonTapped), for: .touchUpInside)
 
         return cell
