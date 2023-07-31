@@ -72,25 +72,24 @@ class VaultTableViewCell: UITableViewCell {
 
         // Set up constraints for the subviews
         NSLayoutConstraint.activate([
-            iconImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            iconImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
-            iconImageView.widthAnchor.constraint(equalToConstant: 60),
+            iconImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            iconImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0.1 * contentView.bounds.height), // 10% of the screen height
+            iconImageView.widthAnchor.constraint(equalToConstant: 156.25), // Increase the width by 25% (125% of the original width)
             iconImageView.heightAnchor.constraint(equalTo: iconImageView.widthAnchor), // Keep the iconImageView square
-            iconImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor), // Center the iconImageView horizontally
 
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            titleLabel.topAnchor.constraint(equalTo: iconImageView.bottomAnchor, constant: 16), // Increase the spacing between iconImageView and titleLabel
+            titleLabel.topAnchor.constraint(equalTo: iconImageView.bottomAnchor, constant: 0.05 * contentView.bounds.height), // 5% of the screen height
 
             descriptionLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             descriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
+            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
 
             vaultButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-            vaultButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 40), // Increased space to 20 points
+            vaultButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 40), // Increased space to 40 points
             vaultButton.widthAnchor.constraint(equalToConstant: 180), // Adjust the button's width as desired
             vaultButton.heightAnchor.constraint(equalToConstant: 60), // Adjust the button's height as desired
-            vaultButton.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -16)
+            vaultButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -0.1 * contentView.bounds.height) // 10% of the screen height
         ])
 
         // Add tap gesture recognizer to the vaultButton
@@ -103,7 +102,7 @@ class VaultTableViewCell: UITableViewCell {
 
     func animateIconImageView(completion: @escaping () -> Void) {
         UIView.animate(withDuration: 0.1, animations: {
-            self.iconImageView.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+            self.iconImageView.transform = CGAffineTransform(scaleX: 1.25, y: 1.25) // Increase size by 25%
             self.vaultButton.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
         }) { _ in
             UIView.animate(withDuration: 0.1, animations: {

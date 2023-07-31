@@ -18,6 +18,43 @@ class VaultTableViewController: UITableViewController, VaultTableViewCellDelegat
         // Set automatic cell height calculation
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableView.automaticDimension
+
+        // Remove separator lines
+        tableView.separatorStyle = .none
+
+        // Set the background color of the table view to match the system background color
+        tableView.backgroundColor = UIColor.systemBackground
+
+        // Add large title to the navigation bar
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+
+    // Function to update the content inset based on the table view's content size
+    private func updateTableViewContentInset() {
+        let tableHeight = tableView.frame.height
+        let contentHeight = tableView.contentSize.height
+
+        if contentHeight < tableHeight {
+            let extraSpace = tableHeight - contentHeight - (navigationController?.navigationBar.frame.height ?? 0)
+            tableView.contentInset = UIEdgeInsets(top: extraSpace / 2, left: 0, bottom: extraSpace / 2, right: 0)
+        } else {
+            tableView.contentInset = .zero
+        }
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        // Adjust the content inset to center the cell and remove extra space above and below
+        updateTableViewContentInset()
+    }
+
+    // Add viewWillTransition function to handle screen rotation for auto-alignment
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(alongsideTransition: { _ in
+            self.updateTableViewContentInset()
+        }, completion: nil)
     }
 
     // MARK: - Table view data source
@@ -36,7 +73,7 @@ class VaultTableViewController: UITableViewController, VaultTableViewCellDelegat
 
         // Configure the cell
         cell.titleLabel.text = "The Vault"
-        cell.descriptionLabel.text = "This is where we keep the most treasured photos.\n\nThis is a line break test."
+        cell.descriptionLabel.text = "This is where we keep the most treasured photos."
         cell.vaultButton.setTitle("Enter The Vault", for: .normal)
 
         return cell
@@ -50,16 +87,16 @@ class VaultTableViewController: UITableViewController, VaultTableViewCellDelegat
     }
 
     func animateCellAndPerformSegue(_ cell: VaultTableViewCell) {
-            cell.animateIconImageView {
-                // Perform the cross-fade animation and then transition to the VaultViewController
-                UIView.transition(with: cell.iconImageView, duration: 0.5, options: .transitionCrossDissolve, animations: {
-                    cell.iconImageView.image = UIImage(systemName: "lock.open.fill")
-                }, completion: { _ in
-                    // Perform the segue after the fade-out animation is completed
-                    self.performSegue(withIdentifier: "showVault", sender: nil)
-                })
-            }
+        cell.animateIconImageView {
+            // Perform the cross-fade animation and then transition to the VaultViewController
+            UIView.transition(with: cell.iconImageView, duration: 0.5, options: .transitionCrossDissolve, animations: {
+                cell.iconImageView.image = UIImage(systemName: "lock.open.fill")
+            }, completion: { _ in
+                // Perform the segue after the fade-out animation is completed
+                self.performSegue(withIdentifier: "showVault", sender: nil)
+            })
         }
+    }
 
     // MARK: - Navigation
 
