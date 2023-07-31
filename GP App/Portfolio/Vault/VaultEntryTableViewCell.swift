@@ -13,6 +13,12 @@ protocol VaultTableViewCellDelegate: AnyObject {
 
 class VaultTableViewCell: UITableViewCell {
 
+    let containerView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
     let iconImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -64,32 +70,38 @@ class VaultTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
-        // Add subviews to the cell's contentView
-        contentView.addSubview(iconImageView) // Show iconImageView first
-        contentView.addSubview(titleLabel)
-        contentView.addSubview(descriptionLabel)
-        contentView.addSubview(vaultButton)
+        // Add containerView to the cell's contentView
+        contentView.addSubview(containerView)
 
-        // Set up constraints for the subviews
+        // Add subviews to the containerView
+        containerView.addSubview(iconImageView) // Show iconImageView first
+        containerView.addSubview(titleLabel)
+        containerView.addSubview(descriptionLabel)
+        containerView.addSubview(vaultButton)
+
+        // Set up constraints for the containerView and its subviews
         NSLayoutConstraint.activate([
-            iconImageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-            iconImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0.1 * contentView.bounds.height), // 10% of the screen height
-            iconImageView.widthAnchor.constraint(equalToConstant: 156.25), // Increase the width by 25% (125% of the original width)
+            containerView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            containerView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+
+            iconImageView.topAnchor.constraint(equalTo: containerView.topAnchor),
+            iconImageView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
+            iconImageView.widthAnchor.constraint(equalTo: containerView.widthAnchor, multiplier: 0.75), // Increase width by 25% (125% of the original width)
             iconImageView.heightAnchor.constraint(equalTo: iconImageView.widthAnchor), // Keep the iconImageView square
 
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            titleLabel.topAnchor.constraint(equalTo: iconImageView.bottomAnchor, constant: 0.05 * contentView.bounds.height), // 5% of the screen height
+            titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
+            titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
+            titleLabel.topAnchor.constraint(equalTo: iconImageView.bottomAnchor, constant: 6), // Reduce the space to 6 points
 
-            descriptionLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            descriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 16),
+            descriptionLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
+            descriptionLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
+            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 6), // Reduce the space to 6 points
 
-            vaultButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-            vaultButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 40), // Increased space to 40 points
-            vaultButton.widthAnchor.constraint(equalToConstant: 180), // Adjust the button's width as desired
-            vaultButton.heightAnchor.constraint(equalToConstant: 60), // Adjust the button's height as desired
-            vaultButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -0.1 * contentView.bounds.height) // 10% of the screen height
+            vaultButton.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
+            vaultButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 40),
+            vaultButton.widthAnchor.constraint(equalToConstant: 180),
+            vaultButton.heightAnchor.constraint(equalToConstant: 60),
+            vaultButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: 0)
         ])
 
         // Add tap gesture recognizer to the vaultButton

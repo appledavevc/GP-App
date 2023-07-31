@@ -27,6 +27,9 @@ class VaultTableViewController: UITableViewController, VaultTableViewCellDelegat
 
         // Add large title to the navigation bar
         navigationController?.navigationBar.prefersLargeTitles = true
+
+        // Set the content inset to center the cell when the view loads
+        updateTableViewContentInset()
     }
 
     // Function to update the content inset based on the table view's content size
@@ -45,7 +48,7 @@ class VaultTableViewController: UITableViewController, VaultTableViewCellDelegat
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-        // Adjust the content inset to center the cell and remove extra space above and below
+        // Adjust the content inset whenever the view layout changes (e.g., screen rotation)
         updateTableViewContentInset()
     }
 
