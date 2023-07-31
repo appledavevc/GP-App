@@ -10,6 +10,7 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class VaultViewController: UICollectionViewController {
+
     @IBAction func unwindToMain(segue: UIStoryboardSegue) {
            
     }
@@ -36,9 +37,15 @@ class VaultViewController: UICollectionViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        // Register cell classes
+        // Register the XIB file for the cell
+        collectionView.register(UINib(nibName: "VaultViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentifier)
 
-        // Do any additional setup after loading the view.
+        // Set the spacing between cells (adjust the constants as needed)
+        let spacing: CGFloat = 12
+        let collectionViewFlowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
+        collectionViewFlowLayout?.minimumLineSpacing = spacing
+        collectionViewFlowLayout?.minimumInteritemSpacing = spacing
+        collectionViewFlowLayout?.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     }
 
     // MARK: UICollectionViewDataSource
@@ -97,3 +104,4 @@ class VaultViewController: UICollectionViewController {
     */
 
 }
+

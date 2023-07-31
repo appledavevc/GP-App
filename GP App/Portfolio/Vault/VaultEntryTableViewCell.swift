@@ -81,17 +81,19 @@ class VaultTableViewCell: UITableViewCell {
 
         // Set up constraints for the containerView and its subviews
         NSLayoutConstraint.activate([
-            containerView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-            containerView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            containerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            containerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            containerView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 6), // Adjust top constraint to 6 points
+            containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 0), // No space at the bottom
 
-            iconImageView.topAnchor.constraint(equalTo: containerView.topAnchor),
+            iconImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 16), // Adjust top constraint to 16 points
             iconImageView.centerXAnchor.constraint(equalTo: containerView.centerXAnchor),
-            iconImageView.widthAnchor.constraint(equalTo: containerView.widthAnchor, multiplier: 0.75), // Increase width by 25% (125% of the original width)
+            iconImageView.widthAnchor.constraint(equalTo: containerView.widthAnchor, multiplier: 0.9), // Increase width by 25% (125% of the original width)
             iconImageView.heightAnchor.constraint(equalTo: iconImageView.widthAnchor), // Keep the iconImageView square
 
             titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
             titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
-            titleLabel.topAnchor.constraint(equalTo: iconImageView.bottomAnchor, constant: 6), // Reduce the space to 6 points
+            titleLabel.topAnchor.constraint(equalTo: iconImageView.bottomAnchor, constant: 12), // Increase space to 12 points
 
             descriptionLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
             descriptionLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
@@ -101,11 +103,14 @@ class VaultTableViewCell: UITableViewCell {
             vaultButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 40),
             vaultButton.widthAnchor.constraint(equalToConstant: 180),
             vaultButton.heightAnchor.constraint(equalToConstant: 60),
-            vaultButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: 0)
+            vaultButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -16) // Adjust bottom constraint to -16 points
         ])
 
         // Add tap gesture recognizer to the vaultButton
         vaultButton.addTarget(self, action: #selector(vaultButtonTapped), for: .touchUpInside)
+
+        // Disable selection highlighting when tapped
+        selectionStyle = .none
     }
 
     @objc func vaultButtonTapped() {
@@ -135,3 +140,4 @@ class VaultTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 }
+

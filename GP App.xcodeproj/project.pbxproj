@@ -210,6 +210,7 @@
 				553B760D2A76C3BB0041FF87 /* VaultDetailViewController.swift */,
 				55A1B4B02A76E79800E47B40 /* VaultEntryTableViewController.swift */,
 				55A1B4B22A76E7BD00E47B40 /* VaultEntryTableViewCell.swift */,
+				55D81D762A77070B00F67E08 /* VaultEntryParentViewController.swift */,
 			);
 			path = Vault;
 			sourceTree = "<group>";
@@ -289,7 +290,6 @@
 				55DF16582A73168F000D7681 /* Landscape */,
 				550B0AB32A6DFA1B001BB700 /* Featured */,
 				55B5822A2A71F7BC00449C8A /* New */,
-				55D81D762A77070B00F67E08 /* VaultEntryParentViewController.swift */,
 			);
 			path = Portfolio;
 			sourceTree = "<group>";
