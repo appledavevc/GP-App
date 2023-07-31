@@ -7,7 +7,7 @@
 
 import UIKit
 
-class VaultTableViewController: UITableViewController {
+class VaultTableViewController: UITableViewController, VaultTableViewCellDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,26 +22,44 @@ class VaultTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "vaultCell", for: indexPath) as! VaultTableViewCell
+        cell.delegate = self // Set the delegate for the cell
 
         // Configure the cell
         cell.titleLabel.text = "The Vault"
-        cell.descriptionLabel.text = "This is where we keep the most treasured photos."
+        cell.descriptionLabel.text = "This is where we keep the most treasured photos.\n\nThis is a line break test."
         cell.vaultButton.setTitle("Enter The Vault", for: .normal)
-        cell.vaultButton.addTarget(self, action: #selector(openVaultButtonTapped), for: .touchUpInside)
 
         return cell
     }
 
-    @objc func openVaultButtonTapped() {
-        // Perform the segue programmatically using the identifier you set in the storyboard
-        performSegue(withIdentifier: "showVault", sender: nil)
+    // MARK: - VaultTableViewCellDelegate
+
+    func vaultButtonTapped(in cell: VaultTableViewCell) {
+        // Animate the selected cell first
+        animateCellAndPerformSegue(cell)
     }
+
+    func animateCellAndPerformSegue(_ cell: VaultTableViewCell) {
+            cell.animateIconImageView {
+                // Perform the cross-fade animation and then transition to the VaultViewController
+                UIView.transition(with: cell.iconImageView, duration: 0.5, options: .transitionCrossDissolve, animations: {
+                    cell.iconImageView.image = UIImage(systemName: "lock.open.fill")
+                }, completion: { _ in
+                    // Perform the segue after the fade-out animation is completed
+                    self.performSegue(withIdentifier: "showVault", sender: nil)
+                })
+            }
+        }
 
     // MARK: - Navigation
 
@@ -52,4 +70,3 @@ class VaultTableViewController: UITableViewController {
         }
     }
 }
-

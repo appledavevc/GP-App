@@ -251,11 +251,10 @@
 		557B96762A59D9CC0032FDFD /* GP App */ = {
 			isa = PBXGroup;
 			children = (
+				55B673B82A772EFF00262FD2 /* Delegates */,
 				552FCF2C2A71429100B13206 /* Contact */,
 				5580E8552A6C016300072284 /* Portfolio */,
 				5501C3812A68C54A009B86F6 /* GP App.entitlements */,
-				557B96772A59D9CC0032FDFD /* AppDelegate.swift */,
-				557B96792A59D9CC0032FDFD /* SceneDelegate.swift */,
 				557B967B2A59D9CC0032FDFD /* Home.swift */,
 				557B967D2A59D9CC0032FDFD /* Main.storyboard */,
 				557B96822A59D9CD0032FDFD /* LaunchScreen.storyboard */,
@@ -304,6 +303,15 @@
 				55F105852A72AE2E00A64AD1 /* NewDetailViewController.swift */,
 			);
 			path = New;
+			sourceTree = "<group>";
+		};
+		55B673B82A772EFF00262FD2 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				557B96772A59D9CC0032FDFD /* AppDelegate.swift */,
+				557B96792A59D9CC0032FDFD /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		55DF16582A73168F000D7681 /* Landscape */ = {
@@ -588,7 +596,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -617,7 +625,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -763,7 +771,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";
@@ -797,7 +805,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 24;
+				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";

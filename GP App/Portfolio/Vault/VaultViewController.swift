@@ -24,7 +24,7 @@ class VaultViewController: UICollectionViewController {
         }
     }
     
-    private var vault: [Vault] = [Vault(image: "P1GrootBegijnhof", name: "Groot-Begijnhof", information: "Test\n\nVault"),
+    private var vault: [Vault] = [Vault(image: "P1GrootBegijnhof", name: "Groot-Begijnhof", information: "11/03/2023 - 16u24\n\nThe Saint Michael's Bridge is a stone arch bridge located in the center of the Belgian city of Ghent. The bridge spans the River Leie, on the south side of the Graslei and Korenlei. The current monumental bridge was built between 1905 and 1909, following the construction of the post office building.\n\nBoth the Saint Michael's Bridge and the Old Post Office are creations of the architect Louis Cloquet."),
                                   Vault(image: "P2SintAmandsberg", name: "Sint-Amandsberg", information: "Test"),
                                   Vault(image: "P3Sint-Pieterskerk", name: "Sint-Pieterskerk", information: "Test"),
                                   Vault(image: "P4Sint-Michielshelling", name: "Sint-Michielshelling", information: "Test"),

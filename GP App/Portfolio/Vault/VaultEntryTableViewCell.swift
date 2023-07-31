@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol VaultTableViewCellDelegate: AnyObject {
+    func vaultButtonTapped(in cell: VaultTableViewCell)
+}
+
 class VaultTableViewCell: UITableViewCell {
 
     let iconImageView: UIImageView = {
@@ -21,7 +25,7 @@ class VaultTableViewCell: UITableViewCell {
     let titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 28, weight: .bold)
         label.textAlignment = .center // Center the text horizontally
         label.numberOfLines = 0
         return label
@@ -30,7 +34,7 @@ class VaultTableViewCell: UITableViewCell {
     let descriptionLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 18)
         label.textAlignment = .center // Center the text horizontally
         label.numberOfLines = 0
         return label
@@ -42,11 +46,20 @@ class VaultTableViewCell: UITableViewCell {
         button.backgroundColor = .systemBlue // Set the background color to system blue
         button.layer.cornerRadius = 20 // Adjust the corner radius to your desired value
         button.setTitleColor(UIColor.white, for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 20)
         button.contentHorizontalAlignment = .center // Center the text horizontally
         button.contentVerticalAlignment = .center // Center the text vertically (optional)
         return button
     }()
+
+    weak var delegate: VaultTableViewCellDelegate?
+
+    var isUnlocked: Bool = false {
+        didSet {
+            let imageName = isUnlocked ? "lock.open.fill" : "lock.shield.fill"
+            iconImageView.image = UIImage(systemName: imageName)
+        }
+    }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -74,16 +87,40 @@ class VaultTableViewCell: UITableViewCell {
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
 
             vaultButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-            vaultButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 16),
+            vaultButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 40), // Increased space to 20 points
             vaultButton.widthAnchor.constraint(equalToConstant: 180), // Adjust the button's width as desired
             vaultButton.heightAnchor.constraint(equalToConstant: 60), // Adjust the button's height as desired
             vaultButton.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -16)
         ])
+
+        // Add tap gesture recognizer to the vaultButton
+        vaultButton.addTarget(self, action: #selector(vaultButtonTapped), for: .touchUpInside)
+    }
+
+    @objc func vaultButtonTapped() {
+        delegate?.vaultButtonTapped(in: self)
+    }
+
+    func animateIconImageView(completion: @escaping () -> Void) {
+        UIView.animate(withDuration: 0.1, animations: {
+            self.iconImageView.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+            self.vaultButton.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+        }) { _ in
+            UIView.animate(withDuration: 0.1, animations: {
+                self.iconImageView.transform = .identity
+                self.vaultButton.transform = .identity
+            }, completion: { _ in
+                completion() // Call the completion block when the animation is completed
+            })
+        }
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.layoutMargins = UIEdgeInsets.zero
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
-
-

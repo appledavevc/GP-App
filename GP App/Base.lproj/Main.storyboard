@@ -3933,6 +3933,7 @@ Cg
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="65"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
