@@ -45,7 +45,7 @@ class VaultViewController: UICollectionViewController {
         let collectionViewFlowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
         collectionViewFlowLayout?.minimumLineSpacing = spacing
         collectionViewFlowLayout?.minimumInteritemSpacing = spacing
-        collectionViewFlowLayout?.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        collectionViewFlowLayout?.sectionInset = UIEdgeInsets(top: spacing, left: 30, bottom: spacing, right: 30)
     }
 
     // MARK: UICollectionViewDataSource

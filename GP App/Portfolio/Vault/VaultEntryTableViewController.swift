@@ -10,27 +10,27 @@ import UIKit
 class VaultTableViewController: UITableViewController, VaultTableViewCellDelegate {
 
     override func viewDidLoad() {
-            super.viewDidLoad()
+        super.viewDidLoad()
 
-            // Register custom cell
-            tableView.register(VaultTableViewCell.self, forCellReuseIdentifier: "vaultCell")
+        // Register custom cell
+        tableView.register(VaultTableViewCell.self, forCellReuseIdentifier: "vaultCell")
 
-            // Set automatic cell height calculation
-            tableView.estimatedRowHeight = 100
-            tableView.rowHeight = UITableView.automaticDimension
+        // Set automatic cell height calculation
+        tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableView.automaticDimension
 
-            // Remove separator lines
-            tableView.separatorStyle = .none
+        // Remove separator lines
+        tableView.separatorStyle = .none
 
-            // Set the background color of the table view to match the system background color
-            tableView.backgroundColor = UIColor.systemBackground
+        // Set the background color of the table view to match the system background color
+        tableView.backgroundColor = UIColor.systemBackground
 
-            // Enable vertical scrolling
-            tableView.alwaysBounceVertical = true
+        // Enable vertical scrolling
+        tableView.alwaysBounceVertical = true
 
-            // Add large title to the navigation bar
-            navigationController?.navigationBar.prefersLargeTitles = true
-        }
+        // Add large title to the navigation bar
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -92,4 +92,3 @@ class VaultTableViewController: UITableViewController, VaultTableViewCellDelegat
         }
     }
 }
-
