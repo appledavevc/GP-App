@@ -63,7 +63,7 @@ class LandscapeViewController: UICollectionViewController {
         let collectionViewFlowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
         collectionViewFlowLayout?.minimumLineSpacing = spacing
         collectionViewFlowLayout?.minimumInteritemSpacing = spacing
-        collectionViewFlowLayout?.sectionInset = UIEdgeInsets(top: 20, left: spacing, bottom: 10, right: spacing)
+        collectionViewFlowLayout?.sectionInset = UIEdgeInsets(top: 20, left: 15, bottom: 10, right: 15)
     }
 
     // MARK: UICollectionViewDataSource
