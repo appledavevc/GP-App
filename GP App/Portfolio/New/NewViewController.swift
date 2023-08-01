@@ -57,7 +57,7 @@ class NewViewController: UICollectionViewController {
         let collectionViewFlowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
         collectionViewFlowLayout?.minimumLineSpacing = spacing
         collectionViewFlowLayout?.minimumInteritemSpacing = spacing
-        collectionViewFlowLayout?.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        collectionViewFlowLayout?.sectionInset = UIEdgeInsets(top: 20, left: spacing, bottom: 10, right: spacing)
     }
 
     // MARK: UICollectionViewDataSource
