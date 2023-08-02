@@ -9,17 +9,18 @@ import UIKit
 
 class SettingsViewController: UITableViewController {
 
-    let sections = ["General", "Appearance", "About GP app"]
+    let sections = ["General", "Appearance", "About GP app", "Policies"]
     let generalOptions = ["Push Notifications"]
     let appearanceOptions = ["Dark Mode", "App Icon", "App Theme"]
-    let aboutOptions = ["Release notes", "Thank you"]
-    
+    let aboutOptions = ["Release notes", "Thank you", "Visit GP Website"]
+    let policiesOptions = ["Privacy Policy", "Copyright", "Photo Quality"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupHeaderView()
         tableView.tableFooterView = UIView() // To hide empty rows at the bottom
     }
-    
+
     private func setupHeaderView() {
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 160))
         
@@ -69,6 +70,8 @@ class SettingsViewController: UITableViewController {
             return appearanceOptions.count
         case 2:
             return aboutOptions.count
+        case 3:
+            return policiesOptions.count
         default:
             return 0
         }
@@ -121,6 +124,31 @@ class SettingsViewController: UITableViewController {
                     cell.iconImageView.image = image // Example icon for "Thank you"
                 }
                 cell.titleLabel.text = aboutOptions[indexPath.row]
+            case 2:
+                if let image = UIImage(systemName: "globe") {
+                    cell.iconImageView.image = image // Example icon for "Visit GP Website"
+                }
+                cell.titleLabel.text = aboutOptions[indexPath.row]
+            default:
+                break
+            }
+        case 3:
+            switch indexPath.row {
+            case 0:
+                if let image = UIImage(systemName: "lock.fill") {
+                    cell.iconImageView.image = image // Example icon for "Privacy Policy"
+                }
+                cell.titleLabel.text = policiesOptions[indexPath.row]
+            case 1:
+                if let image = UIImage(systemName: "doc.richtext.fill") {
+                    cell.iconImageView.image = image // Example icon for "Copyright"
+                }
+                cell.titleLabel.text = policiesOptions[indexPath.row]
+            case 2:
+                if let image = UIImage(systemName: "photo.fill") {
+                    cell.iconImageView.image = image // Example icon for "Photo Quality"
+                }
+                cell.titleLabel.text = policiesOptions[indexPath.row]
             default:
                 break
             }
