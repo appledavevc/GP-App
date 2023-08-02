@@ -27,6 +27,7 @@
 		5558BE4E2A733F78006CB7BD /* PortraitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE4D2A733F78006CB7BD /* PortraitDetailViewController.swift */; };
 		556D5ECC2A79D4FD00C91DCF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D5ECB2A79D4FD00C91DCF /* SettingsViewController.swift */; };
 		556D5ECE2A79D51200C91DCF /* SettingsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D5ECD2A79D51200C91DCF /* SettingsViewCell.swift */; };
+		5576E43D2A7A717800A1707D /* ReleaseNotesViewController.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5576E43C2A7A717800A1707D /* ReleaseNotesViewController.swift.swift */; };
 		557B96782A59D9CC0032FDFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96772A59D9CC0032FDFD /* AppDelegate.swift */; };
 		557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96792A59D9CC0032FDFD /* SceneDelegate.swift */; };
 		557B967C2A59D9CC0032FDFD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B967B2A59D9CC0032FDFD /* Home.swift */; };
@@ -108,6 +109,7 @@
 		5558BE4D2A733F78006CB7BD /* PortraitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitDetailViewController.swift; sourceTree = "<group>"; };
 		556D5ECB2A79D4FD00C91DCF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		556D5ECD2A79D51200C91DCF /* SettingsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewCell.swift; sourceTree = "<group>"; };
+		5576E43C2A7A717800A1707D /* ReleaseNotesViewController.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseNotesViewController.swift.swift; sourceTree = "<group>"; };
 		557B96742A59D9CC0032FDFD /* GP App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GP App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B96772A59D9CC0032FDFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		557B96792A59D9CC0032FDFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -233,10 +235,27 @@
 		556D5ECA2A79D4E300C91DCF /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				5576E43E2A7A9AE600A1707D /* Main */,
+				5576E43B2A7A715E00A1707D /* Release notes */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		5576E43B2A7A715E00A1707D /* Release notes */ = {
+			isa = PBXGroup;
+			children = (
+				5576E43C2A7A717800A1707D /* ReleaseNotesViewController.swift.swift */,
+			);
+			path = "Release notes";
+			sourceTree = "<group>";
+		};
+		5576E43E2A7A9AE600A1707D /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				556D5ECB2A79D4FD00C91DCF /* SettingsViewController.swift */,
 				556D5ECD2A79D51200C91DCF /* SettingsViewCell.swift */,
 			);
-			path = Settings;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		557B966B2A59D9CC0032FDFD = {
@@ -521,6 +540,7 @@
 				55A1B4B32A76E7BD00E47B40 /* VaultEntryTableViewCell.swift in Sources */,
 				553B760E2A76C3BB0041FF87 /* VaultDetailViewController.swift in Sources */,
 				550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */,
+				5576E43D2A7A717800A1707D /* ReleaseNotesViewController.swift.swift in Sources */,
 				5558BE4A2A733DB0006CB7BD /* PortraitViewController.swift in Sources */,
 				5558BE4C2A733E5D006CB7BD /* Portrait.swift in Sources */,
 				556D5ECE2A79D51200C91DCF /* SettingsViewCell.swift in Sources */,

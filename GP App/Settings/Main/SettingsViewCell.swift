@@ -47,4 +47,18 @@ class SettingsViewCell: UITableViewCell {
         chevronImageView.widthAnchor.constraint(equalToConstant: 20).isActive = true
         chevronImageView.heightAnchor.constraint(equalTo: chevronImageView.widthAnchor).isActive = true
     }
+
+    // Add floating animation to the cell
+    func addFloatingAnimation() {
+        UIView.animate(withDuration: 1.5, delay: 0, options: [.repeat, .autoreverse], animations: {
+            // Move the cell slightly up and down
+            self.transform = CGAffineTransform(translationX: 0, y: -5)
+        }, completion: nil)
+    }
+    
+    // Remove floating animation from the cell
+    func removeFloatingAnimation() {
+        self.layer.removeAllAnimations()
+        self.transform = .identity
+    }
 }
