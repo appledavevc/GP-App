@@ -25,6 +25,8 @@
 		5558BE4A2A733DB0006CB7BD /* PortraitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE492A733DB0006CB7BD /* PortraitViewController.swift */; };
 		5558BE4C2A733E5D006CB7BD /* Portrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE4B2A733E5D006CB7BD /* Portrait.swift */; };
 		5558BE4E2A733F78006CB7BD /* PortraitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE4D2A733F78006CB7BD /* PortraitDetailViewController.swift */; };
+		556D5ECC2A79D4FD00C91DCF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D5ECB2A79D4FD00C91DCF /* SettingsViewController.swift */; };
+		556D5ECE2A79D51200C91DCF /* SettingsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D5ECD2A79D51200C91DCF /* SettingsViewCell.swift */; };
 		557B96782A59D9CC0032FDFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96772A59D9CC0032FDFD /* AppDelegate.swift */; };
 		557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96792A59D9CC0032FDFD /* SceneDelegate.swift */; };
 		557B967C2A59D9CC0032FDFD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B967B2A59D9CC0032FDFD /* Home.swift */; };
@@ -104,6 +106,8 @@
 		5558BE492A733DB0006CB7BD /* PortraitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitViewController.swift; sourceTree = "<group>"; };
 		5558BE4B2A733E5D006CB7BD /* Portrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portrait.swift; sourceTree = "<group>"; };
 		5558BE4D2A733F78006CB7BD /* PortraitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitDetailViewController.swift; sourceTree = "<group>"; };
+		556D5ECB2A79D4FD00C91DCF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		556D5ECD2A79D51200C91DCF /* SettingsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewCell.swift; sourceTree = "<group>"; };
 		557B96742A59D9CC0032FDFD /* GP App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GP App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B96772A59D9CC0032FDFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		557B96792A59D9CC0032FDFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +230,15 @@
 			path = Portrait;
 			sourceTree = "<group>";
 		};
+		556D5ECA2A79D4E300C91DCF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				556D5ECB2A79D4FD00C91DCF /* SettingsViewController.swift */,
+				556D5ECD2A79D51200C91DCF /* SettingsViewCell.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		557B966B2A59D9CC0032FDFD = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +265,7 @@
 		557B96762A59D9CC0032FDFD /* GP App */ = {
 			isa = PBXGroup;
 			children = (
+				556D5ECA2A79D4E300C91DCF /* Settings */,
 				55B673B82A772EFF00262FD2 /* Delegates */,
 				552FCF2C2A71429100B13206 /* Contact */,
 				5580E8552A6C016300072284 /* Portfolio */,
@@ -509,6 +523,7 @@
 				550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */,
 				5558BE4A2A733DB0006CB7BD /* PortraitViewController.swift in Sources */,
 				5558BE4C2A733E5D006CB7BD /* Portrait.swift in Sources */,
+				556D5ECE2A79D51200C91DCF /* SettingsViewCell.swift in Sources */,
 				5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */,
 				5558BE482A733D98006CB7BD /* PortraitViewCell.swift in Sources */,
 				557B967C2A59D9CC0032FDFD /* Home.swift in Sources */,
@@ -527,6 +542,7 @@
 				55D81D772A77070B00F67E08 /* VaultEntryParentViewController.swift in Sources */,
 				55F105822A72ABC600A64AD1 /* NewViewController.swift in Sources */,
 				55A1B4B12A76E79800E47B40 /* VaultEntryTableViewController.swift in Sources */,
+				556D5ECC2A79D4FD00C91DCF /* SettingsViewController.swift in Sources */,
 				5558BE4E2A733F78006CB7BD /* PortraitDetailViewController.swift in Sources */,
 				55F105802A72AB9700A64AD1 /* NewViewCell.swift in Sources */,
 				55DF165E2A731973000D7681 /* LandscapeDetailViewController.swift in Sources */,
