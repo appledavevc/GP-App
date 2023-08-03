@@ -11,21 +11,29 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
-        
         OneSignal.initWithLaunchOptions(launchOptions)
         OneSignal.setAppId("33d6d6cc-d0f5-41fe-af21-1074df0a1450")
         
         OneSignal.promptForPushNotifications(userResponse: { accepted in
-          print("User accepted notifications: \(accepted)")
+            print("User accepted notifications: \(accepted)")
         })
-        
+
+        // Get the user's preference for dark mode
+        let darkModeEnabled = UserDefaults.standard.bool(forKey: "DarkModeEnabled")
+
+        // Set the app-wide dark mode or light mode based on the user's preference
+        if darkModeEnabled {
+            setAppWideDarkMode(true)
+        } else {
+            setAppWideDarkMode(false)
+        }
+
         return true
-      }
+    }
 
     // MARK: UISceneSession Lifecycle
 
@@ -41,6 +49,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
+    private func setAppWideDarkMode(_ enabled: Bool) {
+        if enabled {
+            // Set app-wide dark mode appearance here
+            if let window = window {
+                window.overrideUserInterfaceStyle = .dark
+            }
+        } else {
+            // Set app-wide light mode appearance here
+            if let window = window {
+                window.overrideUserInterfaceStyle = .light
+            }
+        }
+    }
 }
-

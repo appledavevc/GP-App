@@ -7,22 +7,13 @@
 
 import UIKit
 
-class DarkModeTableViewCell: UITableViewCell {
+class DarkModeViewCell: UITableViewCell {
 
-    static let reuseIdentifier = "DarkModeTableViewCell"
+    static let reuseIdentifier = "darkmodeCell"
 
-    lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-
-    lazy var switchControl: UISwitch = {
-        let switchControl = UISwitch()
-        switchControl.translatesAutoresizingMaskIntoConstraints = false
-        switchControl.addTarget(self, action: #selector(switchValueChanged(_:)), for: .valueChanged)
-        return switchControl
-    }()
+    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var switchControl: UISwitch!
 
     var switchValueChanged: ((Bool) -> Void)?
 
@@ -37,19 +28,10 @@ class DarkModeTableViewCell: UITableViewCell {
     }
 
     private func setupViews() {
-        contentView.addSubview(titleLabel)
-        contentView.addSubview(switchControl)
-
-        NSLayoutConstraint.activate([
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            switchControl.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-            switchControl.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
-        ])
+        // No need to add subviews or constraints here as they are already connected via IBOutlets
     }
 
-    @objc private func switchValueChanged(_ sender: UISwitch) {
+    @IBAction func switchValueChanged(_ sender: UISwitch) {
         switchValueChanged?(sender.isOn)
     }
 }
-
