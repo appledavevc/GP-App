@@ -95,11 +95,31 @@ class SettingsViewController: UITableViewController {
             return
         }
 
+        // Create a feedback generator for impact style
+        let feedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
+        feedbackGenerator.prepare()
+
+        // Trigger the vibration
+        feedbackGenerator.impactOccurred()
+
         // Disable the floating animation during the explosion
         appIconImageView.layer.removeAllAnimations()
 
         if !hasPerformedExplosionAnimation { // Check the flag before performing the explosion animation
             hasPerformedExplosionAnimation = true
+
+            // Fade out the other sections during the explosion
+            for section in 0..<tableView.numberOfSections {
+                if section != 1 { // Skip the "Appearance" section (optional)
+                    for row in 0..<tableView.numberOfRows(inSection: section) {
+                        if let cell = tableView.cellForRow(at: IndexPath(row: row, section: section)) {
+                            UIView.animate(withDuration: 0.5) {
+                                cell.alpha = 0.0
+                            }
+                        }
+                    }
+                }
+            }
 
             // Animate the explosion effect
             UIView.animate(withDuration: 0.15, animations: {
@@ -113,12 +133,24 @@ class SettingsViewController: UITableViewController {
                     UIView.animate(withDuration: 0.15, animations: {
                         appIconImageView.transform = .identity
                         appIconImageView.alpha = 1.0
-                    })
+                    }) { _ in
+                        // Fade in the other sections after the explosion
+                        for section in 0..<self.tableView.numberOfSections {
+                            if section != 1 { // Skip the "Appearance" section (optional)
+                                for row in 0..<self.tableView.numberOfRows(inSection: section) {
+                                    if let cell = self.tableView.cellForRow(at: IndexPath(row: row, section: section)) {
+                                        UIView.animate(withDuration: 0.5) {
+                                            cell.alpha = 1.0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
-
 
     // MARK: - Table view data source
 
@@ -154,7 +186,7 @@ class SettingsViewController: UITableViewController {
         
         switch indexPath.section {
         case 0:
-            cell.iconImageView.image = UIImage(systemName: "lock.shield.fill")
+            cell.iconImageView.image = UIImage(systemName: "bell.badge.fill")
             cell.titleLabel.text = generalOptions[indexPath.row]
         case 1:
             switch indexPath.row {
@@ -199,7 +231,7 @@ class SettingsViewController: UITableViewController {
         case 3:
             switch indexPath.row {
             case 0:
-                if let image = UIImage(systemName: "lock.fill") {
+                if let image = UIImage(systemName: "hand.raised.circle.fill") {
                     cell.iconImageView.image = image
                 }
                 cell.titleLabel.text = policiesOptions[indexPath.row]
@@ -225,7 +257,7 @@ class SettingsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+
         if indexPath.section == 2 && indexPath.row == 0 { // "Release notes" button tapped
             let releaseNotesVC = ReleaseNotesViewController()
             navigationController?.pushViewController(releaseNotesVC, animated: true)
@@ -233,6 +265,27 @@ class SettingsViewController: UITableViewController {
             if let url = URL(string: "https://testflight.apple.com/join/EyTo5acT") {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
+        } else if indexPath.section == 3 && indexPath.row == 0 { // "Privacy Policy" button tapped
+            let privacyPolicyVC = PrivacyPolicyViewController()
+            navigationController?.pushViewController(privacyPolicyVC, animated: true)
+        } else if indexPath.section == 3 && indexPath.row == 1 { // "Copyright" button tapped
+            let copyrightVC = CopyrightViewController()
+            navigationController?.pushViewController(copyrightVC, animated: true)
+        } else if indexPath.section == 3 && indexPath.row == 2 { // "Photo Quality" button tapped
+            let photoQualityVC = PhotoQualityViewController()
+            navigationController?.pushViewController(photoQualityVC, animated: true)
+        } else if indexPath.section == 2 && indexPath.row == 1 { // "Thank You" button tapped
+            let thankYouVC = ThankYouViewController()
+            navigationController?.pushViewController(thankYouVC, animated: true)
+        } else if indexPath.section == 0 && indexPath.row == 0 { // "Push Notifications" button tapped
+            openAppNotificationSettings()
+        }
+    }
+
+    private func openAppNotificationSettings() {
+        guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else { return }
+        if UIApplication.shared.canOpenURL(settingsUrl) {
+            UIApplication.shared.open(settingsUrl, completionHandler: nil)
         }
     }
 }

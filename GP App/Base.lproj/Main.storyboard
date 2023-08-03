@@ -11,466 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Privacy policy-->
-        <scene sceneID="70x-4l-axu">
-            <objects>
-                <viewController id="W1F-sD-a9C" customClass="Disclaimers" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sb3-VX-coL">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" selectable="NO" id="yaS-FE-syL">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Thank you for using the Ghent Photography app and/or website. This Privacy policy explains how we collect, use, and protect your personal information when you interact with our app and website. By using our services, you agree to the collection and use of information as described in this policy.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Information we collect">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="HelveticaNeue-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cgo
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="1.1 Personal Information">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-We do not collect or store any personally identifiable information (PII) about you unless you voluntarily provide it to us. We do not require any personal information for you to use the app or browse our website.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="1.2 Usage Information">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-We may collect non-personal information about how you use our app and website. This includes information such as your device type, operating system, browser type, IP address, and the pages you visit. We collect this information to improve our services and provide a better user experience.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="1.3 Cookies and Analytics">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-We use cookies on our website to gather anonymous usage data and perform analytical analysis using third-party services like Google Analytics. Cookies are small files that are stored on your device to enhance your browsing experience. These cookies do not contain personal information and are used for statistical purposes only.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Use of Information">
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="HelveticaNeue-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="2.1 Personal Information">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-Any personal information you voluntarily provide, such as when contacting us through email or feedback forms, will be used solely for the purpose of responding to your inquiries or requests. We do not share your personal information with third parties unless required by law.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="2.2 Usage Information">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-We use non-personal usage information to understand how users interact with our app and website, improve our services, and enhance the user experience. This data is aggregated and does not identify individual users.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Data Security">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-We implement reasonable security measures to protect the information we collect. However, please be aware that no data transmission over the internet or electronic storage is completely secure. We cannot guarantee the absolute security of your information.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Third-party Links">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-Our app and website may contain links to third-party websites or services. Please note that we are not responsible for the privacy practices of such third parties. We encourage you to read the privacy policies of these third-party websites before providing any personal information.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Children’s privacy">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-Our app and website are not intended for children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us, and we will promptly delete such information.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Changes to this Privacy policy">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">We reserve the right to update or modify this Privacy policy at any time. Any changes will be effective when the revised policy is posted. We encourage you to review this policy periodically to stay informed about how we collect, use, and protect your information.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Contact us">
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-If you have any questions or concerns about this Privacy Policy, please contact us through </string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="hello@ghentphotography.be">
-                                        <attributes>
-                                            <color key="NSColor" red="0.89412000000000003" green="0.68627000000000005" blue="0.039219999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <url key="NSLink" string="mailto:hello@ghentphotography.be"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-
-Thank you for your trust in Ghent Photography. We are committed to protecting your privacy and providing a secure and enjoyable experience when using our app and website.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="qFr-ye-dCL"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Privacy policy" image="hand.raised.circle.fill" catalog="system" id="khR-i2-ekL"/>
-                    <navigationItem key="navigationItem" id="tpC-Fg-hCA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eYE-IO-fRv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="208" y="1392"/>
-        </scene>
-        <!--Copyright-->
-        <scene sceneID="Uhw-ld-1CF">
-            <objects>
-                <viewController id="qkB-mJ-VMo" customClass="Disclaimers" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zfl-F0-8oV">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" id="1wT-9o-SUe">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">All photos appearing on this app, unless noted otherwise, are the exclusive property of Ghent Photography and are protected under Belgian and International Copyright laws.
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">
-Duplication, processing, distribution, manipulated or any form of commercialisation of such material shall require the prior written consent of Ghent Photography. These copyright laws impose substantial penalties for infringement, and violators will be prosecuted to the full extent of the law.
-All images are copyrighted © Ghent Photography.
-
-For information about reproduction rights, for any of the images contained on this site, please contact us through </string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="hello@ghentphotography.be">
-                                        <attributes>
-                                            <color key="NSColor" red="0.89412000000000003" green="0.68627000000000005" blue="0.039219999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <url key="NSLink" string="mailto:hello@ghentphotography.be"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                            <integer key="NSUnderline" value="1"/>
-                                            <color key="NSUnderlineColor" red="0.89412000000000003" green="0.68627000000000005" blue="0.039219999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=". Use of this app constitutes acceptance with the above copyright notice and all terms and conditions presented here.">
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Spw-Nm-aSG"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Copyright" image="doc.on.doc.fill" catalog="system" id="o3r-pd-oDu"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EXp-RT-mZE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="208" y="2079"/>
-        </scene>
-        <!--Photo quality-->
-        <scene sceneID="5vU-vS-p2P">
-            <objects>
-                <viewController id="LjK-Sg-uov" customClass="Disclaimers" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xoO-d6-SbT">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" findInteractionEnabled="YES" id="jb1-yM-4VP">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">In order to optimise loading times, and database size: Photos rendered in-app are converted from .PNG to .JPG and are compressed by approximately 20% which could slight impact photo quality.
-
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="All photos are downsized from 4032 x 3024 (12MP) to 2560 x 1920 (5 MP) resolution">
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" as well. Please get in touch for full resolution.">
-                                        <attributes>
-                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="QKS-FR-rji"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Photo quality" image="photo.fill.on.rectangle.fill" catalog="system" id="24x-KO-nJj"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lhe-bb-TXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="208" y="2782"/>
-        </scene>
-        <!--Thank you-->
-        <scene sceneID="B2y-hT-5rm">
-            <objects>
-                <viewController id="ywZ-nC-lGb" customClass="Thanks" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oku-Xj-295">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Thanks" id="rRC-Sq-NsZ">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="W8g-LT-ql5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Thank you" image="face.smiling" catalog="system" id="Hsf-9X-Nva"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="koO-9V-tUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1397" y="1363"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ghg-mI-bZn">
             <objects>
@@ -548,31 +88,20 @@ For information about reproduction rights, for any of the images contained on th
             </objects>
             <point key="canvasLocation" x="1052" y="1392"/>
         </scene>
-        <!--Disclaimers-->
-        <scene sceneID="psL-7O-ii2">
+        <!--Thank You View Controller-->
+        <scene sceneID="IeX-yx-O3g">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FCl-Lk-qBf" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Disclaimers" id="qdm-pl-Bym"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cGy-Dr-XnC">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" name="Orange"/>
-                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="regular">
-                            <color key="shadowColor" name="Orange"/>
-                            <color key="selectionIndicatorTintColor" name="AccentColor"/>
-                        </tabBarAppearance>
-                    </tabBar>
-                    <connections>
-                        <segue destination="W1F-sD-a9C" kind="relationship" relationship="viewControllers" id="EQ3-t8-hjT"/>
-                        <segue destination="qkB-mJ-VMo" kind="relationship" relationship="viewControllers" id="HH3-eD-HQ3"/>
-                        <segue destination="LjK-Sg-uov" kind="relationship" relationship="viewControllers" id="okQ-Rc-3z4"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="20v-m4-9AB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="TQd-N0-wby" customClass="ThankYouViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Of8-w1-ido">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nzi-kB-fa1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ER-X4-Bhn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1106.5116279069766" y="674.67811158798293"/>
+            <point key="canvasLocation" x="-1301" y="718"/>
         </scene>
         <!--Release notes-->
         <scene sceneID="ywl-eO-tVk">
@@ -776,7 +305,7 @@ For information about reproduction rights, for any of the images contained on th
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="474-rg-uK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1106.5116279069766" y="-35.407725321888414"/>
+            <point key="canvasLocation" x="2902.3255813953488" y="-35.407725321888414"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Swg-QZ-vxT">
@@ -828,7 +357,7 @@ For information about reproduction rights, for any of the images contained on th
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rjj-jS-amc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-498.1395348837209" y="-35.407725321888414"/>
+            <point key="canvasLocation" x="1299.0697674418604" y="-35.407725321888414"/>
         </scene>
         <!--About us-->
         <scene sceneID="ygS-mv-yU3">
@@ -853,6 +382,21 @@ For information about reproduction rights, for any of the images contained on th
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFS-D1-O7P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1949.3023255813953" y="674.67811158798293"/>
+        </scene>
+        <!--Copyright View Controller-->
+        <scene sceneID="fAq-nL-1Al">
+            <objects>
+                <viewController id="Tlp-mi-t60" customClass="CopyrightViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fv8-s8-4UM">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2aC-SC-cv5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAM-7f-0wV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-598" y="-696"/>
         </scene>
         <!--Contact-->
         <scene sceneID="C8P-FN-ygp">
@@ -887,7 +431,7 @@ For information about reproduction rights, for any of the images contained on th
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsD-aD-Z5I">
-                                <rect key="frame" x="0.0" y="103" width="430" height="829"/>
+                                <rect key="frame" x="0.0" y="155" width="430" height="777"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xr7-bD-et7">
                                         <rect key="frame" x="0.0" y="0.0" width="430" height="1500"/>
@@ -980,7 +524,7 @@ For information about reproduction rights, for any of the images contained on th
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7Q-g4-LMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1949.3023255813953" y="-35.407725321888414"/>
+            <point key="canvasLocation" x="3746.5116279069766" y="-35.407725321888414"/>
         </scene>
         <!--Portfolio-->
         <scene sceneID="Uzw-Sl-sqV">
@@ -1008,7 +552,7 @@ For information about reproduction rights, for any of the images contained on th
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPR-g2-vOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2786.5116279069766" y="-35.407725321888414"/>
+            <point key="canvasLocation" x="4583.7209302325582" y="-35.407725321888414"/>
         </scene>
         <!--Featured-->
         <scene sceneID="zsq-24-lUd">
@@ -1697,6 +1241,37 @@ For information about reproduction rights, for any of the images contained on th
             </objects>
             <point key="canvasLocation" x="2682" y="3491"/>
         </scene>
+        <!--Photo Quality View Controller-->
+        <scene sceneID="esb-AK-hlk">
+            <objects>
+                <viewController id="DJm-4P-CIp" customClass="PhotoQualityViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kg2-uo-2EA">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FPv-g6-Z8B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1L-F5-1Mi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1358" y="-156"/>
+        </scene>
+        <!--Privacy Policy-->
+        <scene sceneID="qmg-0w-poD">
+            <objects>
+                <viewController id="Xfu-or-VR5" customClass="PrivacyPolicyViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="olM-88-RKH">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ms6-oT-bER"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Privacy Policy" image="hand.raised.circle.fill" catalog="system" id="9qR-E3-uKz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRR-gx-901" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-499.53488372093022" y="-35.407725321888414"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="Lbl-YN-XOP">
             <objects>
@@ -1714,31 +1289,13 @@ For information about reproduction rights, for any of the images contained on th
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pwp-Eo-NFV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1396.7441860465117" y="-35.407725321888414"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="U5A-2y-MZS">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qfw-xn-9Iw" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Qd-dr-hA2">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="ag8-aJ-0kf" kind="relationship" relationship="viewControllers" id="1cg-AR-oed"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wo4-Nk-ozK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1397" y="661"/>
+            <point key="canvasLocation" x="400.46511627906978" y="-35.407725321888414"/>
         </scene>
     </scenes>
     <resources>
         <image name="AppBackground2" width="2048" height="2732"/>
         <image name="GPAppIconTW" width="1024" height="1024"/>
         <image name="Infographic" width="3200" height="7812"/>
-        <image name="Thanks" width="2048" height="2732"/>
         <image name="Thumb1" width="1920" height="1080"/>
         <image name="Thumb2" width="1920" height="1080"/>
         <image name="Thumb3" width="1920" height="1080"/>
@@ -1747,9 +1304,7 @@ For information about reproduction rights, for any of the images contained on th
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="99"/>
-        <image name="doc.on.doc.fill" catalog="system" width="116" height="128"/>
         <image name="envelope.fill" catalog="system" width="128" height="93"/>
-        <image name="face.smiling" catalog="system" width="128" height="123"/>
         <image name="gamecontroller.fill" catalog="system" width="128" height="79"/>
         <image name="gear" catalog="system" width="128" height="122"/>
         <image name="hand.raised.circle.fill" catalog="system" width="128" height="123"/>
@@ -1763,9 +1318,6 @@ For information about reproduction rights, for any of the images contained on th
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="swift" catalog="system" width="128" height="108"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Orange">
             <color red="0.94901960784313721" green="0.46274509803921571" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

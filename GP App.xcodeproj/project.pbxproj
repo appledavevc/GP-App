@@ -16,6 +16,9 @@
 		550B0AB52A6DFA3E001BB700 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB42A6DFA3E001BB700 /* FeaturedViewController.swift */; };
 		550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB62A6DFB02001BB700 /* Featured.swift */; };
 		550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */; };
+		5522079A2A7AF6C600675CC4 /* CopyrightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552207992A7AF6C600675CC4 /* CopyrightViewController.swift */; };
+		5522079C2A7AF79A00675CC4 /* PhotoQualityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522079B2A7AF79A00675CC4 /* PhotoQualityViewController.swift */; };
+		5522079F2A7AF97A00675CC4 /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522079E2A7AF97A00675CC4 /* ThankYouViewController.swift */; };
 		5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536EC0F2A6F44DB002A547B /* ContactViewController.swift */; };
 		553B76062A76C1650041FF87 /* VaultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B76052A76C1650041FF87 /* VaultViewCell.swift */; };
 		553B760A2A76C1F80041FF87 /* Vault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B76092A76C1F80041FF87 /* Vault.swift */; };
@@ -44,6 +47,7 @@
 		55DF165C2A7317FB000D7681 /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF165B2A7317FB000D7681 /* LandscapeViewController.swift */; };
 		55DF165E2A731973000D7681 /* LandscapeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF165D2A731973000D7681 /* LandscapeDetailViewController.swift */; };
 		55DF16602A7319D4000D7681 /* Landscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF165F2A7319D4000D7681 /* Landscape.swift */; };
+		55EF89BA2A7AB56300C0AD1F /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EF89B92A7AB56300C0AD1F /* PrivacyPolicyViewController.swift */; };
 		55F105802A72AB9700A64AD1 /* NewViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1057F2A72AB9700A64AD1 /* NewViewCell.swift */; };
 		55F105822A72ABC600A64AD1 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F105812A72ABC600A64AD1 /* NewViewController.swift */; };
 		55F105842A72AC8A00A64AD1 /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F105832A72AC8A00A64AD1 /* New.swift */; };
@@ -98,6 +102,9 @@
 		550B0AB42A6DFA3E001BB700 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		550B0AB62A6DFB02001BB700 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
 		550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedDetailViewController.swift; sourceTree = "<group>"; };
+		552207992A7AF6C600675CC4 /* CopyrightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightViewController.swift; sourceTree = "<group>"; };
+		5522079B2A7AF79A00675CC4 /* PhotoQualityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoQualityViewController.swift; sourceTree = "<group>"; };
+		5522079E2A7AF97A00675CC4 /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
 		5536EC0F2A6F44DB002A547B /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		553B76052A76C1650041FF87 /* VaultViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultViewCell.swift; sourceTree = "<group>"; };
 		553B76092A76C1F80041FF87 /* Vault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vault.swift; sourceTree = "<group>"; };
@@ -130,6 +137,7 @@
 		55DF165B2A7317FB000D7681 /* LandscapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
 		55DF165D2A731973000D7681 /* LandscapeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeDetailViewController.swift; sourceTree = "<group>"; };
 		55DF165F2A7319D4000D7681 /* Landscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landscape.swift; sourceTree = "<group>"; };
+		55EF89B92A7AB56300C0AD1F /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		55F1057F2A72AB9700A64AD1 /* NewViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewCell.swift; sourceTree = "<group>"; };
 		55F105812A72ABC600A64AD1 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		55F105832A72AC8A00A64AD1 /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
@@ -199,6 +207,15 @@
 			path = Featured;
 			sourceTree = "<group>";
 		};
+		5522079D2A7AF96B00675CC4 /* About GP */ = {
+			isa = PBXGroup;
+			children = (
+				5522079E2A7AF97A00675CC4 /* ThankYouViewController.swift */,
+				5576E43C2A7A717800A1707D /* ReleaseNotesViewController.swift.swift */,
+			);
+			path = "About GP";
+			sourceTree = "<group>";
+		};
 		552FCF2C2A71429100B13206 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,18 +252,11 @@
 		556D5ECA2A79D4E300C91DCF /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				5522079D2A7AF96B00675CC4 /* About GP */,
+				55EF89B82A7AB54500C0AD1F /* Policies */,
 				5576E43E2A7A9AE600A1707D /* Main */,
-				5576E43B2A7A715E00A1707D /* Release notes */,
 			);
 			path = Settings;
-			sourceTree = "<group>";
-		};
-		5576E43B2A7A715E00A1707D /* Release notes */ = {
-			isa = PBXGroup;
-			children = (
-				5576E43C2A7A717800A1707D /* ReleaseNotesViewController.swift.swift */,
-			);
-			path = "Release notes";
 			sourceTree = "<group>";
 		};
 		5576E43E2A7A9AE600A1707D /* Main */ = {
@@ -356,6 +366,16 @@
 				55DF165F2A7319D4000D7681 /* Landscape.swift */,
 			);
 			path = Landscape;
+			sourceTree = "<group>";
+		};
+		55EF89B82A7AB54500C0AD1F /* Policies */ = {
+			isa = PBXGroup;
+			children = (
+				55EF89B92A7AB56300C0AD1F /* PrivacyPolicyViewController.swift */,
+				552207992A7AF6C600675CC4 /* CopyrightViewController.swift */,
+				5522079B2A7AF79A00675CC4 /* PhotoQualityViewController.swift */,
+			);
+			path = Policies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -553,6 +573,7 @@
 				55DF165A2A7316D6000D7681 /* LandscapeViewCell.swift in Sources */,
 				557B96782A59D9CC0032FDFD /* AppDelegate.swift in Sources */,
 				553B76062A76C1650041FF87 /* VaultViewCell.swift in Sources */,
+				5522079A2A7AF6C600675CC4 /* CopyrightViewController.swift in Sources */,
 				55F105842A72AC8A00A64AD1 /* New.swift in Sources */,
 				550B0AB22A6DFA0C001BB700 /* FeaturedViewCell.swift in Sources */,
 				557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */,
@@ -560,6 +581,7 @@
 				55DF165C2A7317FB000D7681 /* LandscapeViewController.swift in Sources */,
 				553B760C2A76C3AD0041FF87 /* VaultViewController.swift in Sources */,
 				55D81D772A77070B00F67E08 /* VaultEntryParentViewController.swift in Sources */,
+				55EF89BA2A7AB56300C0AD1F /* PrivacyPolicyViewController.swift in Sources */,
 				55F105822A72ABC600A64AD1 /* NewViewController.swift in Sources */,
 				55A1B4B12A76E79800E47B40 /* VaultEntryTableViewController.swift in Sources */,
 				556D5ECC2A79D4FD00C91DCF /* SettingsViewController.swift in Sources */,
@@ -567,6 +589,8 @@
 				55F105802A72AB9700A64AD1 /* NewViewCell.swift in Sources */,
 				55DF165E2A731973000D7681 /* LandscapeDetailViewController.swift in Sources */,
 				550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */,
+				5522079C2A7AF79A00675CC4 /* PhotoQualityViewController.swift in Sources */,
+				5522079F2A7AF97A00675CC4 /* ThankYouViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
