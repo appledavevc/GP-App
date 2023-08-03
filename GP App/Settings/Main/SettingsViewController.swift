@@ -9,11 +9,11 @@ import UIKit
 
 class SettingsViewController: UITableViewController {
 
-    let sections = ["General", "Appearance", "About GP app", "Policies"]
-    let generalOptions = ["Push Notifications"]
-    let appearanceOptions = ["Dark Mode", "App Icon", "App Theme"]
+    let sections = ["General", "Appearance", "About GP App", "Policies"]
+    let generalOptions = ["Push notifications"]
+    let appearanceOptions = ["Dark mode", "App icon", "App theme"]
     let aboutOptions = ["Release notes", "Thank you", "TestFlight"]
-    let policiesOptions = ["Privacy Policy", "Copyright", "Photo Quality"]
+    let policiesOptions = ["Privacy policy", "Copyright", "Photo quality"]
 
     private var hasPerformedExplosionAnimation = false // Add this flag
 
@@ -258,7 +258,10 @@ class SettingsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 
-        if indexPath.section == 2 && indexPath.row == 0 { // "Release notes" button tapped
+        if indexPath.section == 1 && indexPath.row == 0 { // "Dark mode" button tapped
+            let darkModeVC = DarkModeViewController()
+            navigationController?.pushViewController(darkModeVC, animated: true)
+        } else if indexPath.section == 2 && indexPath.row == 0 { // "Release notes" button tapped
             let releaseNotesVC = ReleaseNotesViewController()
             navigationController?.pushViewController(releaseNotesVC, animated: true)
         } else if indexPath.section == 2 && indexPath.row == 2 { // "TestFlight" button tapped

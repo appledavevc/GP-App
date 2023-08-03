@@ -40,6 +40,8 @@
 		557B968F2A59D9CD0032FDFD /* GP_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B968E2A59D9CD0032FDFD /* GP_AppTests.swift */; };
 		557B96992A59D9CD0032FDFD /* GP_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */; };
 		557B969B2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */; };
+		55955CED2A7C04E200D0064E /* DarkModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55955CEC2A7C04E200D0064E /* DarkModeViewController.swift */; };
+		55955CEF2A7C04FD00D0064E /* DarkModeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55955CEE2A7C04FD00D0064E /* DarkModeViewCell.swift */; };
 		55A1B4B12A76E79800E47B40 /* VaultEntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B4B02A76E79800E47B40 /* VaultEntryTableViewController.swift */; };
 		55A1B4B32A76E7BD00E47B40 /* VaultEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B4B22A76E7BD00E47B40 /* VaultEntryTableViewCell.swift */; };
 		55D81D772A77070B00F67E08 /* VaultEntryParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D81D762A77070B00F67E08 /* VaultEntryParentViewController.swift */; };
@@ -130,6 +132,8 @@
 		557B96942A59D9CD0032FDFD /* GP AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GP AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITests.swift; sourceTree = "<group>"; };
 		557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55955CEC2A7C04E200D0064E /* DarkModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeViewController.swift; sourceTree = "<group>"; };
+		55955CEE2A7C04FD00D0064E /* DarkModeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeViewCell.swift; sourceTree = "<group>"; };
 		55A1B4B02A76E79800E47B40 /* VaultEntryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultEntryTableViewController.swift; sourceTree = "<group>"; };
 		55A1B4B22A76E7BD00E47B40 /* VaultEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultEntryTableViewCell.swift; sourceTree = "<group>"; };
 		55D81D762A77070B00F67E08 /* VaultEntryParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultEntryParentViewController.swift; sourceTree = "<group>"; };
@@ -252,6 +256,7 @@
 		556D5ECA2A79D4E300C91DCF /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				55955CE92A7C049F00D0064E /* Appearance */,
 				5522079D2A7AF96B00675CC4 /* About GP */,
 				55EF89B82A7AB54500C0AD1F /* Policies */,
 				5576E43E2A7A9AE600A1707D /* Main */,
@@ -335,6 +340,15 @@
 				55B5822A2A71F7BC00449C8A /* New */,
 			);
 			path = Portfolio;
+			sourceTree = "<group>";
+		};
+		55955CE92A7C049F00D0064E /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				55955CEE2A7C04FD00D0064E /* DarkModeViewCell.swift */,
+				55955CEC2A7C04E200D0064E /* DarkModeViewController.swift */,
+			);
+			path = Appearance;
 			sourceTree = "<group>";
 		};
 		55B5822A2A71F7BC00449C8A /* New */ = {
@@ -585,12 +599,14 @@
 				55F105822A72ABC600A64AD1 /* NewViewController.swift in Sources */,
 				55A1B4B12A76E79800E47B40 /* VaultEntryTableViewController.swift in Sources */,
 				556D5ECC2A79D4FD00C91DCF /* SettingsViewController.swift in Sources */,
+				55955CED2A7C04E200D0064E /* DarkModeViewController.swift in Sources */,
 				5558BE4E2A733F78006CB7BD /* PortraitDetailViewController.swift in Sources */,
 				55F105802A72AB9700A64AD1 /* NewViewCell.swift in Sources */,
 				55DF165E2A731973000D7681 /* LandscapeDetailViewController.swift in Sources */,
 				550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */,
 				5522079C2A7AF79A00675CC4 /* PhotoQualityViewController.swift in Sources */,
 				5522079F2A7AF97A00675CC4 /* ThankYouViewController.swift in Sources */,
+				55955CEF2A7C04FD00D0064E /* DarkModeViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
