@@ -2,156 +2,84 @@
 //  DarkModeViewController.swift
 //  GP App
 //
-//  Created by Dave Van Cauwenberghe on 03/08/2023.
+//  Created by Dave Van Cauwenberghe on 04/08/2023.
 //
 
 import UIKit
 
 class DarkModeViewController: UITableViewController {
-
-    private let darkModeKey = "DarkModeEnabled"
-
-    let options = ["Enable Dark mode", "Enable Light mode", "Use System Preferences"]
+    let darkModeOptions: [DarkModeViewCell.DarkModeOption] = [.enableDarkMode, .enableLightMode, .useSystemPreferences]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTableView()
-        tableView.tableFooterView = UIView() // To hide empty rows at the bottom
-        title = "Dark mode" // Set the title for the navigation bar
+
+        tableView.register(UINib(nibName: "DarkModeViewCell", bundle: nil), forCellReuseIdentifier: "darkCell")
+
+        // Load user's saved preference
+        let savedPreference = UserDefaults.standard.integer(forKey: "DarkModePreference")
+        if let option = DarkModeViewCell.DarkModeOption(rawValue: savedPreference) {
+            switchDarkMode(to: option)
+        }
     }
 
-    private func setupTableView() {
-        tableView.register(DarkModeViewCell.self, forCellReuseIdentifier: DarkModeViewCell.reuseIdentifier)
-    }
+    func switchDarkMode(to option: DarkModeViewCell.DarkModeOption) {
+        for (index, darkModeOption) in darkModeOptions.enumerated() {
+            let isSelected = darkModeOption == option
+            let indexPath = IndexPath(row: index, section: 0)
+            if let cell = tableView.cellForRow(at: indexPath) as? DarkModeViewCell {
+                cell.switchControl.isOn = isSelected
+            }
+        }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        tableView.reloadData()
-    }
+        UserDefaults.standard.set(option.rawValue, forKey: "DarkModePreference")
+        UserDefaults.standard.synchronize()
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let darkModeEnabled = UserDefaults.standard.bool(forKey: darkModeKey)
-        setAppWideDarkMode(darkModeEnabled)
-    }
-
-    @objc private func darkModeSwitchValueChanged(_ sender: UISwitch) {
-        let isEnabled = sender.isOn
-        UserDefaults.standard.set(isEnabled, forKey: darkModeKey)
-
-        if isEnabled {
+        switch option {
+        case .enableDarkMode:
             setAppWideDarkMode(true)
-        } else {
+        case .enableLightMode:
             setAppWideDarkMode(false)
+        case .useSystemPreferences:
+            setAppWideDarkMode(isSystemPreferenceEnabled())
+        }
+    }
+
+    private func isSystemPreferenceEnabled() -> Bool {
+        if #available(iOS 13.0, *) {
+            return UIScreen.main.traitCollection.userInterfaceStyle == .dark
+        } else {
+            return false
         }
     }
 
     private func setAppWideDarkMode(_ enabled: Bool) {
         if enabled {
             // Set app-wide dark mode appearance here
-            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-                for window in windowScene.windows {
-                    window.overrideUserInterfaceStyle = .dark
-                }
+            if let window = view.window {
+                window.overrideUserInterfaceStyle = .dark
             }
         } else {
             // Set app-wide light mode appearance here
-            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-                for window in windowScene.windows {
-                    window.overrideUserInterfaceStyle = .light
-                }
+            if let window = view.window {
+                window.overrideUserInterfaceStyle = .light
             }
         }
     }
-}
 
-extension DarkModeViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return options.count
+        return darkModeOptions.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: DarkModeViewCell.reuseIdentifier, for: indexPath) as! DarkModeViewCell
-
-        // Check if the indexPath.row is within the bounds of the options array
-        guard indexPath.row < options.count else {
-            // Return an empty cell if the index is out of range
-            return cell
-        }
-
-        cell.titleLabel.text = options[indexPath.row]
-        cell.iconImageView.image = UIImage(systemName: indexPath.row == 0 ? "moon.fill" : indexPath.row == 1 ? "sun.max.fill" : "iphone")
-
-        switch indexPath.row {
-        case 0, 1:
-            cell.switchControl.isHidden = false
-            if indexPath.row == 0 {
-                cell.switchControl.isOn = UserDefaults.standard.bool(forKey: darkModeKey)
-            } else {
-                cell.switchControl.isOn = !UserDefaults.standard.bool(forKey: darkModeKey)
-            }
-            cell.switchValueChanged = { [weak self] isOn in
-                self?.setAppWideDarkMode(indexPath.row == 0 ? isOn : !isOn)
-
-                // Update "Use System Preferences" button style
-                if indexPath.row == 2 {
-                    cell.contentView.backgroundColor = .clear
-                    cell.titleLabel.textColor = .systemBlue
-                }
-
-                // Turn off "Enable Dark mode" when "Enable Light mode" is switched on
-                if indexPath.row == 1 && isOn {
-                    if let enableCell = tableView.cellForRow(at: IndexPath(row: 0, section: indexPath.section)) as? DarkModeViewCell {
-                        enableCell.switchControl.isOn = false
-                        self?.setAppWideDarkMode(false)
-                        UserDefaults.standard.set(false, forKey: self?.darkModeKey ?? "")
-                    }
-                }
-
-                // Turn off "Enable Light mode" when "Enable Dark mode" is switched on
-                if indexPath.row == 0 && isOn {
-                    if let disableCell = tableView.cellForRow(at: IndexPath(row: 1, section: indexPath.section)) as? DarkModeViewCell {
-                        disableCell.switchControl.isOn = false
-                        self?.setAppWideDarkMode(true)
-                        UserDefaults.standard.set(true, forKey: self?.darkModeKey ?? "")
-                    }
-                }
-            }
-        default:
-            cell.switchControl.isHidden = true
-        }
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "darkCell", for: indexPath) as! DarkModeViewCell
+        let option = darkModeOptions[indexPath.row]
+        let savedPreference = UserDefaults.standard.integer(forKey: "DarkModePreference")
+        cell.configure(with: option, isSelected: savedPreference == indexPath.row)
         return cell
     }
 
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
-    }
-
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-
-        switch indexPath.row {
-        case 2:
-            // Use System Preferences, so remove the user default setting for dark mode
-            UserDefaults.standard.removeObject(forKey: darkModeKey)
-            setAppWideDarkMode(false) // Let the system preferences decide
-
-            // Update "Use System Preferences" button style
-            if let cell = tableView.cellForRow(at: indexPath) as? DarkModeViewCell {
-                cell.contentView.backgroundColor = .clear
-                cell.titleLabel.textColor = .systemBlue
-            }
-
-            // Reset switches
-            if let enableCell = tableView.cellForRow(at: IndexPath(row: 0, section: indexPath.section)) as? DarkModeViewCell {
-                enableCell.switchControl.isOn = false
-            }
-            if let disableCell = tableView.cellForRow(at: IndexPath(row: 1, section: indexPath.section)) as? DarkModeViewCell {
-                disableCell.switchControl.isOn = false
-            }
-        default:
-            break
-        }
+        let option = darkModeOptions[indexPath.row]
+        switchDarkMode(to: option)
     }
 }

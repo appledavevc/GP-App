@@ -2,43 +2,66 @@
 //  DarkModeViewCell.swift
 //  GP App
 //
-//  Created by Dave Van Cauwenberghe on 03/08/2023.
+//  Created by Dave Van Cauwenberghe on 04/08/2023.
 //
 
 import UIKit
 
 class DarkModeViewCell: UITableViewCell {
-
-    static let reuseIdentifier = "darkmodeCell"
-
     @IBOutlet weak var iconImageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var modeLabel: UILabel!
     @IBOutlet weak var switchControl: UISwitch!
 
-    var switchValueChanged: ((Bool) -> Void)?
+    enum DarkModeOption: Int {
+        case enableDarkMode
+        case enableLightMode
+        case useSystemPreferences
 
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setupViews()
+        var title: String {
+            switch self {
+            case .enableDarkMode: return "Enable Dark Mode"
+            case .enableLightMode: return "Enable Light Mode"
+            case .useSystemPreferences: return "Use System Preferences"
+            }
+        }
+
+        var icon: UIImage? {
+            switch self {
+            case .enableDarkMode: return UIImage(systemName: "moon.fill")
+            case .enableLightMode: return UIImage(systemName: "sun.max.fill")
+            case .useSystemPreferences: return nil
+            }
+        }
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setupViews()
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setupConstraints()
     }
 
-    private func setupViews() {
-        // No need to add subviews here as they are already connected via IBOutlets.
-        // Add auto-layout constraints for titleLabel.
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-            titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            titleLabel.trailingAnchor.constraint(equalTo: switchControl.leadingAnchor, constant: -16)
-        ])
+    private func setupConstraints() {
+        // IconImageView constraints
+        iconImageView.translatesAutoresizingMaskIntoConstraints = false
+        iconImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16).isActive = true
+        iconImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        iconImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
+        iconImageView.heightAnchor.constraint(equalTo: iconImageView.widthAnchor).isActive = true
+
+        // modeLabel constraints
+        modeLabel.translatesAutoresizingMaskIntoConstraints = false
+        modeLabel.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 16).isActive = true
+        modeLabel.trailingAnchor.constraint(equalTo: switchControl.leadingAnchor, constant: -16).isActive = true
+        modeLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+
+        // switchControl constraints
+        switchControl.translatesAutoresizingMaskIntoConstraints = false
+        switchControl.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16).isActive = true
+        switchControl.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
     }
 
-    @IBAction func switchValueChanged(_ sender: UISwitch) {
-        switchValueChanged?(sender.isOn)
+    func configure(with option: DarkModeOption, isSelected: Bool) {
+        iconImageView.image = option.icon
+        modeLabel.text = option.title
+        switchControl.isOn = isSelected
     }
 }
