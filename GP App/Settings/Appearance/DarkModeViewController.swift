@@ -73,6 +73,12 @@ extension DarkModeViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: DarkModeViewCell.reuseIdentifier, for: indexPath) as! DarkModeViewCell
 
+        // Check if the indexPath.row is within the bounds of the options array
+        guard indexPath.row < options.count else {
+            // Return an empty cell if the index is out of range
+            return cell
+        }
+
         cell.titleLabel.text = options[indexPath.row]
         cell.iconImageView.image = UIImage(systemName: indexPath.row == 0 ? "moon.fill" : indexPath.row == 1 ? "sun.max.fill" : "iphone")
 

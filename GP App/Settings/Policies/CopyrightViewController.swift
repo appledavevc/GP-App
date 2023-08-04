@@ -48,9 +48,12 @@ class CopyrightViewController: UIViewController {
         let copyrightLabel = UILabel()
         copyrightLabel.translatesAutoresizingMaskIntoConstraints = false
         copyrightLabel.text = """
-        All content and images included in this app or website, unless otherwise indicated, are the property of Ghent Photography and protected by international copyright laws.
+        All photos appearing on this app, unless noted otherwise, are the exclusive property of Ghent Photography and are protected under Belgian and International Copyright laws.
 
-        Unauthorized use of any material on this app or website is strictly prohibited without the express written consent of the copyright holder.
+        Duplication, processing, distribution, manipulated or any form of commercialisation of such material shall require the prior written consent of Ghent Photography. These copyright laws impose substantial penalties for infringement, and violators will be prosecuted to the full extent of the law.
+        All images are copyrighted © Ghent Photography.
+
+        For information about reproduction rights, for any of the images contained on this site, please contact us through hello@ghentphotography.be.
 
         If you believe that any content or materials available on this app or website infringe your copyright, please contact us at hello@ghentphotography.be with the following information:
 
@@ -61,6 +64,8 @@ class CopyrightViewController: UIViewController {
         - A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner's behalf.
 
         Ghent Photography takes allegations of copyright infringement very seriously. We respond to all valid notices of such infringement, and our policy is to terminate the accounts and/or membership of users who are found to be repeat infringers.
+        
+        Use of this app constitutes acceptance with the above copyright notice and all terms and conditions presented here.
 
         """
         copyrightLabel.numberOfLines = 0

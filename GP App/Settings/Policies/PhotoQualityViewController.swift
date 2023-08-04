@@ -48,20 +48,11 @@ class PhotoQualityViewController: UIViewController {
         let photoQualityLabel = UILabel()
         photoQualityLabel.translatesAutoresizingMaskIntoConstraints = false
         photoQualityLabel.text = """
-        Our app allows you to choose the photo quality when uploading images. You can select between different options to optimize data usage and storage on your device.
+        In order to optimise loading times, and database size: Photos rendered in-app are converted from .PNG to .JPG and are compressed by approximately 20% which could slight impact photo quality.
 
-        1. High Quality
-        The "High Quality" option provides the best image resolution and is recommended for users who want the best visual experience. Keep in mind that selecting this option may consume more data and take up more storage on your device.
+        All photos are downsized from 4032 x 3024 (12MP) to 2560 x 1920 (5 MP) resolution as well. Please get in touch for full resolution.
 
-        2. Medium Quality
-        The "Medium Quality" option offers a balance between image resolution and data usage. This is a good option if you want decent image quality while conserving data and storage.
-
-        3. Low Quality
-        The "Low Quality" option reduces the image resolution to save data and storage space. This is ideal for users with limited data plans or low device storage.
-
-        You can change the photo quality setting at any time from the app settings.
-
-        Thank you for using the Ghent Photography app. We hope you enjoy capturing and sharing moments with our app!
+        Thank you for using the GP app. We hope you enjoy capturing and sharing moments with our app!
         """
         photoQualityLabel.numberOfLines = 0
         photoQualityLabel.textColor = .label // Set the text color to system label color (works with Dark Mode)

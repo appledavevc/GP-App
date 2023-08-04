@@ -384,54 +384,54 @@
             <point key="canvasLocation" x="32" y="-305"/>
         </scene>
         <!--Dark Mode View Controller-->
-        <scene sceneID="abt-2b-5Jj">
+        <scene sceneID="eWy-Xg-cd1">
             <objects>
-                <tableViewController id="cpO-Gg-9Ty" customClass="DarkModeViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="BTT-aj-1O3">
+                <tableViewController id="Z6p-eI-Ix4" customClass="DarkModeViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="tes-sb-Urj">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="darkmodeCell" id="KuI-Tf-w40" customClass="DarkModeViewCell" customModule="GP_App" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="darkmodeCell" id="K00-Ah-HzP" customClass="DarkModeViewCell" customModule="GP_App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KuI-Tf-w40" id="yKa-3c-BjM">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="K00-Ah-HzP" id="Mp6-41-Dxd">
                                     <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeo-Rv-tJE">
-                                            <rect key="frame" x="244" y="11" width="42" height="21"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFX-uS-OV6">
+                                            <rect key="frame" x="20" y="-4" width="67" height="47"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJd-OK-cfX">
+                                            <rect key="frame" x="134" y="11" width="42" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YdU-Mk-gHo">
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AIY-J3-Fpu">
                                             <rect key="frame" x="361" y="6" width="49" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </switch>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="26M-wz-YWt">
-                                            <rect key="frame" x="-39" y="-43" width="240" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="iconImageView" destination="26M-wz-YWt" id="3Bl-pg-7ed"/>
-                                    <outlet property="switchControl" destination="YdU-Mk-gHo" id="18F-8v-BIA"/>
-                                    <outlet property="titleLabel" destination="xeo-Rv-tJE" id="oQg-ud-sRo"/>
+                                    <outlet property="iconImageView" destination="tFX-uS-OV6" id="POc-Gl-CAN"/>
+                                    <outlet property="switchControl" destination="AIY-J3-Fpu" id="dFP-4c-rtd"/>
+                                    <outlet property="titleLabel" destination="PJd-OK-cfX" id="0Et-9M-nFy"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="cpO-Gg-9Ty" id="aBU-kj-HRB"/>
-                            <outlet property="delegate" destination="cpO-Gg-9Ty" id="CAA-Fr-BsW"/>
+                            <outlet property="dataSource" destination="Z6p-eI-Ix4" id="jcs-6D-K1i"/>
+                            <outlet property="delegate" destination="Z6p-eI-Ix4" id="krl-Y3-5Dr"/>
                         </connections>
                     </tableView>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eA3-6h-tcg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWS-le-PrE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1667" y="-1017"/>
+            <point key="canvasLocation" x="-1596.2790697674418" y="-1017.167381974249"/>
         </scene>
         <!--Copyright View Controller-->
         <scene sceneID="fAq-nL-1Al">

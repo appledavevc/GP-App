@@ -28,7 +28,14 @@ class DarkModeViewCell: UITableViewCell {
     }
 
     private func setupViews() {
-        // No need to add subviews or constraints here as they are already connected via IBOutlets
+        // No need to add subviews here as they are already connected via IBOutlets.
+        // Add auto-layout constraints for titleLabel.
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            titleLabel.trailingAnchor.constraint(equalTo: switchControl.leadingAnchor, constant: -16)
+        ])
     }
 
     @IBAction func switchValueChanged(_ sender: UISwitch) {
