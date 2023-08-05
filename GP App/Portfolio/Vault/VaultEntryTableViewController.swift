@@ -58,7 +58,7 @@ class VaultTableViewController: UITableViewController, VaultTableViewCellDelegat
 
         // Configure the cell
         cell.titleLabel.text = "The Vault"
-        cell.descriptionLabel.text = "We're opening our Vault, where we saved many photos through the years.\n\nAre you ready to discover what The Vault has to offer?"
+        cell.descriptionLabel.text = "Discover our app-exclusive portfolio here."
         cell.vaultButton.setTitle("Enter The Vault", for: .normal)
 
         return cell

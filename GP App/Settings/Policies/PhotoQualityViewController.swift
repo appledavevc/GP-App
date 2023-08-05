@@ -27,9 +27,9 @@ class PhotoQualityViewController: UIViewController {
             .foregroundColor: UIColor.label // Use .label for automatic Dark Mode support
         ]
     }
-    
+
     private func setupViews() {
-        view.backgroundColor = .systemBackground // Set the view background color to system background color
+        view.backgroundColor = .systemBackground
 
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -39,24 +39,16 @@ class PhotoQualityViewController: UIViewController {
         contentView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(contentView)
 
-        let titleLabel = UILabel()
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.text = "Photo Quality"
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 24)
-        contentView.addSubview(titleLabel)
-
         let photoQualityLabel = UILabel()
         photoQualityLabel.translatesAutoresizingMaskIntoConstraints = false
         photoQualityLabel.text = """
-        In order to optimise loading times, and database size: Photos rendered in-app are converted from .PNG to .JPG and are compressed by approximately 20% which could slight impact photo quality.
+        In order to optimise loading times, and database size: Photos rendered in-app are converted from .PNG to .JPG and are compressed by approximately 20% which could slight impact photo quality.**
 
         All photos are downsized from 4032 x 3024 (12MP) to 2560 x 1920 (5 MP) resolution as well. Please get in touch for full resolution.
 
         Thank you for using the GP app. We hope you enjoy capturing and sharing moments with our app!
         """
         photoQualityLabel.numberOfLines = 0
-        photoQualityLabel.textColor = .label // Set the text color to system label color (works with Dark Mode)
-        photoQualityLabel.backgroundColor = .systemBackground // Set the background color to system background color (works with Dark Mode)
         contentView.addSubview(photoQualityLabel)
 
         let padding: CGFloat = 16
@@ -75,15 +67,10 @@ class PhotoQualityViewController: UIViewController {
             contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
 
-            // Title label constraints
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
-            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
-            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
-
             // Photo quality label constraints
             photoQualityLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
             photoQualityLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
-            photoQualityLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: padding),
+            photoQualityLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
             photoQualityLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -padding)
         ])
 
@@ -122,3 +109,4 @@ class PhotoQualityViewController: UIViewController {
         photoQualityLabel.attributedText = formattedText
     }
 }
+

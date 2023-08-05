@@ -24,13 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("User accepted notifications: \(accepted)")
         })
 
-        // Get the user's preference for dark mode or light mode or use system preferences
-        if let mode = UserDefaults.standard.string(forKey: "AppMode") {
-            setAppWideMode(mode)
-        } else {
-            // Default to use system preferences
-            setAppWideMode("SystemPreferences")
-        }
+        // Get the user's preference for dark mode or light mode
+        let isDarkModeEnabled = UserDefaults.standard.bool(forKey: "DarkModeEnabled")
+        setAppWideMode(isDarkModeEnabled)
 
         return true
     }
@@ -47,14 +43,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-    private func setAppWideMode(_ mode: String) {
-        switch mode {
-        case "DarkMode":
+    func setAppWideMode(_ isDarkModeEnabled: Bool) {
+        if isDarkModeEnabled {
             applyDarkMode()
-        case "LightMode":
+        } else {
             applyLightMode()
-        default:
-            applySystemPreferencesMode()
         }
     }
 
@@ -70,14 +63,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
             for window in windowScene.windows {
                 window.overrideUserInterfaceStyle = .light
-            }
-        }
-    }
-
-    private func applySystemPreferencesMode() {
-        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-            for window in windowScene.windows {
-                window.overrideUserInterfaceStyle = .unspecified
             }
         }
     }

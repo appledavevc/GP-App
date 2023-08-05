@@ -27,7 +27,7 @@ class PrivacyPolicyViewController: UIViewController {
             .foregroundColor: UIColor.label // Use .label for automatic Dark Mode support
         ]
     }
-    
+
     private func setupViews() {
         view.backgroundColor = .systemBackground // Set the view background color to system background color
 
@@ -38,12 +38,6 @@ class PrivacyPolicyViewController: UIViewController {
         let contentView = UIView()
         contentView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(contentView)
-
-        let titleLabel = UILabel()
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        titleLabel.text = "Privacy Policy"
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 24)
-        contentView.addSubview(titleLabel)
 
         let privacyPolicyLabel = UILabel()
         privacyPolicyLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -107,15 +101,10 @@ class PrivacyPolicyViewController: UIViewController {
             contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
 
-            // Title label constraints
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
-            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
-            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
-
             // Privacy policy label constraints
             privacyPolicyLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
             privacyPolicyLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
-            privacyPolicyLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: padding),
+            privacyPolicyLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
             privacyPolicyLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -padding)
         ])
 
@@ -166,3 +155,4 @@ class PrivacyPolicyViewController: UIViewController {
         privacyPolicyLabel.attributedText = formattedText
     }
 }
+

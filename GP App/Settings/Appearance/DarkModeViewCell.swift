@@ -24,6 +24,13 @@ class DarkModeTableViewCell: UITableViewCell {
         return switchControl
     }()
 
+    lazy var iconImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+
     var switchValueChanged: ((Bool) -> Void)?
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -37,11 +44,16 @@ class DarkModeTableViewCell: UITableViewCell {
     }
 
     private func setupViews() {
+        contentView.addSubview(iconImageView)
         contentView.addSubview(titleLabel)
         contentView.addSubview(switchControl)
 
         NSLayoutConstraint.activate([
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            iconImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
+            iconImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            iconImageView.widthAnchor.constraint(equalToConstant: 24),
+            iconImageView.heightAnchor.constraint(equalToConstant: 24),
+            titleLabel.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 16),
             titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             switchControl.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             switchControl.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)

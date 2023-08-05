@@ -11,7 +11,7 @@ class SettingsViewController: UITableViewController {
 
     let sections = ["General", "Appearance", "About GP App", "Policies"]
     let generalOptions = ["Push notifications"]
-    let appearanceOptions = ["Dark mode", "App icon", "App theme"]
+    let appearanceOptions = ["Dark mode"]
     let aboutOptions = ["Release notes", "Thank you", "TestFlight"]
     let policiesOptions = ["Privacy policy", "Copyright", "Photo quality"]
 
@@ -192,16 +192,6 @@ class SettingsViewController: UITableViewController {
             switch indexPath.row {
             case 0:
                 if let image = UIImage(systemName: "moon.fill") {
-                    cell.iconImageView.image = image
-                }
-                cell.titleLabel.text = appearanceOptions[indexPath.row]
-            case 1:
-                if let image = UIImage(systemName: "app.badge") {
-                    cell.iconImageView.image = image
-                }
-                cell.titleLabel.text = appearanceOptions[indexPath.row]
-            case 2:
-                if let image = UIImage(systemName: "paintpalette.fill") {
                     cell.iconImageView.image = image
                 }
                 cell.titleLabel.text = appearanceOptions[indexPath.row]

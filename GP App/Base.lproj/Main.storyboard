@@ -409,7 +409,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybI-UI-N6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1599.0697674418604" y="-1017.167381974249"/>
+            <point key="canvasLocation" x="31" y="-1017"/>
         </scene>
         <!--Copyright View Controller-->
         <scene sceneID="fAq-nL-1Al">
@@ -424,7 +424,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAM-7f-0wV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-763" y="-1017"/>
+            <point key="canvasLocation" x="804" y="-1017"/>
         </scene>
         <!--Contact-->
         <scene sceneID="C8P-FN-ygp">
@@ -464,7 +464,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xr7-bD-et7">
                                         <rect key="frame" x="0.0" y="0.0" width="430" height="1500"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="Thumb6" id="8zQ-2p-ayP">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="Thumb7" id="8zQ-2p-ayP">
                                                 <rect key="frame" x="0.0" y="8" width="430" height="233"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -1329,6 +1329,7 @@
         <image name="Thumb3" width="1920" height="1080"/>
         <image name="Thumb5" width="1920" height="1080"/>
         <image name="Thumb6" width="1920" height="1080"/>
+        <image name="Thumb7" width="1920" height="1080"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="99"/>
