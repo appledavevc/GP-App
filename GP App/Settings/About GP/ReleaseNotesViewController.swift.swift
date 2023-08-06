@@ -28,6 +28,17 @@ class ReleaseNotesViewController: UIViewController {
     }()
 
     private let releaseNotesText = """
+    v1.5.2 (05/08/2023)
+
+    - Updated “Home” ViewController
+    - New “Settings” ViewController
+    - Dark Mode settings introduced in-app
+    - DIsclaimers renamed to Policies and moved to Settings
+    - Easter egg added somewhere in the app
+    - Push notifications shortcut integrated in the app
+    - Constraint fixes through Portfolio
+    - Minor bug fixes
+    
     v1.5.1 (01/08/2023 - Build 27)
 
     - Constraints and ViewCells updates
