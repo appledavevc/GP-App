@@ -155,4 +155,3 @@ class PrivacyPolicyViewController: UIViewController {
         privacyPolicyLabel.attributedText = formattedText
     }
 }
-

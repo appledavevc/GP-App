@@ -109,4 +109,3 @@ class PhotoQualityViewController: UIViewController {
         photoQualityLabel.attributedText = formattedText
     }
 }
-

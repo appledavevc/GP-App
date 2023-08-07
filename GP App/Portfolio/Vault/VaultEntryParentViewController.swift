@@ -21,4 +21,3 @@ class VaultEntryParentViewController: UIViewController {
         present(vaultTableViewController, animated: true, completion: nil)
     }
 }
-
