@@ -41,6 +41,22 @@
             </objects>
             <point key="canvasLocation" x="1628" y="-1728"/>
         </scene>
+        <!--About us-->
+        <scene sceneID="8Ku-0a-aZ9">
+            <objects>
+                <viewController id="JqO-3I-bZK" customClass="GhentPhotographyViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ASH-L6-8YG">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xeq-sg-zn1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About us" image="book.fill" catalog="system" id="6Cl-Dj-o23"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXm-eM-F6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2495" y="-1729"/>
+        </scene>
         <!--Infographic-->
         <scene sceneID="b7G-AM-vPz">
             <objects>
@@ -376,7 +392,8 @@
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="8vT-hS-dWr" kind="relationship" relationship="viewControllers" id="N43-EC-X3G"/>
+                        <segue destination="JqO-3I-bZK" kind="relationship" relationship="viewControllers" id="sLE-t0-2o0"/>
+                        <segue destination="8vT-hS-dWr" kind="relationship" relationship="viewControllers" id="dyf-2v-Alv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFS-D1-O7P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1199,9 +1216,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AMP-b4-lQG">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJF-Tj-3Zh">
                                 <rect key="frame" x="390" y="10" width="30" height="30"/>
                                 <constraints>
@@ -1230,11 +1244,7 @@
                         <viewLayoutGuide key="safeArea" id="QSS-r6-kl4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="AMP-b4-lQG" secondAttribute="bottom" id="FVV-L9-wA6"/>
-                            <constraint firstItem="AMP-b4-lQG" firstAttribute="trailing" secondItem="QSS-r6-kl4" secondAttribute="trailing" id="Szv-GW-Dfy"/>
                             <constraint firstItem="eJF-Tj-3Zh" firstAttribute="top" secondItem="QSS-r6-kl4" secondAttribute="top" constant="10" id="TMW-3B-KOe"/>
-                            <constraint firstItem="AMP-b4-lQG" firstAttribute="top" secondItem="Rvc-8b-FKk" secondAttribute="top" id="fL6-pT-e9t"/>
-                            <constraint firstItem="AMP-b4-lQG" firstAttribute="leading" secondItem="QSS-r6-kl4" secondAttribute="leading" id="sZT-G7-fkN"/>
                             <constraint firstItem="QSS-r6-kl4" firstAttribute="trailing" secondItem="eJF-Tj-3Zh" secondAttribute="trailing" constant="10" id="ufx-dO-miZ"/>
                             <constraint firstItem="eJF-Tj-3Zh" firstAttribute="leading" secondItem="ghE-uW-VcI" secondAttribute="trailing" constant="8" id="vIr-Vc-Oqv"/>
                             <constraint firstItem="ghE-uW-VcI" firstAttribute="top" secondItem="QSS-r6-kl4" secondAttribute="top" constant="10" id="vSW-Co-7sv"/>
@@ -1242,7 +1252,6 @@
                     </view>
                     <connections>
                         <outlet property="moreInfoButton" destination="ghE-uW-VcI" id="FkC-pc-BJL"/>
-                        <outlet property="newImageView" destination="AMP-b4-lQG" id="6Al-bF-QyX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkL-oF-WaL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

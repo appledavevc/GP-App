@@ -12,6 +12,7 @@
 		5501C3942A68C5E5009B86F6 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 5501C3932A68C5E5009B86F6 /* OneSignal */; };
 		5501C3962A68C5E5009B86F6 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 5501C3952A68C5E5009B86F6 /* OneSignalExtension */; };
 		5501C3992A68C5F6009B86F6 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 5501C3982A68C5F6009B86F6 /* OneSignal */; };
+		5501D76F2A7FD5560082FB53 /* GhentPhotographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501D76E2A7FD5560082FB53 /* GhentPhotographyViewController.swift */; };
 		550B0AB22A6DFA0C001BB700 /* FeaturedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB12A6DFA0C001BB700 /* FeaturedViewCell.swift */; };
 		550B0AB52A6DFA3E001BB700 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB42A6DFA3E001BB700 /* FeaturedViewController.swift */; };
 		550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB62A6DFB02001BB700 /* Featured.swift */; };
@@ -100,6 +101,7 @@
 		5501C3882A68C57B009B86F6 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		5501C38A2A68C57B009B86F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5501C39A2A68C63C009B86F6 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		5501D76E2A7FD5560082FB53 /* GhentPhotographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhentPhotographyViewController.swift; sourceTree = "<group>"; };
 		550B0AB12A6DFA0C001BB700 /* FeaturedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewCell.swift; sourceTree = "<group>"; };
 		550B0AB42A6DFA3E001BB700 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		550B0AB62A6DFB02001BB700 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
@@ -198,6 +200,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5501D7702A7FD8010082FB53 /* Our story */ = {
+			isa = PBXGroup;
+			children = (
+				5501D76E2A7FD5560082FB53 /* GhentPhotographyViewController.swift */,
+			);
+			path = "Our story";
 			sourceTree = "<group>";
 		};
 		550B0AB32A6DFA1B001BB700 /* Featured */ = {
@@ -299,6 +309,7 @@
 		557B96762A59D9CC0032FDFD /* GP App */ = {
 			isa = PBXGroup;
 			children = (
+				5501D7702A7FD8010082FB53 /* Our story */,
 				556D5ECA2A79D4E300C91DCF /* Settings */,
 				55B673B82A772EFF00262FD2 /* Delegates */,
 				552FCF2C2A71429100B13206 /* Contact */,
@@ -571,6 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5501D76F2A7FD5560082FB53 /* GhentPhotographyViewController.swift in Sources */,
 				55A1B4B32A76E7BD00E47B40 /* VaultEntryTableViewCell.swift in Sources */,
 				553B760E2A76C3BB0041FF87 /* VaultDetailViewController.swift in Sources */,
 				550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */,
