@@ -789,7 +789,7 @@
                         <color key="badgeColor" name="Orange"/>
                     </tabBarItem>
                     <connections>
-                        <segue destination="bz8-zZ-RFv" kind="presentation" identifier="showDetail" id="Unl-Qx-cfg"/>
+                        <segue destination="bz8-zZ-RFv" kind="presentation" identifier="showDetail" id="7Sz-yF-dYU"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tKq-kg-CVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1216,6 +1216,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9EJ-c6-pp0">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJF-Tj-3Zh">
                                 <rect key="frame" x="390" y="10" width="30" height="30"/>
                                 <constraints>
@@ -1226,7 +1229,7 @@
                                     <color key="baseBackgroundColor" name="Orange"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="AmD-5b-7qc" kind="unwind" unwindAction="unwindToMainWithSegue:" id="BAP-Sx-GK2"/>
+                                    <segue destination="AmD-5b-7qc" kind="unwind" unwindAction="unwindToMainWithSegue:" id="pcH-2i-vKk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghE-uW-VcI">
@@ -1244,7 +1247,11 @@
                         <viewLayoutGuide key="safeArea" id="QSS-r6-kl4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="9EJ-c6-pp0" firstAttribute="trailing" secondItem="QSS-r6-kl4" secondAttribute="trailing" id="4CY-Ei-Aw1"/>
                             <constraint firstItem="eJF-Tj-3Zh" firstAttribute="top" secondItem="QSS-r6-kl4" secondAttribute="top" constant="10" id="TMW-3B-KOe"/>
+                            <constraint firstAttribute="bottom" secondItem="9EJ-c6-pp0" secondAttribute="bottom" id="TjP-vf-elm"/>
+                            <constraint firstItem="9EJ-c6-pp0" firstAttribute="leading" secondItem="QSS-r6-kl4" secondAttribute="leading" id="TnY-1Z-87b"/>
+                            <constraint firstItem="9EJ-c6-pp0" firstAttribute="top" secondItem="Rvc-8b-FKk" secondAttribute="top" id="iLA-Kg-wph"/>
                             <constraint firstItem="QSS-r6-kl4" firstAttribute="trailing" secondItem="eJF-Tj-3Zh" secondAttribute="trailing" constant="10" id="ufx-dO-miZ"/>
                             <constraint firstItem="eJF-Tj-3Zh" firstAttribute="leading" secondItem="ghE-uW-VcI" secondAttribute="trailing" constant="8" id="vIr-Vc-Oqv"/>
                             <constraint firstItem="ghE-uW-VcI" firstAttribute="top" secondItem="QSS-r6-kl4" secondAttribute="top" constant="10" id="vSW-Co-7sv"/>
@@ -1252,12 +1259,13 @@
                     </view>
                     <connections>
                         <outlet property="moreInfoButton" destination="ghE-uW-VcI" id="FkC-pc-BJL"/>
+                        <outlet property="newImageView" destination="9EJ-c6-pp0" id="3Z1-U4-RiX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkL-oF-WaL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="AmD-5b-7qc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3335" y="402"/>
+            <point key="canvasLocation" x="3334.8837209302324" y="401.71673819742495"/>
         </scene>
         <!--The Vault-->
         <scene sceneID="eBM-Bd-Vzu">
