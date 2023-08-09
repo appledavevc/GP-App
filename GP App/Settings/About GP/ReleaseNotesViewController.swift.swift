@@ -21,19 +21,31 @@ class ReleaseNotesViewController: UIViewController {
         textView.isEditable = false
         textView.isScrollEnabled = false // Disable scrolling on the text view itself
         textView.textAlignment = .left
-        textView.font = UIFont.systemFont(ofSize: 17)
+        textView.font = UIFont.systemFont(ofSize: 14)
         textView.textColor = .label // Set the text color to system label color (works with Dark Mode)
         textView.backgroundColor = .systemBackground // Set the background color to system background color (works with Dark Mode)
         return textView
     }()
 
     private let releaseNotesText = """
-    v1.5.2 (05/08/2023)
+    v1.5.2 (05/08/2023 - Build 30)
+
+    - Release notes updated
+
+    v1.5.2 (05/08/2023 - Build 29)
+
+    - “About us” renamed to “Our story”
+    - More information about Ghent Photography added
+    - New UI in “Our story”
+    - Additional information added to all photos
+    - Minor Swift-code clean-up
+
+    v1.5.2 (05/08/2023 - Build 28)
 
     - Updated “Home” ViewController
     - New “Settings” ViewController
     - Dark Mode settings introduced in-app
-    - DIsclaimers renamed to Policies and moved to Settings
+    - Disclaimers renamed to Policies and moved to Settings
     - Easter egg added somewhere in the app
     - Push notifications shortcut integrated in the app
     - Constraint fixes through Portfolio
