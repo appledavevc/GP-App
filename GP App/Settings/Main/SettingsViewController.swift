@@ -9,7 +9,7 @@ import UIKit
 
 class SettingsViewController: UITableViewController {
 
-    let sections = ["General", "Appearance", "About GP App", "Policies"]
+    let sections = ["General", "Appearance", "About GP App", "Contact", "Policies"]
     let generalOptions = ["Push notifications"]
     let appearanceOptions = ["Dark mode"]
     let aboutOptions = ["Release notes", "Thank you", "TestFlight"]
@@ -167,6 +167,8 @@ class SettingsViewController: UITableViewController {
         case 2:
             return aboutOptions.count
         case 3:
+            return 1 // There's only one row in the "Contact" section
+        case 4:
             return policiesOptions.count
         default:
             return 0
@@ -219,6 +221,9 @@ class SettingsViewController: UITableViewController {
                 break
             }
         case 3:
+            cell.iconImageView.image = UIImage(systemName: "envelope.fill") // Set the appropriate icon
+            cell.titleLabel.text = "Let's connect" // Set the appropriate title
+        case 4:
             switch indexPath.row {
             case 0:
                 if let image = UIImage(systemName: "hand.raised.circle.fill") {
@@ -258,13 +263,16 @@ class SettingsViewController: UITableViewController {
             if let url = URL(string: "https://testflight.apple.com/join/EyTo5acT") {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
-        } else if indexPath.section == 3 && indexPath.row == 0 { // "Privacy Policy" button tapped
+        } else if indexPath.section == 3 && indexPath.row == 0 { // "Let's connect" button tapped
+            let contactVC = ContactViewController() // Replace with the actual view controller
+            navigationController?.pushViewController(contactVC, animated: true)
+        } else if indexPath.section == 4 && indexPath.row == 0 { // "Privacy Policy" button tapped
             let privacyPolicyVC = PrivacyPolicyViewController()
             navigationController?.pushViewController(privacyPolicyVC, animated: true)
-        } else if indexPath.section == 3 && indexPath.row == 1 { // "Copyright" button tapped
+        } else if indexPath.section == 4 && indexPath.row == 1 { // "Copyright" button tapped
             let copyrightVC = CopyrightViewController()
             navigationController?.pushViewController(copyrightVC, animated: true)
-        } else if indexPath.section == 3 && indexPath.row == 2 { // "Photo Quality" button tapped
+        } else if indexPath.section == 4 && indexPath.row == 2 { // "Photo Quality" button tapped
             let photoQualityVC = PhotoQualityViewController()
             navigationController?.pushViewController(photoQualityVC, animated: true)
         } else if indexPath.section == 2 && indexPath.row == 1 { // "Thank You" button tapped

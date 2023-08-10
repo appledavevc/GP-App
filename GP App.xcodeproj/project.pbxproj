@@ -20,7 +20,6 @@
 		5522079A2A7AF6C600675CC4 /* CopyrightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552207992A7AF6C600675CC4 /* CopyrightViewController.swift */; };
 		5522079C2A7AF79A00675CC4 /* PhotoQualityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522079B2A7AF79A00675CC4 /* PhotoQualityViewController.swift */; };
 		5522079F2A7AF97A00675CC4 /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522079E2A7AF97A00675CC4 /* ThankYouViewController.swift */; };
-		5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536EC0F2A6F44DB002A547B /* ContactViewController.swift */; };
 		553B76062A76C1650041FF87 /* VaultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B76052A76C1650041FF87 /* VaultViewCell.swift */; };
 		553B760A2A76C1F80041FF87 /* Vault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B76092A76C1F80041FF87 /* Vault.swift */; };
 		553B760C2A76C3AD0041FF87 /* VaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B760B2A76C3AD0041FF87 /* VaultViewController.swift */; };
@@ -44,6 +43,8 @@
 		5586A7A62A7D2B96003A8AEA /* DarkModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5586A7A52A7D2B96003A8AEA /* DarkModeViewController.swift */; };
 		55A1B4B12A76E79800E47B40 /* VaultEntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B4B02A76E79800E47B40 /* VaultEntryTableViewController.swift */; };
 		55A1B4B32A76E7BD00E47B40 /* VaultEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B4B22A76E7BD00E47B40 /* VaultEntryTableViewCell.swift */; };
+		55BC65CD2A84677B00699D42 /* ContactViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BC65CC2A84677B00699D42 /* ContactViewCell.swift */; };
+		55BC65CF2A84682F00699D42 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BC65CE2A84682F00699D42 /* ContactViewController.swift */; };
 		55D5FCE92A7D3C35005427BC /* DarkModeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D5FCE82A7D3C35005427BC /* DarkModeViewCell.swift */; };
 		55D81D772A77070B00F67E08 /* VaultEntryParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D81D762A77070B00F67E08 /* VaultEntryParentViewController.swift */; };
 		55DF165A2A7316D6000D7681 /* LandscapeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF16592A7316D6000D7681 /* LandscapeViewCell.swift */; };
@@ -109,7 +110,6 @@
 		552207992A7AF6C600675CC4 /* CopyrightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightViewController.swift; sourceTree = "<group>"; };
 		5522079B2A7AF79A00675CC4 /* PhotoQualityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoQualityViewController.swift; sourceTree = "<group>"; };
 		5522079E2A7AF97A00675CC4 /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
-		5536EC0F2A6F44DB002A547B /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		553B76052A76C1650041FF87 /* VaultViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultViewCell.swift; sourceTree = "<group>"; };
 		553B76092A76C1F80041FF87 /* Vault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vault.swift; sourceTree = "<group>"; };
 		553B760B2A76C3AD0041FF87 /* VaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +137,8 @@
 		5586A7A52A7D2B96003A8AEA /* DarkModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeViewController.swift; sourceTree = "<group>"; };
 		55A1B4B02A76E79800E47B40 /* VaultEntryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultEntryTableViewController.swift; sourceTree = "<group>"; };
 		55A1B4B22A76E7BD00E47B40 /* VaultEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultEntryTableViewCell.swift; sourceTree = "<group>"; };
+		55BC65CC2A84677B00699D42 /* ContactViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewCell.swift; sourceTree = "<group>"; };
+		55BC65CE2A84682F00699D42 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		55D5FCE82A7D3C35005427BC /* DarkModeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeViewCell.swift; sourceTree = "<group>"; };
 		55D81D762A77070B00F67E08 /* VaultEntryParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultEntryParentViewController.swift; sourceTree = "<group>"; };
 		55DF16592A7316D6000D7681 /* LandscapeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeViewCell.swift; sourceTree = "<group>"; };
@@ -233,7 +235,8 @@
 		552FCF2C2A71429100B13206 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
-				5536EC0F2A6F44DB002A547B /* ContactViewController.swift */,
+				55BC65CC2A84677B00699D42 /* ContactViewCell.swift */,
+				55BC65CE2A84682F00699D42 /* ContactViewController.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55BC65CD2A84677B00699D42 /* ContactViewCell.swift in Sources */,
 				5501D76F2A7FD5560082FB53 /* GhentPhotographyViewController.swift in Sources */,
 				55A1B4B32A76E7BD00E47B40 /* VaultEntryTableViewCell.swift in Sources */,
 				553B760E2A76C3BB0041FF87 /* VaultDetailViewController.swift in Sources */,
@@ -590,7 +594,6 @@
 				5558BE4A2A733DB0006CB7BD /* PortraitViewController.swift in Sources */,
 				5558BE4C2A733E5D006CB7BD /* Portrait.swift in Sources */,
 				556D5ECE2A79D51200C91DCF /* SettingsViewCell.swift in Sources */,
-				5536EC102A6F44DB002A547B /* ContactViewController.swift in Sources */,
 				5558BE482A733D98006CB7BD /* PortraitViewCell.swift in Sources */,
 				557B967C2A59D9CC0032FDFD /* Home.swift in Sources */,
 				550B0AB52A6DFA3E001BB700 /* FeaturedViewController.swift in Sources */,
@@ -603,6 +606,7 @@
 				55F105842A72AC8A00A64AD1 /* New.swift in Sources */,
 				550B0AB22A6DFA0C001BB700 /* FeaturedViewCell.swift in Sources */,
 				557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */,
+				55BC65CF2A84682F00699D42 /* ContactViewController.swift in Sources */,
 				553B760A2A76C1F80041FF87 /* Vault.swift in Sources */,
 				55DF165C2A7317FB000D7681 /* LandscapeViewController.swift in Sources */,
 				553B760C2A76C3AD0041FF87 /* VaultViewController.swift in Sources */,

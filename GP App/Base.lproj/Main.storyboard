@@ -149,7 +149,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXQ-lk-rRW">
-                                <rect key="frame" x="142" y="402.33333333333331" width="147" height="53.666666666666686"/>
+                                <rect key="frame" x="142" y="359" width="147" height="67"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Discord">
                                         <attributes>
@@ -161,7 +161,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJM-mm-c1g">
-                                <rect key="frame" x="142" y="526" width="147" height="53.666666666666629"/>
+                                <rect key="frame" x="142" y="509" width="147" height="67"/>
                                 <attributedString key="attributedText">
                                     <fragment content="GitHub">
                                         <attributes>
@@ -173,7 +173,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFa-c0-oS6">
-                                <rect key="frame" x="142" y="649.66666666666663" width="147" height="53.666666666666629"/>
+                                <rect key="frame" x="142" y="659" width="147" height="67"/>
                                 <attributedString key="attributedText">
                                     <fragment content="E-mail">
                                         <attributes>
@@ -185,7 +185,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3As-s1-Sv2">
-                                <rect key="frame" x="20" y="216.66666666666666" width="390" height="53.999999999999972"/>
+                                <rect key="frame" x="20" y="134" width="390" height="67"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="book.fill" catalog="system">
                                     <attributedString key="attributedTitle">
@@ -195,7 +195,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zp-bs-jaC">
-                                <rect key="frame" x="20" y="278.66666666666669" width="390" height="53.666666666666686"/>
+                                <rect key="frame" x="20" y="209" width="390" height="67"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="message.fill" catalog="system">
                                     <attributedString key="attributedTitle">
@@ -205,7 +205,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhM-Af-VL1">
-                                <rect key="frame" x="20" y="340.33333333333331" width="390" height="54"/>
+                                <rect key="frame" x="20" y="284" width="390" height="67"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="camera.fill" catalog="system">
                                     <attributedString key="attributedTitle">
@@ -215,7 +215,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdc-t1-SO9">
-                                <rect key="frame" x="20" y="464" width="390" height="54"/>
+                                <rect key="frame" x="20" y="434" width="390" height="67"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="gamecontroller.fill" catalog="system">
                                     <attributedString key="attributedTitle">
@@ -225,7 +225,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRy-Id-2yT">
-                                <rect key="frame" x="20" y="587.66666666666663" width="390" height="54"/>
+                                <rect key="frame" x="20" y="584" width="390" height="67"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="swift" catalog="system">
                                     <attributedString key="attributedTitle">
@@ -235,7 +235,7 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Er-FI-JAv">
-                                <rect key="frame" x="20" y="711.33333333333337" width="390" height="54"/>
+                                <rect key="frame" x="20" y="734" width="390" height="67"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="envelope.fill" catalog="system">
                                     <attributedString key="attributedTitle">
@@ -245,10 +245,10 @@
                                 </buttonConfiguration>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="GPAppIconTW" translatesAutoresizingMaskIntoConstraints="NO" id="Re9-r4-UOE">
-                                <rect key="frame" x="165" y="782.33333333333337" width="100" height="53.666666666666629"/>
+                                <rect key="frame" x="165" y="818" width="100" height="67"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gad-ED-KEf">
-                                <rect key="frame" x="103" y="155" width="224" height="53.666666666666657"/>
+                                <rect key="frame" x="103" y="59" width="224" height="67"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Our socials">
                                         <attributes>
@@ -443,30 +443,6 @@
             </objects>
             <point key="canvasLocation" x="804" y="-1017"/>
         </scene>
-        <!--Contact-->
-        <scene sceneID="C8P-FN-ygp">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="m6N-Oq-OTk" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Contact" id="7h6-gf-EqA"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WE4-JO-EeG">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" name="Orange"/>
-                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="regular">
-                            <color key="shadowColor" name="Orange"/>
-                            <color key="selectionIndicatorTintColor" name="Orange"/>
-                        </tabBarAppearance>
-                    </tabBar>
-                    <connections>
-                        <segue destination="iha-3Q-2We" kind="relationship" relationship="viewControllers" id="dO1-OD-dQh"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7n-Ya-Ddh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="805" y="-305"/>
-        </scene>
         <!--Welcome-->
         <scene sceneID="OfV-08-xbP">
             <objects>
@@ -516,9 +492,6 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
-                                                <connections>
-                                                    <segue destination="m6N-Oq-OTk" kind="show" id="lV2-Xd-auB"/>
-                                                </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="Thumb3" id="z5s-UJ-Zmd">
                                                 <rect key="frame" x="0.0" y="731" width="430" height="233"/>
@@ -795,6 +768,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tKq-kg-CVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2495" y="402"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="cSC-oK-SPZ">
+            <objects>
+                <tableViewController id="hia-b0-fBB" customClass="ContactViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Sef-0U-Wqp">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactViewCell" id="VJ2-BK-6Bi" customClass="ContactViewCell" customModule="GP_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="430" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VJ2-BK-6Bi" id="y8d-vY-z8e">
+                                    <rect key="frame" x="0.0" y="0.0" width="430" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hia-b0-fBB" id="SMV-vS-AwR"/>
+                            <outlet property="delegate" destination="hia-b0-fBB" id="d2a-qO-0Q1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="UiF-AI-DpI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMz-tY-bik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1627" y="1125"/>
         </scene>
         <!--Landscape-->
         <scene sceneID="1fK-Xn-WNV">

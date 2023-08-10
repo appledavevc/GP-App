@@ -2,115 +2,98 @@
 //  ContactViewController.swift
 //  GP App
 //
-//  Created by Dave Van Cauwenberghe on 25/07/2023.
+//  Created by Dave Van Cauwenberghe on 10/08/2023.
 //
 
 import UIKit
 
-class ContactViewController: UIViewController {
+class ContactViewController: UITableViewController {
 
-    @IBOutlet weak var facebookButton: UIButton!
-    @IBOutlet weak var messengerButton: UIButton!
-    @IBOutlet weak var instagramButton: UIButton!
-    @IBOutlet weak var discordButton: UIButton!
-    @IBOutlet weak var emailButton: UIButton!
-    @IBOutlet weak var githubButton: UIButton!
+    let sections = ["Our socials", "Discord", "GitHub", "E-mail"]
+    let socialOptions = ["Facebook", "Messenger", "Instagram"]
+    let discordOptions = ["Ghent Photography"]
+    let githubOptions = ["GP App"]
+    let emailOptions = ["hello@ghentphotography.be"]
 
-    let facebookLink = "https://www.facebook.com/ghentphotographygp"
-    let messengerLink = "https://m.me/ghentphotographygp"
-    let instagramLink = "https://www.instagram.com/ghent_photography/"
-    let discordLink = "https://discord.gg/jaYeKGvUr8"
-    let emailLink = "mailto:hello@ghentphotography.be"
-    let githubLink = "https://github.com/appledavevc/GP-App"
+    private var hasPerformedExplosionAnimation = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Set font for buttons using preferred headline style
-        facebookButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-        messengerButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-        instagramButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-        discordButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-        emailButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-        githubButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-
-        facebookButton.addTarget(self, action: #selector(openFacebook), for: .touchUpInside)
-        messengerButton.addTarget(self, action: #selector(openMessenger), for: .touchUpInside)
-        instagramButton.addTarget(self, action: #selector(openInstagram), for: .touchUpInside)
-        discordButton.addTarget(self, action: #selector(openDiscord), for: .touchUpInside)
-        emailButton.addTarget(self, action: #selector(openEmail), for: .touchUpInside)
-        githubButton.addTarget(self, action: #selector(openGitHub), for: .touchUpInside)
-
-        // Listen for content size category changes to update fonts dynamically
-        NotificationCenter.default.addObserver(self, selector: #selector(handleContentSizeChange), name: UIContentSizeCategory.didChangeNotification, object: nil)
+        
+        // Set up navigation bar
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "Let's Connect"
+        
+        tableView.tableFooterView = UIView()
     }
 
-    @objc func handleContentSizeChange() {
-        // Update fonts when content size category changes
-        facebookButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-        messengerButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-        instagramButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-        discordButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-        emailButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
-        githubButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
     }
 
-    // Don't forget to remove the observer when the view controller is deallocated
-    deinit {
-        NotificationCenter.default.removeObserver(self, name: UIContentSizeCategory.didChangeNotification, object: nil)
-    }
-
-    @objc func openFacebook() {
-        if let facebookURL = URL(string: "fb://profile/ghentphotographygp") {
-            if UIApplication.shared.canOpenURL(facebookURL) {
-                UIApplication.shared.open(facebookURL, options: [:], completionHandler: nil)
-            } else {
-                openLink(urlString: facebookLink)
-            }
-        } else {
-            openLink(urlString: facebookLink)
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch section {
+        case 0:
+            return socialOptions.count
+        case 1:
+            return discordOptions.count
+        case 2:
+            return githubOptions.count
+        case 3:
+            return emailOptions.count
+        default:
+            return 0
         }
     }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[section]
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
 
-    @objc func openMessenger() {
-        if let messengerURL = URL(string: "fb-messenger://user-thread/ghentphotographygp") {
-            if UIApplication.shared.canOpenURL(messengerURL) {
-                UIApplication.shared.open(messengerURL, options: [:], completionHandler: nil)
-            } else {
-                openLink(urlString: messengerLink)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = ContactViewCell(style: .default, reuseIdentifier: "ContactViewCell")
+        
+        switch indexPath.section {
+        case 0:
+            cell.configure(iconImage: UIImage(systemName: "bell.badge.fill"), title: socialOptions[indexPath.row])
+        case 1:
+            if let image = UIImage(systemName: "paperplane.fill") {
+                cell.configure(iconImage: image, title: discordOptions[indexPath.row])
             }
-        } else {
-            openLink(urlString: messengerLink)
-        }
-    }
-
-    @objc func openInstagram() {
-        if let instagramURL = URL(string: "instagram://user?username=ghent_photography") {
-            if UIApplication.shared.canOpenURL(instagramURL) {
-                UIApplication.shared.open(instagramURL, options: [:], completionHandler: nil)
-            } else {
-                openLink(urlString: instagramLink)
+        case 2:
+            if let image = UIImage(systemName: "arrow.right.square.fill") {
+                cell.configure(iconImage: image, title: githubOptions[indexPath.row])
             }
-        } else {
-            openLink(urlString: instagramLink)
+        case 3:
+            if let image = UIImage(systemName: "envelope.fill") {
+                cell.configure(iconImage: image, title: emailOptions[indexPath.row])
+            }
+        default:
+            break
         }
+        
+        return cell
     }
 
-    @objc func openDiscord() {
-        openLink(urlString: discordLink)
-    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
 
-    @objc func openEmail() {
-        openLink(urlString: emailLink)
-    }
-
-    @objc func openGitHub() {
-        openLink(urlString: githubLink)
-    }
-
-    private func openLink(urlString: String) {
-        if let url = URL(string: urlString) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        if indexPath.section == 1 && indexPath.row == 0 {
+            if let url = URL(string: "https://discord.gg/jaYeKGvUr8") {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        } else if indexPath.section == 2 && indexPath.row == 0 {
+            if let url = URL(string: "https://github.com/appledavevc/GP-App") {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
+        } else if indexPath.section == 3 && indexPath.row == 0 {
+            if let url = URL(string: "mailto:hello@ghentphotography.be") {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
         }
     }
 }

@@ -28,6 +28,10 @@ class ReleaseNotesViewController: UIViewController {
     }()
 
     private let releaseNotesText = """
+    v1.5.2 (09/08/2023 - Build 31)
+
+    - Hotfix in “New” FeaturedDetailViewController
+    
     v1.5.2 (05/08/2023 - Build 30)
 
     - Release notes updated
