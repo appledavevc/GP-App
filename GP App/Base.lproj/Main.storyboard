@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CaO-2Q-mU8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tJ8-7V-zJd">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -11,36 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="Ghg-mI-bZn">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CaO-2Q-mU8" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="5zr-9r-yKe">
-                        <rect key="frame" x="0.0" y="59" width="430" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="Orange"/>
-                        <color key="barTintColor" name="Orange"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textShadowColor" name="Orange"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textShadowColor" name="Orange"/>
-                        </textAttributes>
-                        <navigationBarAppearance key="scrollEdgeAppearance">
-                            <color key="backgroundColor" name="Orange"/>
-                            <color key="shadowColor" name="Orange"/>
-                        </navigationBarAppearance>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="HyW-Mo-UU2" kind="relationship" relationship="rootViewController" id="bv3-8o-aNw"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nf1-dL-QVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1628" y="-1728"/>
-        </scene>
         <!--About us-->
         <scene sceneID="8Ku-0a-aZ9">
             <objects>
@@ -55,7 +25,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YXm-eM-F6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2495" y="-1729"/>
+            <point key="canvasLocation" x="3018" y="-2114"/>
         </scene>
         <!--Infographic-->
         <scene sceneID="b7G-AM-vPz">
@@ -102,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojx-4r-R82" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="31" y="402"/>
+            <point key="canvasLocation" x="4806" y="-2114"/>
         </scene>
         <!--Thank You View Controller-->
         <scene sceneID="IeX-yx-O3g">
@@ -373,32 +343,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rjj-jS-amc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1627" y="402"/>
-        </scene>
-        <!--About us-->
-        <scene sceneID="ygS-mv-yU3">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="stE-hQ-swK" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="About us" id="GYD-gO-Xwu"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yZj-PG-lou">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" name="Orange"/>
-                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="regular">
-                            <color key="shadowColor" name="Orange"/>
-                            <color key="selectionIndicatorTintColor" name="Orange"/>
-                        </tabBarAppearance>
-                    </tabBar>
-                    <connections>
-                        <segue destination="JqO-3I-bZK" kind="relationship" relationship="viewControllers" id="sLE-t0-2o0"/>
-                        <segue destination="8vT-hS-dWr" kind="relationship" relationship="viewControllers" id="dyf-2v-Alv"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fFS-D1-O7P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="32" y="-305"/>
+            <point key="canvasLocation" x="3017" y="-1405"/>
         </scene>
         <!--Dark Mode View Controller-->
         <scene sceneID="Ahf-Tq-ixy">
@@ -443,119 +388,43 @@
             </objects>
             <point key="canvasLocation" x="804" y="-1017"/>
         </scene>
-        <!--Welcome-->
-        <scene sceneID="OfV-08-xbP">
+        <!--Navigation Controller-->
+        <scene sceneID="IPn-Cb-zJi">
             <objects>
-                <viewController id="HyW-Mo-UU2" customClass="Home" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="am3-Ez-gSD">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsD-aD-Z5I">
-                                <rect key="frame" x="0.0" y="155" width="430" height="777"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xr7-bD-et7">
-                                        <rect key="frame" x="0.0" y="0.0" width="430" height="1500"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="Thumb7" id="8zQ-2p-ayP">
-                                                <rect key="frame" x="0.0" y="8" width="430" height="233"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Y5g-Yj-aXA" userLabel="Portfolio">
-                                                <rect key="frame" x="0.0" y="249" width="430" height="233"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain"/>
-                                                <connections>
-                                                    <segue destination="tJ8-7V-zJd" kind="show" id="YNq-Ng-r7a"/>
-                                                </connections>
-                                            </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="Thumb1" id="BWV-mU-qG7">
-                                                <rect key="frame" x="0.0" y="249" width="430" height="233"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ieT-bG-5e7" userLabel="About us">
-                                                <rect key="frame" x="0.0" y="490" width="430" height="233"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain"/>
-                                                <connections>
-                                                    <segue destination="stE-hQ-swK" kind="show" id="2Ap-c6-4xc"/>
-                                                </connections>
-                                            </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="Thumb2" id="qff-h7-c5w">
-                                                <rect key="frame" x="0.0" y="490" width="430" height="233"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="jsK-El-JNo" userLabel="Contact">
-                                                <rect key="frame" x="0.0" y="731" width="430" height="233"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain"/>
-                                            </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="Thumb3" id="z5s-UJ-Zmd">
-                                                <rect key="frame" x="0.0" y="731" width="430" height="233"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="P6H-Fq-uNQ" userLabel="Disclaimers">
-                                                <rect key="frame" x="0.0" y="972" width="430" height="233"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain"/>
-                                                <connections>
-                                                    <segue destination="9C0-ff-mc2" kind="show" id="AMD-eT-MFO"/>
-                                                </connections>
-                                            </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="Thumb5" id="5YB-yy-9Wa">
-                                                <rect key="frame" x="0.0" y="972" width="430" height="233"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="Thumb6" id="ByK-o6-m0z">
-                                                <rect key="frame" x="0.0" y="1213" width="430" height="233"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="xr7-bD-et7" secondAttribute="trailing" id="4w7-wj-c5Q"/>
-                                    <constraint firstAttribute="bottom" secondItem="xr7-bD-et7" secondAttribute="bottom" id="K8T-CP-PxW"/>
-                                    <constraint firstAttribute="width" secondItem="zsD-aD-Z5I" secondAttribute="height" multiplier="430:777" id="Nyb-gH-uvh"/>
-                                    <constraint firstItem="xr7-bD-et7" firstAttribute="leading" secondItem="zsD-aD-Z5I" secondAttribute="leading" id="sSO-lx-wlh"/>
-                                    <constraint firstItem="xr7-bD-et7" firstAttribute="top" secondItem="zsD-aD-Z5I" secondAttribute="top" id="wRE-9e-YdZ"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="9aJ-88-VwK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="zsD-aD-Z5I" firstAttribute="leading" secondItem="9aJ-88-VwK" secondAttribute="leading" id="12c-us-OO9"/>
-                            <constraint firstItem="xr7-bD-et7" firstAttribute="height" secondItem="am3-Ez-gSD" secondAttribute="height" multiplier="1.60944" id="H4y-Z2-zG5"/>
-                            <constraint firstAttribute="bottom" secondItem="zsD-aD-Z5I" secondAttribute="bottom" id="KVl-EC-72p"/>
-                            <constraint firstItem="zsD-aD-Z5I" firstAttribute="top" secondItem="9aJ-88-VwK" secondAttribute="top" id="KfF-jf-lUU"/>
-                            <constraint firstItem="xr7-bD-et7" firstAttribute="width" secondItem="am3-Ez-gSD" secondAttribute="width" id="ily-av-4un"/>
-                            <constraint firstItem="zsD-aD-Z5I" firstAttribute="trailing" secondItem="9aJ-88-VwK" secondAttribute="trailing" id="khC-DF-hKh"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Welcome" id="Yqb-fA-3Vt"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z7Q-g4-LMQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NfW-QW-3Do" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="Jee-Lp-hWC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ZR2-T7-hnn">
+                        <rect key="frame" x="0.0" y="59" width="430" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="Orange"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textShadowColor" name="Orange"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textShadowColor" name="Orange"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="scrollEdgeAppearance" backgroundEffect="prominent">
+                            <color key="backgroundColor" name="Orange"/>
+                            <color key="shadowColor" name="Orange"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                </navigationController>
             </objects>
-            <point key="canvasLocation" x="1627" y="-1017"/>
+            <point key="canvasLocation" x="2106" y="-2803"/>
         </scene>
-        <!--Portfolio-->
+        <!--Welcome-->
         <scene sceneID="Uzw-Sl-sqV">
             <objects>
-                <tabBarController title="Portfolio" automaticallyAdjustsScrollViewInsets="NO" id="tJ8-7V-zJd" sceneMemberID="viewController">
+                <tabBarController title="Welcome" automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="flipHorizontal" id="tJ8-7V-zJd" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Portfolio" id="bV8-ns-cZ9"/>
+                    <navigationItem key="navigationItem" title="Welcome" largeTitleDisplayMode="always" style="browser" customizationIdentifier="1" id="bV8-ns-cZ9"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zgu-pc-rCX">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" name="Orange"/>
-                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="regular">
+                        <tabBarAppearance key="scrollEdgeAppearance" backgroundEffect="prominent">
                             <color key="shadowColor" name="Orange"/>
                             <color key="selectionIndicatorTintColor" name="Orange"/>
                         </tabBarAppearance>
@@ -566,11 +435,13 @@
                         <segue destination="hak-9L-djh" kind="relationship" relationship="viewControllers" id="LlA-DE-7Ug"/>
                         <segue destination="UFq-Ue-0rL" kind="relationship" relationship="viewControllers" id="Qrp-LF-Sky"/>
                         <segue destination="8ha-t0-htA" kind="relationship" relationship="viewControllers" id="lAO-Or-3A8"/>
+                        <segue destination="JqO-3I-bZK" kind="relationship" relationship="viewControllers" id="VDb-62-0r1"/>
+                        <segue destination="Y6K-3x-bm7" kind="relationship" relationship="viewControllers" id="Pfz-iT-au9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPR-g2-vOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2496" y="-1017"/>
+            <point key="canvasLocation" x="2106" y="-2113"/>
         </scene>
         <!--Featured-->
         <scene sceneID="zsq-24-lUd">
@@ -1319,36 +1190,11 @@
             </objects>
             <point key="canvasLocation" x="-763" y="-305"/>
         </scene>
-        <!--Settings-->
-        <scene sceneID="Lbl-YN-XOP">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9C0-ff-mc2" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Settings" id="nTS-Pi-Eum"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EqP-0G-lfE">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Y6K-3x-bm7" kind="relationship" relationship="viewControllers" id="Xko-uP-dWp"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pwp-Eo-NFV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1627" y="-305"/>
-        </scene>
     </scenes>
     <resources>
         <image name="AppBackground2" width="2048" height="2732"/>
         <image name="GPAppIconTW" width="1024" height="1024"/>
         <image name="Infographic" width="3200" height="7812"/>
-        <image name="Thumb1" width="1920" height="1080"/>
-        <image name="Thumb2" width="1920" height="1080"/>
-        <image name="Thumb3" width="1920" height="1080"/>
-        <image name="Thumb5" width="1920" height="1080"/>
-        <image name="Thumb6" width="1920" height="1080"/>
-        <image name="Thumb7" width="1920" height="1080"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="99"/>
