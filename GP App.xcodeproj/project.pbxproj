@@ -24,6 +24,7 @@
 		553B760A2A76C1F80041FF87 /* Vault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B76092A76C1F80041FF87 /* Vault.swift */; };
 		553B760C2A76C3AD0041FF87 /* VaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B760B2A76C3AD0041FF87 /* VaultViewController.swift */; };
 		553B760E2A76C3BB0041FF87 /* VaultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B760D2A76C3BB0041FF87 /* VaultDetailViewController.swift */; };
+		554A9D5C2A866E1D0080BB14 /* PortfolioTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554A9D5B2A866E1D0080BB14 /* PortfolioTabBarController.swift */; };
 		5558BE482A733D98006CB7BD /* PortraitViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE472A733D98006CB7BD /* PortraitViewCell.swift */; };
 		5558BE4A2A733DB0006CB7BD /* PortraitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE492A733DB0006CB7BD /* PortraitViewController.swift */; };
 		5558BE4C2A733E5D006CB7BD /* Portrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE4B2A733E5D006CB7BD /* Portrait.swift */; };
@@ -114,6 +115,7 @@
 		553B76092A76C1F80041FF87 /* Vault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vault.swift; sourceTree = "<group>"; };
 		553B760B2A76C3AD0041FF87 /* VaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultViewController.swift; sourceTree = "<group>"; };
 		553B760D2A76C3BB0041FF87 /* VaultDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultDetailViewController.swift; sourceTree = "<group>"; };
+		554A9D5B2A866E1D0080BB14 /* PortfolioTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTabBarController.swift; sourceTree = "<group>"; };
 		5558BE472A733D98006CB7BD /* PortraitViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitViewCell.swift; sourceTree = "<group>"; };
 		5558BE492A733DB0006CB7BD /* PortraitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitViewController.swift; sourceTree = "<group>"; };
 		5558BE4B2A733E5D006CB7BD /* Portrait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portrait.swift; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 				55DF16582A73168F000D7681 /* Landscape */,
 				550B0AB32A6DFA1B001BB700 /* Featured */,
 				55B5822A2A71F7BC00449C8A /* New */,
+				554A9D5B2A866E1D0080BB14 /* PortfolioTabBarController.swift */,
 			);
 			path = Portfolio;
 			sourceTree = "<group>";
@@ -615,6 +618,7 @@
 				55F105822A72ABC600A64AD1 /* NewViewController.swift in Sources */,
 				55A1B4B12A76E79800E47B40 /* VaultEntryTableViewController.swift in Sources */,
 				556D5ECC2A79D4FD00C91DCF /* SettingsViewController.swift in Sources */,
+				554A9D5C2A866E1D0080BB14 /* PortfolioTabBarController.swift in Sources */,
 				5586A7A62A7D2B96003A8AEA /* DarkModeViewController.swift in Sources */,
 				5558BE4E2A733F78006CB7BD /* PortraitDetailViewController.swift in Sources */,
 				55F105802A72AB9700A64AD1 /* NewViewCell.swift in Sources */,
