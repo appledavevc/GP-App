@@ -28,6 +28,15 @@ class ReleaseNotesViewController: UIViewController {
     }()
 
     private let releaseNotesText = """
+    v1.5.3 (13/08/2023)
+
+    - New Home (Initial View Controller)
+    - Moved “The Vault”
+    - Updated “The Vault” UI
+    - Moved “Let’s connect” to Settings
+    - Moved “About us” to Settings
+    - As requested, added VoiceOver to new “Home” (Hopefully it works, couldn’t test)
+    
     v1.5.2 (09/08/2023 - Build 31)
 
     - Hotfix in “New” FeaturedDetailViewController

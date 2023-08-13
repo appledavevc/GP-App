@@ -68,17 +68,20 @@ class VaultTableViewController: UITableViewController, VaultTableViewCellDelegat
 
     func vaultButtonTapped(in cell: VaultTableViewCell) {
         // Animate the selected cell first
-        animateCellAndPerformSegue(cell)
+        animateCellAndPresentVaultViewController(cell)
     }
 
-    func animateCellAndPerformSegue(_ cell: VaultTableViewCell) {
+    func animateCellAndPresentVaultViewController(_ cell: VaultTableViewCell) {
         cell.animateIconImageView {
-            // Perform the cross-fade animation and then transition to the VaultViewController
+            // Perform the cross-fade animation and then present the VaultViewController modally
             UIView.transition(with: cell.iconImageView, duration: 0.5, options: .transitionCrossDissolve, animations: {
                 cell.iconImageView.image = UIImage(systemName: "lock.open.fill")
             }, completion: { _ in
-                // Perform the segue after the fade-out animation is completed
-                self.performSegue(withIdentifier: "showVault", sender: nil)
+                // Instantiate the VaultViewController from storyboard
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                if let vaultViewController = storyboard.instantiateViewController(withIdentifier: "VaultViewController") as? VaultViewController {
+                    self.present(vaultViewController, animated: true, completion: nil)
+                }
             })
         }
     }

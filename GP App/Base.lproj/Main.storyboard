@@ -296,7 +296,7 @@
         <!--Settings-->
         <scene sceneID="Swg-QZ-vxT">
             <objects>
-                <tableViewController id="Y6K-3x-bm7" customClass="SettingsViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SettingsViewController" id="Y6K-3x-bm7" customClass="SettingsViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="OJK-Uy-mx0">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,7 +343,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rjj-jS-amc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3017" y="-1405"/>
+            <point key="canvasLocation" x="3915.3488372093025" y="-1405.3648068669529"/>
         </scene>
         <!--Dark Mode View Controller-->
         <scene sceneID="Ahf-Tq-ixy">
@@ -453,7 +453,6 @@
                         <segue destination="49g-Cq-p4P" kind="relationship" relationship="viewControllers" id="l0R-Xv-byh"/>
                         <segue destination="hak-9L-djh" kind="relationship" relationship="viewControllers" id="LlA-DE-7Ug"/>
                         <segue destination="UFq-Ue-0rL" kind="relationship" relationship="viewControllers" id="Qrp-LF-Sky"/>
-                        <segue destination="8ha-t0-htA" kind="relationship" relationship="viewControllers" id="lAO-Or-3A8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPR-g2-vOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -823,7 +822,7 @@
         <!--The Vault Entry-->
         <scene sceneID="eKE-cE-mQe">
             <objects>
-                <tableViewController storyboardIdentifier="TheVaultEntryViewController" id="8ha-t0-htA" userLabel="The Vault Entry" customClass="VaultTableViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="VaultEntryViewController" id="8ha-t0-htA" userLabel="The Vault Entry" customClass="VaultTableViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="59G-tE-oQw">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -845,18 +844,15 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="The Vault" image="lock.shield.fill" catalog="system" id="Rup-hM-f3q"/>
-                    <connections>
-                        <segue destination="r3F-Zq-QcE" kind="show" identifier="showVault" id="Wmj-5r-wfi"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5Y-Up-fid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2495" y="2558"/>
+            <point key="canvasLocation" x="3393.4883720930234" y="2557.7253218884121"/>
         </scene>
         <!--The Vault-->
         <scene sceneID="F10-uN-KeD">
             <objects>
-                <collectionViewController id="icJ-pp-Oxy" customClass="VaultViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="VaultViewController" id="icJ-pp-Oxy" customClass="VaultViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="uOe-Ni-rVx">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -919,7 +915,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PL8-S9-F4S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4194" y="2558"/>
+            <point key="canvasLocation" x="4300" y="2558"/>
         </scene>
         <!--Vault Detail View Controller-->
         <scene sceneID="SDS-nI-mwc">
@@ -978,7 +974,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Cx-xU-Z0b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="tN3-sP-smo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5030" y="2558"/>
+            <point key="canvasLocation" x="5291" y="2558"/>
         </scene>
         <!--Portrait Detail View Controller-->
         <scene sceneID="gAa-pO-lOV">
@@ -1157,25 +1153,6 @@
             </objects>
             <point key="canvasLocation" x="3334.8837209302324" y="401.71673819742495"/>
         </scene>
-        <!--The Vault-->
-        <scene sceneID="eBM-Bd-Vzu">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="r3F-Zq-QcE" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="The Vault" id="ffe-b6-JtQ"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RHW-Bd-qSc">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="icJ-pp-Oxy" kind="relationship" relationship="viewControllers" id="6aq-WT-T8S"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ifb-4b-b6t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3335" y="2558"/>
-        </scene>
         <!--Photo Quality View Controller-->
         <scene sceneID="esb-AK-hlk">
             <objects>
@@ -1206,6 +1183,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRR-gx-901" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-763" y="-305"/>
+        </scene>
+        <!--Vault Tab Bar Controller-->
+        <scene sceneID="c6y-ws-kmN">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yUO-va-2OT" customClass="VaultTabBarController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2ao-Be-KGG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8ha-t0-htA" kind="relationship" relationship="viewControllers" id="jek-1q-XB0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VGS-of-cQo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2494.8837209302324" y="2557.7253218884121"/>
+        </scene>
+        <!--Settings Tab Bar Controller-->
+        <scene sceneID="0Ug-a7-Uvx">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Zpq-Ma-s8B" customClass="SettingsTabBarController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wUh-1U-ecV">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Y6K-3x-bm7" kind="relationship" relationship="viewControllers" id="w6D-ac-Uwy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZ6-Pj-DiI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3016.7441860465115" y="-1405.3648068669529"/>
         </scene>
     </scenes>
     <resources>

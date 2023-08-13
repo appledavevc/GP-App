@@ -24,10 +24,9 @@ class PortfolioTabBarController: UITabBarController {
         let newVC = storyboard.instantiateViewController(withIdentifier: "NewViewController")
         let landscapeVC = storyboard.instantiateViewController(withIdentifier: "LandscapeViewController")
         let portraitVC = storyboard.instantiateViewController(withIdentifier: "PortraitViewController")
-        let vaultEntryVC = storyboard.instantiateViewController(withIdentifier: "TheVaultEntryViewController")
         
         // Set the view controllers for the tab bar
-        viewControllers = [featuredVC, newVC, landscapeVC, portraitVC, vaultEntryVC]
+        viewControllers = [featuredVC, newVC, landscapeVC, portraitVC]
         
         // Customize tab bar appearance if needed
         tabBar.tintColor = .systemBlue
