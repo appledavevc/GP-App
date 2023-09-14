@@ -28,6 +28,11 @@ class ReleaseNotesViewController: UIViewController {
     }()
 
     private let releaseNotesText = """
+    v1.5.4 (14/09/2023)
+
+    - All InfoViews have been added
+    - Minor bug fixes
+    
     v1.5.3 (13/08/2023)
 
     - New Home (Initial View Controller)

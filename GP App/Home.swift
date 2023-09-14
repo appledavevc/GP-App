@@ -18,13 +18,16 @@ class Home: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set the view controller's title
+        title = "Ghent Photography"
+        
         view.addSubview(scrollView)
         
         NSLayoutConstraint.activate([
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             scrollView.topAnchor.constraint(equalTo: view.topAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -49) // Adjust for tab bar height
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         
         let buttonSize = CGSize(width: view.bounds.width - 32, height: view.bounds.width - 32)
