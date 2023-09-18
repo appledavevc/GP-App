@@ -875,7 +875,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 33;
+				CURRENT_PROJECT_VERSION = 34;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";
@@ -892,7 +892,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5.4;
+				MARKETING_VERSION = 1.5.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -909,7 +909,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 33;
+				CURRENT_PROJECT_VERSION = 34;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";
@@ -926,7 +926,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5.4;
+				MARKETING_VERSION = 1.5.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
