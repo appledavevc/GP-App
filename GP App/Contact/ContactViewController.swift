@@ -112,7 +112,7 @@ class ContactViewController: UITableViewController {
         case "Facebook":
             return UIImage(systemName: "person.2.fill") // You can replace this with a custom image
         case "Messenger":
-            return UIImage(systemName: "message.fill")
+            return UIImage(systemName: "bolt.horizontal.circle.fill")
         case "Instagram":
             return UIImage(systemName: "camera.fill")
         default:

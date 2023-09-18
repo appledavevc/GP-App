@@ -28,6 +28,12 @@ class ReleaseNotesViewController: UIViewController {
     }()
 
     private let releaseNotesText = """
+    v1.5.5 (18/09/2023)
+
+    - iOS 17 optimalisations
+    - New symbols in Let’s connect
+    - Minor bug fixes
+    
     v1.5.4 (14/09/2023)
 
     - All InfoViews have been added

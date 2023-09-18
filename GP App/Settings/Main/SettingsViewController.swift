@@ -221,7 +221,7 @@ class SettingsViewController: UITableViewController {
                 break
             }
         case 3:
-            cell.iconImageView.image = UIImage(systemName: "envelope.fill") // Set the appropriate icon
+            cell.iconImageView.image = UIImage(systemName: "antenna.radiowaves.left.and.right") // Set the appropriate icon
             cell.titleLabel.text = "Let's connect" // Set the appropriate title
         case 4:
             switch indexPath.row {
