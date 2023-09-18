@@ -59,9 +59,12 @@ class ContactViewController: UITableViewController {
         
         switch indexPath.section {
         case 0:
-            cell.configure(iconImage: UIImage(systemName: "bell.badge.fill"), title: socialOptions[indexPath.row])
+            let socialOption = socialOptions[indexPath.row]
+            if let iconImage = iconForSocialOption(socialOption) {
+                cell.configure(iconImage: iconImage, title: socialOption)
+            }
         case 1:
-            if let image = UIImage(systemName: "paperplane.fill") {
+            if let image = UIImage(systemName: "gamecontroller.fill") {
                 cell.configure(iconImage: image, title: discordOptions[indexPath.row])
             }
         case 2:
@@ -82,18 +85,57 @@ class ContactViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 
-        if indexPath.section == 1 && indexPath.row == 0 {
+        switch indexPath.section {
+        case 0:
+            let socialOption = socialOptions[indexPath.row]
+            openURLForSocialOption(socialOption)
+        case 1:
             if let url = URL(string: "https://discord.gg/jaYeKGvUr8") {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
-        } else if indexPath.section == 2 && indexPath.row == 0 {
+        case 2:
             if let url = URL(string: "https://github.com/appledavevc/GP-App") {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
-        } else if indexPath.section == 3 && indexPath.row == 0 {
+        case 3:
             if let url = URL(string: "mailto:hello@ghentphotography.be") {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
+        default:
+            break
+        }
+    }
+
+    // Function to return the appropriate icon image for a social option
+    private func iconForSocialOption(_ option: String) -> UIImage? {
+        switch option {
+        case "Facebook":
+            return UIImage(systemName: "person.2.fill") // You can replace this with a custom image
+        case "Messenger":
+            return UIImage(systemName: "message.fill")
+        case "Instagram":
+            return UIImage(systemName: "camera.fill")
+        default:
+            return nil
+        }
+    }
+    
+    // Function to open URLs for social options
+    private func openURLForSocialOption(_ option: String) {
+        var url: URL?
+        switch option {
+        case "Facebook":
+            url = URL(string: "https://www.facebook.com/ghentphotographygp/")
+        case "Messenger":
+            url = URL(string: "http://m.me/ghentphotographygp")
+        case "Instagram":
+            url = URL(string: "https://www.instagram.com/ghent_photography/")
+        default:
+            break
+        }
+
+        if let url = url {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
 }

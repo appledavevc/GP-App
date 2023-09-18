@@ -12,6 +12,7 @@ class ThankYouViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        playHapticFeedback()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -45,4 +46,10 @@ class ThankYouViewController: UIViewController {
             imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
     }
+
+    private func playHapticFeedback() {
+        let generator = UIImpactFeedbackGenerator(style: .heavy) // You can adjust the style
+        generator.impactOccurred()
+    }
 }
+

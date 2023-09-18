@@ -119,13 +119,26 @@ extension DarkModeViewController {
         cell.switchControl.isOn = indexPath.row == 0 ? isDarkModeEnabled : !isDarkModeEnabled
 
         cell.switchValueChanged = { [weak self] isOn in
-            self?.switchValueChanged(isOn, at: indexPath)
+            self?.switchValueChanged(isOn, cell: cell, at: indexPath)
         }
 
         return cell
     }
 
-    private func switchValueChanged(_ isOn: Bool, at indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+
+    override func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        // Disable tapping for cells containing switches
+        return indexPath.row >= options.count
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false) // Deselect the row immediately
+    }
+
+    private func switchValueChanged(_ isOn: Bool, cell: DarkModeTableViewCell, at indexPath: IndexPath) {
         if isOn {
             if indexPath.row == 0 {
                 UserDefaults.standard.set(true, forKey: darkModeKey)
@@ -140,8 +153,5 @@ extension DarkModeViewController {
             }
         }
     }
-
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
-    }
 }
+
