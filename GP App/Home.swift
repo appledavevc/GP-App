@@ -1,10 +1,3 @@
-//
-//  Home.swift
-//  GP App
-//
-//  Created by Dave Van Cauwenberghe on 08/07/2023.
-//
-
 import UIKit
 
 class Home: UIViewController {
@@ -15,11 +8,33 @@ class Home: UIViewController {
         return scrollView
     }()
     
+    // Add a search button with an SF symbol
+    let searchButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        let image = UIImage(systemName: "magnifyingglass")
+        button.setImage(image, for: .normal)
+        button.tintColor = .systemBlue
+        return button
+    }()
+    
+    var photoButtons: [UIButton] = [] // Store the buttons for all photos here
+    
+    // Array to store photo names
+    let photoNames: [String] = ["L1OudeDokken", "L2OudeDokken", "L3OudeDokken"] // Replace with your photo names
+    
+    // Array to store menu button names
+    let menuButtonNames: [String] = ["Thumb1", "Thumb2", "Thumb3"] // Replace with your menu button names
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Set the view controller's title
         title = "Ghent Photography"
+        
+        // Add the search button to the navigation bar
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: searchButton)
+        searchButton.addTarget(self, action: #selector(searchButtonTapped), for: .touchUpInside)
         
         view.addSubview(scrollView)
         
@@ -35,9 +50,10 @@ class Home: UIViewController {
         
         var previousButton: UIButton?
         
-        for (index, imageName) in ["Thumb1", "Thumb2", "Thumb3"].enumerated() {
+        for (index, imageName) in menuButtonNames.enumerated() {
             let button = createThumbButton(withImage: imageName, tag: index + 1)
             scrollView.addSubview(button)
+            photoButtons.append(button)
             
             NSLayoutConstraint.activate([
                 button.widthAnchor.constraint(equalToConstant: buttonSize.width),
@@ -59,18 +75,33 @@ class Home: UIViewController {
         }
         
         // Set the content size of the scroll view
-        scrollView.contentSize = CGSize(width: view.bounds.width, height: buttonSize.height * CGFloat(3) + spacing * CGFloat(2))
+        scrollView.contentSize = CGSize(width: view.bounds.width, height: buttonSize.height * CGFloat(menuButtonNames.count) + spacing * CGFloat(menuButtonNames.count - 1))
         
         // Set appearance of the "Home" tab to have a blue tint
         tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 0)
         tabBarItem.selectedImage = UIImage(systemName: "house.fill")?.withTintColor(.systemBlue, renderingMode: .alwaysOriginal)
     }
     
+    // Handle the search button tap event
+    @objc func searchButtonTapped() {
+        // Perform the action you want when the search button is tapped
+        // For example, push a new view controller with search functionality
+        let searchViewController = SearchViewController(photoNames: photoNames)
+        navigationController?.pushViewController(searchViewController, animated: true)
+    }
+
     func createThumbButton(withImage imageName: String, tag: Int) -> UIButton {
         let button = UIButton()
-        button.setImage(UIImage(named: imageName), for: .normal)
-        button.imageView?.contentMode = .scaleAspectFill
         button.translatesAutoresizingMaskIntoConstraints = false
+        // Set the button's image
+        if let image = UIImage(named: imageName) {
+            button.setImage(image, for: .normal)
+            // Set the accessibility identifier to the image name
+            button.imageView?.accessibilityIdentifier = imageName
+        }
+        
+        // Customize button appearance
+        button.imageView?.contentMode = .scaleAspectFill
         button.layer.cornerRadius = 15
         button.layer.borderWidth = 2
         button.layer.borderColor = UIColor.systemBlue.cgColor
