@@ -48,6 +48,27 @@ class ThankYouViewController: UIViewController {
         stackView.spacing = 16 // Adjusted spacing between paragraphs
         view.addSubview(stackView)
 
+        // "GPAppIconTW" image view
+        let imageView = UIImageView(image: UIImage(named: "GPAppIconTW"))
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(imageView)
+
+        // Constraints for the background image view
+        NSLayoutConstraint.activate([
+            backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor),
+            backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+        ])
+
+        // Constraints for the stack view and image view
+        NSLayoutConstraint.activate([
+            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40), // Place the logo below the top safe area
+            imageView.heightAnchor.constraint(equalToConstant: 200), // Increase the height for a larger logo
+        ])
+
         // "Thank you for downloading our app" label
         let thankYouLabel = UILabel()
         thankYouLabel.text = "Thank you for downloading our app"
@@ -59,17 +80,6 @@ class ThankYouViewController: UIViewController {
         thankYouLabel.isAccessibilityElement = true
         thankYouLabel.accessibilityLabel = "Thank you for downloading our app"
         stackView.addArrangedSubview(thankYouLabel)
-
-        // "Stay tuned for future updates" label
-        let updatesLabel = UILabel()
-        updatesLabel.text = "Stay tuned for future updates"
-        updatesLabel.font = UIFont.preferredFont(forTextStyle: .subheadline) // Dynamic font sizing
-        updatesLabel.textColor = UIColor(named: "GPOrange")
-        updatesLabel.textAlignment = .center
-        updatesLabel.adjustsFontForContentSizeCategory = true // Dynamic font size adjustment
-        updatesLabel.isAccessibilityElement = true
-        updatesLabel.accessibilityLabel = "Stay tuned for future updates"
-        stackView.addArrangedSubview(updatesLabel)
 
         // "Please give us a positive review on the App Store" label
         let reviewLabel = UILabel()
@@ -92,34 +102,13 @@ class ThankYouViewController: UIViewController {
         reviewButton.layer.cornerRadius = 12 // Increased corner radius
         reviewButton.isAccessibilityElement = true
         reviewButton.accessibilityLabel = "Leave a Review"
-        stackView.addArrangedSubview(reviewButton)
+        stackView.addArrangedSubview(reviewButton) // Add the button to the stackView
 
-        // "GPAppIconTW" image view
-        let imageView = UIImageView(image: UIImage(named: "GPAppIconTW"))
-        imageView.contentMode = .scaleAspectFit
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(imageView)
-
-        // Constraints for the background image view
+        // Constraints for the stack view
         NSLayoutConstraint.activate([
-            backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor),
-            backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-        ])
-
-        // Constraints for the stack view and image view
-        NSLayoutConstraint.activate([
-            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 40), // Increased top space
-            stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40), // Increased bottom space
-
-            // Limit the width of the stack view to make it look better
-            stackView.widthAnchor.constraint(lessThanOrEqualToConstant: 400), // Increased width
-
-            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            imageView.topAnchor.constraint(equalTo: stackView.bottomAnchor, constant: 20),
-            imageView.heightAnchor.constraint(equalToConstant: 100), // Adjust the height as needed
+            stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40), // Move to the bottom
+            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40), // Add leading space
+            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40), // Add trailing space
         ])
     }
 

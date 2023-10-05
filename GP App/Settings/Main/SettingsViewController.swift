@@ -11,60 +11,60 @@ class SettingsViewController: UITableViewController {
 
     let sections = ["General", "Appearance", "About GP App", "Contact", "Policies"]
     let generalOptions = ["Push notifications"]
-    let appearanceOptions = ["Dark mode"]
+    let appearanceOptions = ["App Icon", "Dark mode"]
     let aboutOptions = ["Release notes", "Thank you", "TestFlight"]
     let policiesOptions = ["Privacy policy", "Copyright", "Photo quality"]
 
-    private var hasPerformedExplosionAnimation = false // Add this flag
+    private var hasPerformedExplosionAnimation = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupHeaderView()
-        tableView.tableFooterView = UIView() // To hide empty rows at the bottom
+        tableView.tableFooterView = UIView()
     }
 
     private func setupHeaderView() {
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 160))
-        
+
         // Add the AppIconImageView
         let appIconImageView = UIImageView(image: UIImage(named: "AppIcon"))
         appIconImageView.translatesAutoresizingMaskIntoConstraints = false
         appIconImageView.contentMode = .scaleAspectFill
-        appIconImageView.layer.cornerRadius = 24 // You can adjust this value to make it bigger
-        appIconImageView.clipsToBounds = true // Clip the image to avoid white space
+        appIconImageView.layer.cornerRadius = 24
+        appIconImageView.clipsToBounds = true
         headerView.addSubview(appIconImageView)
-        
+
         // Add the "Dave Van Cauwenberghe - v1.5.1" label
         let versionLabel = UILabel()
         versionLabel.translatesAutoresizingMaskIntoConstraints = false
-        versionLabel.text = "© Dave Van Cauwenberghe - v1.5.5"
+        versionLabel.text = "© Dave Van Cauwenberghe - v1.6"
         versionLabel.textAlignment = .center
         versionLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         versionLabel.textColor = .darkGray
         headerView.addSubview(versionLabel)
-        
+
         NSLayoutConstraint.activate([
             // AppIconImageView constraints
             appIconImageView.centerXAnchor.constraint(equalTo: headerView.centerXAnchor),
             appIconImageView.centerYAnchor.constraint(equalTo: headerView.centerYAnchor),
-            appIconImageView.widthAnchor.constraint(equalToConstant: 100), // Adjust this size as needed
-            appIconImageView.heightAnchor.constraint(equalTo: appIconImageView.widthAnchor), // Aspect ratio is preserved
-            
+            appIconImageView.widthAnchor.constraint(equalToConstant: 100),
+            appIconImageView.heightAnchor.constraint(equalTo: appIconImageView.widthAnchor),
+
             // Version label constraints
             versionLabel.centerXAnchor.constraint(equalTo: headerView.centerXAnchor),
-            versionLabel.topAnchor.constraint(equalTo: appIconImageView.bottomAnchor, constant: 8), // Adjust the spacing as needed
+            versionLabel.topAnchor.constraint(equalTo: appIconImageView.bottomAnchor, constant: 8),
         ])
-        
+
         tableView.tableHeaderView = headerView
-        
+
         // Add tap gesture recognizer to the AppIconImageView
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(appIconImageViewTapped))
         appIconImageView.addGestureRecognizer(tapGesture)
         appIconImageView.isUserInteractionEnabled = true
     }
-    
+
     // MARK: - Tap Gesture Recognizer Action
-    
+
     @objc private func appIconImageViewTapped() {
         // Perform your animation or action here for the Easter egg
         // For example, you can use UIView animations to scale or rotate the image
@@ -105,7 +105,7 @@ class SettingsViewController: UITableViewController {
         // Disable the floating animation during the explosion
         appIconImageView.layer.removeAllAnimations()
 
-        if !hasPerformedExplosionAnimation { // Check the flag before performing the explosion animation
+        if !hasPerformedExplosionAnimation {
             hasPerformedExplosionAnimation = true
 
             // Fade out the other sections during the explosion
@@ -174,71 +174,59 @@ class SettingsViewController: UITableViewController {
             return 0
         }
     }
-    
+
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sections[section]
     }
-    
+
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsCell", for: indexPath) as! SettingsViewCell
-        
+
         switch indexPath.section {
         case 0:
             cell.iconImageView.image = UIImage(systemName: "bell.badge.fill")
             cell.titleLabel.text = generalOptions[indexPath.row]
         case 1:
-            switch indexPath.row {
-            case 0:
-                if let image = UIImage(systemName: "moon.fill") {
-                    cell.iconImageView.image = image
-                }
-                cell.titleLabel.text = appearanceOptions[indexPath.row]
-            default:
-                break
+            if indexPath.row == 1 {
+                // Change the symbol for "Dark Mode" to a moon.fill
+                cell.iconImageView.image = UIImage(systemName: "moon.fill")
+                cell.titleLabel.text = "Dark Mode"
+            } else if indexPath.row == 0 {
+                // Use an app icon symbol instead of gear for "App Icon"
+                cell.iconImageView.image = UIImage(systemName: "app.badge")
+                cell.titleLabel.text = "App Icon"
             }
         case 2:
             switch indexPath.row {
             case 0:
-                if let image = UIImage(systemName: "doc.text.fill") {
-                    cell.iconImageView.image = image
-                }
+                cell.iconImageView.image = UIImage(systemName: "doc.text.fill")
                 cell.titleLabel.text = aboutOptions[indexPath.row]
             case 1:
-                if let image = UIImage(systemName: "heart.fill") {
-                    cell.iconImageView.image = image
-                }
+                cell.iconImageView.image = UIImage(systemName: "heart.fill")
                 cell.titleLabel.text = aboutOptions[indexPath.row]
             case 2:
-                if let image = UIImage(systemName: "person.crop.circle.badge.plus") {
-                    cell.iconImageView.image = image
-                }
+                cell.iconImageView.image = UIImage(systemName: "person.crop.circle.badge.plus")
                 cell.titleLabel.text = aboutOptions[indexPath.row]
             default:
                 break
             }
         case 3:
-            cell.iconImageView.image = UIImage(systemName: "antenna.radiowaves.left.and.right") // Set the appropriate icon
-            cell.titleLabel.text = "Let's connect" // Set the appropriate title
+            cell.iconImageView.image = UIImage(systemName: "antenna.radiowaves.left.and.right")
+            cell.titleLabel.text = "Let's connect"
         case 4:
             switch indexPath.row {
             case 0:
-                if let image = UIImage(systemName: "hand.raised.circle.fill") {
-                    cell.iconImageView.image = image
-                }
+                cell.iconImageView.image = UIImage(systemName: "hand.raised.circle.fill")
                 cell.titleLabel.text = policiesOptions[indexPath.row]
             case 1:
-                if let image = UIImage(systemName: "doc.richtext.fill") {
-                    cell.iconImageView.image = image
-                }
+                cell.iconImageView.image = UIImage(systemName: "doc.richtext.fill")
                 cell.titleLabel.text = policiesOptions[indexPath.row]
             case 2:
-                if let image = UIImage(systemName: "photo.fill") {
-                    cell.iconImageView.image = image
-                }
+                cell.iconImageView.image = UIImage(systemName: "photo.fill")
                 cell.titleLabel.text = policiesOptions[indexPath.row]
             default:
                 break
@@ -246,14 +234,14 @@ class SettingsViewController: UITableViewController {
         default:
             break
         }
-        
+
         return cell
     }
-    
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 
-        if indexPath.section == 1 && indexPath.row == 0 { // "Dark mode" button tapped
+        if indexPath.section == 1 && indexPath.row == 1 { // "Dark mode" button tapped
             let darkModeVC = DarkModeViewController()
             navigationController?.pushViewController(darkModeVC, animated: true)
         } else if indexPath.section == 2 && indexPath.row == 0 { // "Release notes" button tapped
@@ -280,6 +268,10 @@ class SettingsViewController: UITableViewController {
             navigationController?.pushViewController(thankYouVC, animated: true)
         } else if indexPath.section == 0 && indexPath.row == 0 { // "Push Notifications" button tapped
             openAppNotificationSettings()
+        } else if indexPath.section == 1 && indexPath.row == 0 { // "App Icon" button tapped
+            // Handle the App Icon button action by navigating to AppIconViewController
+            let appIconVC = AppIconViewController()
+            navigationController?.pushViewController(appIconVC, animated: true)
         }
     }
 
@@ -290,3 +282,4 @@ class SettingsViewController: UITableViewController {
         }
     }
 }
+
