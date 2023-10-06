@@ -7,51 +7,66 @@
 
 import UIKit
 
+struct AppIcon {
+    let name: String
+    let description: String
+
+    var isSelected: Bool {
+        return UIApplication.shared.alternateIconName == name
+    }
+}
+
 class AppIconViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.backgroundColor = UIColor(named: "Background")
         return tableView
     }()
-    
-    let appIconImages = ["AppIcon", "AppIcon", "AppIcon"] // Add more alternate app icons if needed
-    
-    let appIconNames = ["GP Launch", "GP Test", "GP Test 2"] // Custom names for the app icons
-    
+
+    // Define your alternate app icons and their names
+    let appIcons: [AppIcon] = [
+        AppIcon(name: "AppIcon", description: "Default Icon"),
+        AppIcon(name: "AppIcon1", description: "GP Dusk"),
+        AppIcon(name: "AppIcon2", description: "GP City Centre"),
+    ]
+
+    let defaultIcon = UIImage(named: "AppIcon") // Default app icon
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "App Icon"
-        
+        title = "App icon"
+
         setupUI()
     }
-    
+
     private func setupUI() {
-        view.backgroundColor = .white
-        
-        // Create a header view with the "AppIcon" image
+        view.backgroundColor = UIColor.systemBackground
+
+        // Create a header view with the current app icon
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 160))
-        let appIconImageView = UIImageView(image: UIImage(named: "AppIcon"))
+        let appIconImageView = UIImageView(image: getCurrentAppIcon() ?? defaultIcon)
         appIconImageView.translatesAutoresizingMaskIntoConstraints = false
         appIconImageView.contentMode = .scaleAspectFill
         appIconImageView.layer.cornerRadius = 24
         appIconImageView.clipsToBounds = true
         headerView.addSubview(appIconImageView)
-        
+
         NSLayoutConstraint.activate([
             appIconImageView.centerXAnchor.constraint(equalTo: headerView.centerXAnchor),
             appIconImageView.centerYAnchor.constraint(equalTo: headerView.centerYAnchor),
             appIconImageView.widthAnchor.constraint(equalToConstant: 100),
             appIconImageView.heightAnchor.constraint(equalTo: appIconImageView.widthAnchor),
         ])
-        
+
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "AppIconCell")
         tableView.tableHeaderView = headerView
-        
+
         view.addSubview(tableView)
-        
+
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -59,64 +74,113 @@ class AppIconViewController: UIViewController, UITableViewDelegate, UITableViewD
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
-    
+
     // MARK: - Table View Delegate and Data Source
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1 // Only one section for the app icon options
+        return 2
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return appIconImages.count
+        if section == 0 {
+            return appIcons.count // GP Originals section has the alternate app icons
+        } else {
+            return 1 // Revert to Default section has one row for the button
+        }
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AppIconCell", for: indexPath)
-        let appIconName = appIconNames[indexPath.row]
-        
-        // Set the app icon image and round corners based on the selected name
-        if let appIconImage = UIImage(named: appIconImages[indexPath.row]) {
-            cell.imageView?.image = appIconImage
-            cell.imageView?.layer.cornerRadius = 12
-            cell.imageView?.clipsToBounds = true
-        }
-        
-        cell.textLabel?.text = appIconName
-        cell.textLabel?.adjustsFontForContentSizeCategory = true
-        cell.textLabel?.accessibilityLabel = appIconName
-        
-        if appIconName == "GP Launch" {
-            // Show a checkmark for the default app icon
-            cell.accessoryType = .checkmark
+
+        if indexPath.section == 0 {
+            let appIcon = appIcons[indexPath.row]
+
+            // Display the app icon thumbnail in the cell
+            if let appIconImage = UIImage(named: appIcon.name) {
+                cell.imageView?.image = appIconImage
+                cell.imageView?.layer.cornerRadius = 12
+                cell.imageView?.clipsToBounds = true
+            }
+
+            cell.textLabel?.text = appIcon.description
         } else {
-            cell.accessoryType = .none
+            cell.textLabel?.text = "Revert to Default Icon"
+            cell.textLabel?.textColor = .systemRed
         }
-        
+
+        cell.textLabel?.adjustsFontForContentSizeCategory = true
+
         return cell
     }
-    
+
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "GP Originals"
+        } else {
+            return "Revert to Default"
+        }
+    }
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedAppIconName = appIconImages[indexPath.row]
-        setAppIcon(iconName: selectedAppIconName)
-        
+        if indexPath.section == 0 {
+            let selectedAppIcon = appIcons[indexPath.row]
+            setAppIcon(appIcon: selectedAppIcon)
+            tableView.reloadData()
+        } else {
+            revertToDefaultIcon()
+        }
+
         // Deselect the selected cell
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
+
     // MARK: - App Icon Change
-    
-    private func setAppIcon(iconName: String) {
+
+    private func setAppIcon(appIcon: AppIcon) {
         if UIApplication.shared.supportsAlternateIcons {
-            UIApplication.shared.setAlternateIconName(iconName) { [weak self] error in
+            UIApplication.shared.setAlternateIconName(appIcon.name) { [weak self] error in
                 if let error = error {
-                    print("Failed to change the app's icon: \(error.localizedDescription)")
+                    self?.showErrorAlert(message: "Failed to change the app's icon: \(error.localizedDescription)")
                 } else {
-                    print("App icon changed successfully to \(iconName)")
-                    // Refresh the view or take further action if needed
+                    self?.showSuccessAlert(message: "App icon changed successfully to \(appIcon.description)")
                 }
             }
         } else {
-            print("Changing app icon is not supported on this device.")
+            showErrorAlert(message: "Changing app icon is not supported on this device.")
         }
+    }
+
+    private func revertToDefaultIcon() {
+        UIApplication.shared.setAlternateIconName(nil) { [weak self] error in
+            if let error = error {
+                self?.showErrorAlert(message: "Failed to change the app's icon: \(error.localizedDescription)")
+            } else {
+                self?.showSuccessAlert(message: "App icon changed successfully to Default Icon")
+            }
+        }
+    }
+
+    // Get the currently selected app icon
+    private func getCurrentAppIcon() -> UIImage? {
+        if let alternateIconName = UIApplication.shared.alternateIconName,
+           let appIcon = appIcons.first(where: { $0.name == alternateIconName }),
+           let appIconImage = UIImage(named: appIcon.name) {
+            return appIconImage
+        }
+        return defaultIcon // Default app icon
+    }
+
+    // MARK: - Helper Methods
+
+    private func showErrorAlert(message: String) {
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+
+    private func showSuccessAlert(message: String) {
+        let alert = UIAlertController(title: "Success", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 }
