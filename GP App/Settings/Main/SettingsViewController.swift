@@ -11,7 +11,7 @@ class SettingsViewController: UITableViewController {
 
     let sections = ["General", "Appearance", "About GP App", "Contact", "Policies"]
     let generalOptions = ["Push notifications"]
-    let appearanceOptions = ["App Icon", "Dark mode"]
+    let appearanceOptions = ["App icon", "Dark mode"]
     let aboutOptions = ["Release notes", "Thank you", "TestFlight"]
     let policiesOptions = ["Privacy policy", "Copyright", "Photo quality"]
 
@@ -194,11 +194,11 @@ class SettingsViewController: UITableViewController {
             if indexPath.row == 1 {
                 // Change the symbol for "Dark Mode" to a moon.fill
                 cell.iconImageView.image = UIImage(systemName: "moon.fill")
-                cell.titleLabel.text = "Dark Mode"
+                cell.titleLabel.text = "Dark mode"
             } else if indexPath.row == 0 {
                 // Use an app icon symbol instead of gear for "App Icon"
                 cell.iconImageView.image = UIImage(systemName: "app.badge")
-                cell.titleLabel.text = "App Icon"
+                cell.titleLabel.text = "App icon"
             }
         case 2:
             switch indexPath.row {
@@ -273,6 +273,11 @@ class SettingsViewController: UITableViewController {
             let appIconVC = AppIconViewController()
             navigationController?.pushViewController(appIconVC, animated: true)
         }
+        
+        // Add haptic feedback for the button press
+        let feedbackGenerator = UIImpactFeedbackGenerator(style: .light)
+        feedbackGenerator.prepare()
+        feedbackGenerator.impactOccurred()
     }
 
     private func openAppNotificationSettings() {
@@ -282,4 +287,3 @@ class SettingsViewController: UITableViewController {
         }
     }
 }
-

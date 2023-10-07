@@ -38,6 +38,23 @@
             </array>
         </dict>
     </dict>
+    <key>CFBundleAlternateIcons</key>
+    <dict>
+        <key>AppIcon1</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string>AppIcon1</string>
+            </array>
+        </dict>
+        <key>AppIcon2</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string>AppIcon2</string>
+            </array>
+        </dict>
+    </dict>
     <key>UIContentSizeCategoryLimits</key>
     <dict>
         <key>UIContentSizeCategorySmall</key>
