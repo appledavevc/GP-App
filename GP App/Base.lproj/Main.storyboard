@@ -953,36 +953,20 @@
             </objects>
             <point key="canvasLocation" x="3017" y="1365"/>
         </scene>
-        <!--App Icon View Controller-->
-        <scene sceneID="9fk-I7-juO">
+        <!--Icon Change View Controller-->
+        <scene sceneID="25F-MV-5EM">
             <objects>
-                <viewController id="eUN-m8-0PE" customClass="AppIconViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TdP-Mr-VU8">
+                <viewController id="EQY-Bk-Rzv" customClass="IconChangeViewController" customModule="GP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dfG-bo-dAa">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mKd-tJ-atC">
-                                <rect key="frame" x="95" y="257" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syc-GF-Ns3">
-                                <rect key="frame" x="178" y="657" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="GfY-El-Rx9"/>
+                        <viewLayoutGuide key="safeArea" id="bGc-pd-UEm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <outlet property="changeIconButton" destination="Syc-GF-Ns3" id="jYG-4l-Q01"/>
-                        <outlet property="iconImageView" destination="mKd-tJ-atC" id="EoC-Kt-cWu"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lcB-JM-E8l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wUD-PX-CKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094" y="-2133"/>
+            <point key="canvasLocation" x="1246" y="-2125"/>
         </scene>
         <!--Settings Tab Bar Controller-->
         <scene sceneID="0Ug-a7-Uvx">

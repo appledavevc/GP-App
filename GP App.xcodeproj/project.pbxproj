@@ -33,6 +33,7 @@
 		5558BE4E2A733F78006CB7BD /* PortraitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5558BE4D2A733F78006CB7BD /* PortraitDetailViewController.swift */; };
 		556D5ECC2A79D4FD00C91DCF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D5ECB2A79D4FD00C91DCF /* SettingsViewController.swift */; };
 		556D5ECE2A79D51200C91DCF /* SettingsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556D5ECD2A79D51200C91DCF /* SettingsViewCell.swift */; };
+		5573C4632AD0EED200ECA231 /* IconChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5573C4622AD0EED200ECA231 /* IconChangeViewController.swift */; };
 		5576E43D2A7A717800A1707D /* ReleaseNotesViewController.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5576E43C2A7A717800A1707D /* ReleaseNotesViewController.swift.swift */; };
 		557B96782A59D9CC0032FDFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96772A59D9CC0032FDFD /* AppDelegate.swift */; };
 		557B967A2A59D9CC0032FDFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96792A59D9CC0032FDFD /* SceneDelegate.swift */; };
@@ -44,7 +45,6 @@
 		557B96992A59D9CD0032FDFD /* GP_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */; };
 		557B969B2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */; };
 		5586A7A62A7D2B96003A8AEA /* DarkModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5586A7A52A7D2B96003A8AEA /* DarkModeViewController.swift */; };
-		558A9DEE2ACF412000FD9446 /* AppIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558A9DED2ACF412000FD9446 /* AppIconViewController.swift */; };
 		55A1B4B12A76E79800E47B40 /* VaultEntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B4B02A76E79800E47B40 /* VaultEntryTableViewController.swift */; };
 		55A1B4B32A76E7BD00E47B40 /* VaultEntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A1B4B22A76E7BD00E47B40 /* VaultEntryTableViewCell.swift */; };
 		55BC65CD2A84677B00699D42 /* ContactViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BC65CC2A84677B00699D42 /* ContactViewCell.swift */; };
@@ -128,6 +128,7 @@
 		5558BE4D2A733F78006CB7BD /* PortraitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitDetailViewController.swift; sourceTree = "<group>"; };
 		556D5ECB2A79D4FD00C91DCF /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		556D5ECD2A79D51200C91DCF /* SettingsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewCell.swift; sourceTree = "<group>"; };
+		5573C4622AD0EED200ECA231 /* IconChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconChangeViewController.swift; sourceTree = "<group>"; };
 		5576E43C2A7A717800A1707D /* ReleaseNotesViewController.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseNotesViewController.swift.swift; sourceTree = "<group>"; };
 		557B96742A59D9CC0032FDFD /* GP App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GP App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557B96772A59D9CC0032FDFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,7 +144,6 @@
 		557B96982A59D9CD0032FDFD /* GP_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITests.swift; sourceTree = "<group>"; };
 		557B969A2A59D9CD0032FDFD /* GP_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5586A7A52A7D2B96003A8AEA /* DarkModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeViewController.swift; sourceTree = "<group>"; };
-		558A9DED2ACF412000FD9446 /* AppIconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconViewController.swift; sourceTree = "<group>"; };
 		55A1B4B02A76E79800E47B40 /* VaultEntryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultEntryTableViewController.swift; sourceTree = "<group>"; };
 		55A1B4B22A76E7BD00E47B40 /* VaultEntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultEntryTableViewCell.swift; sourceTree = "<group>"; };
 		55BC65CC2A84677B00699D42 /* ContactViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewCell.swift; sourceTree = "<group>"; };
@@ -375,7 +375,7 @@
 			children = (
 				55D5FCE82A7D3C35005427BC /* DarkModeViewCell.swift */,
 				5586A7A52A7D2B96003A8AEA /* DarkModeViewController.swift */,
-				558A9DED2ACF412000FD9446 /* AppIconViewController.swift */,
+				5573C4622AD0EED200ECA231 /* IconChangeViewController.swift */,
 			);
 			path = Appearance;
 			sourceTree = "<group>";
@@ -627,6 +627,7 @@
 				55DF165C2A7317FB000D7681 /* LandscapeViewController.swift in Sources */,
 				553B760C2A76C3AD0041FF87 /* VaultViewController.swift in Sources */,
 				55D81D772A77070B00F67E08 /* VaultEntryParentViewController.swift in Sources */,
+				5573C4632AD0EED200ECA231 /* IconChangeViewController.swift in Sources */,
 				55D753342A87B91F00810E05 /* VaultTabBarController.swift in Sources */,
 				55EF89BA2A7AB56300C0AD1F /* PrivacyPolicyViewController.swift in Sources */,
 				55F105822A72ABC600A64AD1 /* NewViewController.swift in Sources */,
@@ -637,7 +638,6 @@
 				5558BE4E2A733F78006CB7BD /* PortraitDetailViewController.swift in Sources */,
 				55F105802A72AB9700A64AD1 /* NewViewCell.swift in Sources */,
 				552137762AC0C42D00DDE9E3 /* SearchViewController.swift in Sources */,
-				558A9DEE2ACF412000FD9446 /* AppIconViewController.swift in Sources */,
 				55DF165E2A731973000D7681 /* LandscapeDetailViewController.swift in Sources */,
 				550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */,
 				5522079C2A7AF79A00675CC4 /* PhotoQualityViewController.swift in Sources */,
@@ -708,7 +708,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 35;
+				CURRENT_PROJECT_VERSION = 36;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -737,7 +737,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 35;
+				CURRENT_PROJECT_VERSION = 36;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -887,7 +887,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 35;
+				CURRENT_PROJECT_VERSION = 36;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";
@@ -921,7 +921,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 35;
+				CURRENT_PROJECT_VERSION = 36;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";

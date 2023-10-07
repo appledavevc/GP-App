@@ -270,7 +270,7 @@ class SettingsViewController: UITableViewController {
             openAppNotificationSettings()
         } else if indexPath.section == 1 && indexPath.row == 0 { // "App Icon" button tapped
             // Handle the App Icon button action by navigating to AppIconViewController
-            let appIconVC = AppIconViewController()
+            let appIconVC = IconChangeViewController()
             navigationController?.pushViewController(appIconVC, animated: true)
         }
         
