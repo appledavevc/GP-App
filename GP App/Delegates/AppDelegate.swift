@@ -24,11 +24,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("User accepted notifications: \(accepted)")
         })
 
-        // Get the user's preference for dark mode or light mode
-        let isDarkModeEnabled = UserDefaults.standard.bool(forKey: "DarkModeEnabled")
-        setAppWideMode(isDarkModeEnabled)
+        setupInitialAppAppearance()
 
         return true
+    }
+
+    func setupInitialAppAppearance() {
+        let usesSystemAppearance = UserDefaults.standard.bool(forKey: "AppUsesSystemAppearance")
+
+        if usesSystemAppearance {
+            // Follow the system's appearance setting
+            if #available(iOS 13.0, *) {
+                window?.overrideUserInterfaceStyle = .unspecified
+            }
+        } else {
+            // Use the saved preference
+            let isDarkModeEnabled = UserDefaults.standard.bool(forKey: "DarkModeEnabled")
+            setAppWideMode(isDarkModeEnabled)
+        }
     }
 
     // MARK: UISceneSession Lifecycle
@@ -39,8 +52,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
     func setAppWideMode(_ isDarkModeEnabled: Bool) {
@@ -52,17 +63,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func applyDarkMode() {
-        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-            for window in windowScene.windows {
-                window.overrideUserInterfaceStyle = .dark
+        if #available(iOS 13.0, *) {
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                for window in windowScene.windows {
+                    window.overrideUserInterfaceStyle = .dark
+                }
             }
         }
     }
 
     private func applyLightMode() {
-        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-            for window in windowScene.windows {
-                window.overrideUserInterfaceStyle = .light
+        if #available(iOS 13.0, *) {
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                for window in windowScene.windows {
+                    window.overrideUserInterfaceStyle = .light
+                }
             }
         }
     }
