@@ -1,105 +1,105 @@
 {
   "images" : [
     {
-      "filename" : "AppIcon (40 x 40 px).png",
+      "filename" : "AppIcon-40.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "AppIcon (60 x 60 px).png",
+      "filename" : "AppIcon-60.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "AppIcon (58 x 58 px).png",
+      "filename" : "AppIcon-58.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "AppIcon (87 x 87 px).png",
+      "filename" : "AppIcon-87.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "AppIcon (76 x 76 px).png",
+      "filename" : "AppIcon-76.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "2x",
       "size" : "38x38"
     },
     {
-      "filename" : "AppIcon (114 x 114 px).png",
+      "filename" : "AppIcon-114.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "3x",
       "size" : "38x38"
     },
     {
-      "filename" : "AppIcon (80 x 80 px).png",
+      "filename" : "AppIcon-80.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "AppIcon (120 x 120 px).png",
+      "filename" : "AppIcon-120.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "AppIcon (120 x 120 px) 1.png",
+      "filename" : "AppIcon-120 1.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "AppIcon (180 x 180 px).png",
+      "filename" : "AppIcon-180.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "AppIcon (128 x 128 px).png",
+      "filename" : "AppIcon-128.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "2x",
       "size" : "64x64"
     },
     {
-      "filename" : "AppIcon (192 x 192 px).png",
+      "filename" : "AppIcon-192.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "3x",
       "size" : "64x64"
     },
     {
-      "filename" : "AppIcon (136 x 136 px).png",
+      "filename" : "AppIcon-136.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "2x",
       "size" : "68x68"
     },
     {
-      "filename" : "AppIcon (152 x 152 px).png",
+      "filename" : "AppIcon-152.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
-      "filename" : "AppIcon (167 x 167 px).png",
+      "filename" : "AppIcon-167.png",
       "idiom" : "universal",
       "platform" : "ios",
       "scale" : "2x",

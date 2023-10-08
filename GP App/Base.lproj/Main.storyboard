@@ -963,10 +963,11 @@
                         <viewLayoutGuide key="safeArea" id="bGc-pd-UEm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Y7C-eU-v26"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wUD-PX-CKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1246" y="-2125"/>
+            <point key="canvasLocation" x="1245" y="-2125"/>
         </scene>
         <!--Settings Tab Bar Controller-->
         <scene sceneID="0Ug-a7-Uvx">
