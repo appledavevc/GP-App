@@ -29,43 +29,32 @@ class OurStoryViewController: UIViewController {
         imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 24
         imageView.clipsToBounds = true
+        imageView.accessibilityLabel = "App Icon"  // Added accessibility label
         return imageView
     }()
 
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Welcome to Ghent Photography"
-        label.font = UIFont.boldSystemFont(ofSize: 24)
+        label.font = UIFont.boldSystemFont(ofSize: 28) // Updated font size
         label.textAlignment = .center
         label.numberOfLines = 0
         label.textColor = UIColor(hex: "#F27649")
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.accessibilityLabel = "Main title: Welcome to Ghent Photography" // Added accessibility label
         return label
     }()
 
     private let descriptionLabel: UILabel = {
         let label = UILabel()
-        label.text = """
-        Welcome to Ghent Photography, founded in May 2021. Our mission is to capture the essence of the daily life in Ghent through our lenses, offering unique perspectives that often go unnoticed by the average passer-by.
-
-        Ghent is a city brimming with hidden gems, and our goal is to uncover and showcase these extraordinary moments. We believe that even the seemingly ordinary scenes can hold extraordinary beauty and meaning when seen through the lens of a camera.
-
-        Our dedicated team is passionate about showcasing Ghent’s charm and diversity. With an emphasis on capturing the city’s vibrant energy, we aim to transport viewers to the very heart of Ghent’s bustling streets and tranquil corners.
-
-        Ghent is a city that embraces exploration on foot. Its compact size allows for seamless navigation from one captivating spot to another, with no need for public transport. As avid walkers ourselves, we invite you to experience the joy of meandering through Ghent’s picturesque streets alongside us.
-
-        Through our photos, we hope to inspire both locals and visitors alike to appreciate the often overlooked beauty of Ghent’s daily life. Join us on this visual journey as we uncover the city’s secrets, one frame at a time.
-
-        At Ghent Photography, we believe that every image has a story to tell, and we are dedicated to sharing Ghent’s narrative through our lens. Explore our gallery and let our photographs transport you into the heart and soul of this remarkable city.
-
-        We look forward to capturing the essence of Ghent and sharing its beauty with you.
-        """
+        label.text = "Welcome to Ghent Photography, founded in May 2021. Our mission is to capture the essence of the daily life in Ghent through our lenses, offering unique perspectives that often go unnoticed by the average passer-by.\n\nGhent is a city brimming with hidden gems, and our goal is to uncover and showcase these extraordinary moments. We believe that even the seemingly ordinary scenes can hold extraordinary beauty and meaning when seen through the lens of a camera.\n\nOur dedicated team is passionate about showcasing Ghent’s charm and diversity. With an emphasis on capturing the city’s vibrant energy, we aim to transport viewers to the very heart of Ghent’s bustling streets and tranquil corners.\n\nGhent is a city that embraces exploration on foot. Its compact size allows for seamless navigation from one captivating spot to another, with no need for public transport. As avid walkers ourselves, we invite you to experience the joy of meandering through Ghent’s picturesque streets alongside us.\n\nThrough our photos, we hope to inspire both locals and visitors alike to appreciate the often overlooked beauty of Ghent’s daily life. Join us on this visual journey as we uncover the city’s secrets, one frame at a time.\n\nAt Ghent Photography, we believe that every image has a story to tell, and we are dedicated to sharing Ghent’s narrative through our lens. Explore our gallery and let our photographs transport you into the heart and soul of this remarkable city.\n\nWe look forward to capturing the essence of Ghent and sharing its beauty with you."
         label.font = UIFont.preferredFont(forTextStyle: .body)
         label.textAlignment = .center
         label.numberOfLines = 0
         label.textColor = UIColor(named: "DescriptionTextColor")
         label.backgroundColor = UIColor.black.withAlphaComponent(0.1) // Add the tint here
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.accessibilityLabel = "Description about Ghent Photography" // Added accessibility label
         return label
     }()
 
