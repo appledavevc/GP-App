@@ -12,7 +12,7 @@
 		5501C3942A68C5E5009B86F6 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 5501C3932A68C5E5009B86F6 /* OneSignal */; };
 		5501C3962A68C5E5009B86F6 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 5501C3952A68C5E5009B86F6 /* OneSignalExtension */; };
 		5501C3992A68C5F6009B86F6 /* OneSignal in Frameworks */ = {isa = PBXBuildFile; productRef = 5501C3982A68C5F6009B86F6 /* OneSignal */; };
-		5501D76F2A7FD5560082FB53 /* GhentPhotographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501D76E2A7FD5560082FB53 /* GhentPhotographyViewController.swift */; };
+		5501D76F2A7FD5560082FB53 /* OurStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5501D76E2A7FD5560082FB53 /* OurStoryViewController.swift */; };
 		550B0AB22A6DFA0C001BB700 /* FeaturedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB12A6DFA0C001BB700 /* FeaturedViewCell.swift */; };
 		550B0AB52A6DFA3E001BB700 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB42A6DFA3E001BB700 /* FeaturedViewController.swift */; };
 		550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB62A6DFB02001BB700 /* Featured.swift */; };
@@ -107,7 +107,7 @@
 		5501C3882A68C57B009B86F6 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		5501C38A2A68C57B009B86F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5501C39A2A68C63C009B86F6 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
-		5501D76E2A7FD5560082FB53 /* GhentPhotographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhentPhotographyViewController.swift; sourceTree = "<group>"; };
+		5501D76E2A7FD5560082FB53 /* OurStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurStoryViewController.swift; sourceTree = "<group>"; };
 		550B0AB12A6DFA0C001BB700 /* FeaturedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewCell.swift; sourceTree = "<group>"; };
 		550B0AB42A6DFA3E001BB700 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		550B0AB62A6DFB02001BB700 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 		5501D7702A7FD8010082FB53 /* Our story */ = {
 			isa = PBXGroup;
 			children = (
-				5501D76E2A7FD5560082FB53 /* GhentPhotographyViewController.swift */,
+				5501D76E2A7FD5560082FB53 /* OurStoryViewController.swift */,
 			);
 			path = "Our story";
 			sourceTree = "<group>";
@@ -601,7 +601,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55BC65CD2A84677B00699D42 /* ContactViewCell.swift in Sources */,
-				5501D76F2A7FD5560082FB53 /* GhentPhotographyViewController.swift in Sources */,
+				5501D76F2A7FD5560082FB53 /* OurStoryViewController.swift in Sources */,
 				55A1B4B32A76E7BD00E47B40 /* VaultEntryTableViewCell.swift in Sources */,
 				553B760E2A76C3BB0041FF87 /* VaultDetailViewController.swift in Sources */,
 				551A7E2F2A88611B005D5F39 /* SettingsTabBarController.swift in Sources */,
@@ -708,7 +708,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 42;
+				CURRENT_PROJECT_VERSION = 43;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -737,7 +737,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 42;
+				CURRENT_PROJECT_VERSION = 43;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -888,7 +888,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 42;
+				CURRENT_PROJECT_VERSION = 43;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";
@@ -923,7 +923,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 42;
+				CURRENT_PROJECT_VERSION = 43;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";
@@ -955,7 +955,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 42;
+				CURRENT_PROJECT_VERSION = 43;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -975,7 +975,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 42;
+				CURRENT_PROJECT_VERSION = 43;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -994,7 +994,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 42;
+				CURRENT_PROJECT_VERSION = 43;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.6;
@@ -1012,7 +1012,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 42;
+				CURRENT_PROJECT_VERSION = 43;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.6;

@@ -28,6 +28,17 @@ class ReleaseNotesViewController: UIViewController {
     }()
 
     private let releaseNotesText = """
+    v1.6 (08/10/2023 - Build 43)
+
+    - Debugging new alternate app icons code
+    - Update dark mode settings
+    - Bug fixes
+
+    v1.6 (08/10/2023 - Build 36-42)
+
+    - New alternate app icons code
+    - Bug fixes
+    
     v1.5.5 (18/09/2023)
 
     - iOS 17 optimalisations

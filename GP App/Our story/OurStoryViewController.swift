@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GhentPhotographyViewController: UIViewController {
+class OurStoryViewController: UIViewController {
 
     // MARK: - UI Elements
 

@@ -12,7 +12,7 @@ class SettingsViewController: UITableViewController {
     let sections = ["General", "Appearance", "About GP App", "Contact", "Policies"]
     let generalOptions = ["Push notifications"]
     let appearanceOptions = ["App icon", "Dark mode"]
-    let aboutOptions = ["Release notes", "Thank you", "TestFlight"]
+    let aboutOptions = ["Our story", "Release notes", "Thank you", "TestFlight"]
     let policiesOptions = ["Privacy policy", "Copyright", "Photo quality"]
 
     private var hasPerformedExplosionAnimation = false
@@ -202,13 +202,16 @@ class SettingsViewController: UITableViewController {
             }
         case 2:
             switch indexPath.row {
-            case 0:
-                cell.iconImageView.image = UIImage(systemName: "doc.text.fill")
+            case 0: // Add this case for "Our Story"
+                cell.iconImageView.image = UIImage(systemName: "book.fill")
                 cell.titleLabel.text = aboutOptions[indexPath.row]
             case 1:
-                cell.iconImageView.image = UIImage(systemName: "heart.fill")
+                cell.iconImageView.image = UIImage(systemName: "doc.text.fill")
                 cell.titleLabel.text = aboutOptions[indexPath.row]
             case 2:
+                cell.iconImageView.image = UIImage(systemName: "heart.fill")
+                cell.titleLabel.text = aboutOptions[indexPath.row]
+            case 3:
                 cell.iconImageView.image = UIImage(systemName: "person.crop.circle.badge.plus")
                 cell.titleLabel.text = aboutOptions[indexPath.row]
             default:
@@ -244,10 +247,10 @@ class SettingsViewController: UITableViewController {
         if indexPath.section == 1 && indexPath.row == 1 { // "Dark mode" button tapped
             let darkModeVC = DarkModeViewController()
             navigationController?.pushViewController(darkModeVC, animated: true)
-        } else if indexPath.section == 2 && indexPath.row == 0 { // "Release notes" button tapped
+        } else if indexPath.section == 2 && indexPath.row == 1 { // "Release notes" button tapped
             let releaseNotesVC = ReleaseNotesViewController()
             navigationController?.pushViewController(releaseNotesVC, animated: true)
-        } else if indexPath.section == 2 && indexPath.row == 2 { // "TestFlight" button tapped
+        } else if indexPath.section == 2 && indexPath.row == 3 { // "TestFlight" button tapped
             if let url = URL(string: "https://testflight.apple.com/join/EyTo5acT") {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             }
@@ -263,7 +266,7 @@ class SettingsViewController: UITableViewController {
         } else if indexPath.section == 4 && indexPath.row == 2 { // "Photo Quality" button tapped
             let photoQualityVC = PhotoQualityViewController()
             navigationController?.pushViewController(photoQualityVC, animated: true)
-        } else if indexPath.section == 2 && indexPath.row == 1 { // "Thank You" button tapped
+        } else if indexPath.section == 2 && indexPath.row == 2 { // "Thank You" button tapped
             let thankYouVC = ThankYouViewController()
             navigationController?.pushViewController(thankYouVC, animated: true)
         } else if indexPath.section == 0 && indexPath.row == 0 { // "Push Notifications" button tapped
@@ -272,6 +275,9 @@ class SettingsViewController: UITableViewController {
             // Handle the App Icon button action by navigating to AppIconViewController
             let appIconVC = IconChangeViewController()
             navigationController?.pushViewController(appIconVC, animated: true)
+        } else if indexPath.section == 2 && indexPath.row == 0 { // "Our Story" button tapped
+            let ourStoryVC = OurStoryViewController()
+            navigationController?.pushViewController(ourStoryVC, animated: true)
         }
         
         // Add haptic feedback for the button press
