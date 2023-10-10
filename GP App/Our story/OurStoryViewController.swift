@@ -36,10 +36,10 @@ class OurStoryViewController: UIViewController {
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.text = "Welcome to Ghent Photography"
-        label.font = UIFont.boldSystemFont(ofSize: 28) // Updated font size
+        label.font = UIFont.boldSystemFont(ofSize: 38) // Updated font size
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.textColor = UIColor(hex: "#F27649")
+        label.textColor = .gpOrange
         label.translatesAutoresizingMaskIntoConstraints = false
         label.accessibilityLabel = "Main title: Welcome to Ghent Photography" // Added accessibility label
         return label
@@ -63,7 +63,21 @@ class OurStoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "AppBackground")!)
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "AppBackground2")!)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        configureNavigationBar()
+    }
+    
+    private func configureNavigationBar() {
+        title = "Our story"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.largeTitleTextAttributes = [
+            .font: UIFont.boldSystemFont(ofSize: 34),
+            .foregroundColor: UIColor.label
+        ]
     }
 
     // MARK: - UI Setup
@@ -106,7 +120,7 @@ class OurStoryViewController: UIViewController {
         ])
 
         // Set the content mode of the background image to "scaleToFill"
-        let backgroundImage = UIImage(named: "AppBackground")
+        let backgroundImage = UIImage(named: "AppBackground2")
         let backgroundImageView = UIImageView(image: backgroundImage)
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
         backgroundImageView.contentMode = .scaleToFill
