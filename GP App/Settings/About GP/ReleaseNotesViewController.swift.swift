@@ -32,6 +32,8 @@ class ReleaseNotesViewController: UIViewController {
 
     - Debugging new alternate app icons code
     - Update dark mode settings
+    - VoiceOver optimalisations
+    - iOS 15 support
     - Bug fixes
 
     v1.6 (08/10/2023 - Build 36-42)
