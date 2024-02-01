@@ -32,10 +32,6 @@ class Home: UIViewController {
         // Set the view controller's title
         title = "Ghent Photography"
         
-        // Add the search button to the navigation bar
-        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: searchButton)
-        searchButton.addTarget(self, action: #selector(searchButtonTapped), for: .touchUpInside)
-        
         view.addSubview(scrollView)
         
         NSLayoutConstraint.activate([
@@ -81,14 +77,7 @@ class Home: UIViewController {
         tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 0)
         tabBarItem.selectedImage = UIImage(systemName: "house.fill")?.withTintColor(.systemBlue, renderingMode: .alwaysOriginal)
     }
-    
-    // Handle the search button tap event
-    @objc func searchButtonTapped() {
-        // Perform the action you want when the search button is tapped
-        // For example, push a new view controller with search functionality
-        let searchViewController = SearchViewController(photoNames: photoNames)
-        navigationController?.pushViewController(searchViewController, animated: true)
-    }
+
 
     func createThumbButton(withImage imageName: String, tag: Int) -> UIButton {
         let button = UIButton()

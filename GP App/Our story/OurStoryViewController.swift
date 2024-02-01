@@ -63,7 +63,7 @@ class OurStoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "AppBackground2")!)
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "AppBackground3")!)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -120,7 +120,7 @@ class OurStoryViewController: UIViewController {
         ])
 
         // Set the content mode of the background image to "scaleToFill"
-        let backgroundImage = UIImage(named: "AppBackground2")
+        let backgroundImage = UIImage(named: "AppBackground3")
         let backgroundImageView = UIImageView(image: backgroundImage)
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
         backgroundImageView.contentMode = .scaleToFill
