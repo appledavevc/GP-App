@@ -28,6 +28,10 @@ class ReleaseNotesViewController: UIViewController {
     }()
 
     private let releaseNotesText = """
+    v1.6.1 (04/02/2024 - Build 45)
+
+    - Apple Vision Pro support
+    
     v1.6 (01/02/2024 - Build 44)
 
     - Portfolio update
