@@ -6,9 +6,9 @@ Thank you for considering contributing to the Ghent Photography app! We apprecia
 
 There are several ways you can contribute to the Ghent Photography app:
 
-1. **Bug Reports**: If you come across any bugs, errors, or issues while using the app, please report them using the [issue tracker](https://github.com/appledavevc/ghent-photography-app/issues).
+1. **Bug Reports**: If you come across any bugs, errors, or issues while using the app, please report them using the [issue tracker](https://github.com/appledavevc/pp-app/issues).
 
-2. **Feature Requests**: If you have an idea for a new feature or improvement, we'd love to hear it! Submit a feature request in the [issue tracker](https://github.com/appledavevc/ghent-photography-app/issues).
+2. **Feature Requests**: If you have an idea for a new feature or improvement, we'd love to hear it! Submit a feature request in the [issue tracker](https://github.com/appledavevc/pp-app/issues).
 
 3. **Code Contributions**: If you're a developer, you can contribute to the app's codebase by submitting pull requests. Before you start coding, please ensure your changes align with our code style and guidelines.
 
@@ -40,7 +40,7 @@ To ensure a smooth and efficient contribution process, please follow these guide
 
 If you encounter any bugs or have any suggestions, please follow these steps when creating an issue:
 
-1. Check the [issue tracker](https://github.com/appledavevc/ghent-photography-app/issues) to ensure that a similar issue or feature request hasn't been reported.
+1. Check the [issue tracker](https://github.com/appledavevc/pp-app/issues) to ensure that a similar issue or feature request hasn't been reported.
 
 2. Clearly describe the problem or suggestion in the issue title and description.
 
