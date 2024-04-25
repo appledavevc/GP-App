@@ -710,7 +710,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 45;
+				CURRENT_PROJECT_VERSION = 46;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -723,7 +723,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.6.1;
+				MARKETING_VERSION = 1.6.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App.OneSignalNotificationServiceExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -739,7 +739,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 45;
+				CURRENT_PROJECT_VERSION = 46;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -752,7 +752,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.6.1;
+				MARKETING_VERSION = 1.6.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App.OneSignalNotificationServiceExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -890,7 +890,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 45;
+				CURRENT_PROJECT_VERSION = 46;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";
@@ -907,7 +907,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.1;
+				MARKETING_VERSION = 1.6.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -929,7 +929,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 45;
+				CURRENT_PROJECT_VERSION = 46;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";
@@ -946,7 +946,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.1;
+				MARKETING_VERSION = 1.6.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

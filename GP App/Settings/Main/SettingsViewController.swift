@@ -37,7 +37,7 @@ class SettingsViewController: UITableViewController {
         // Add the "Dave Van Cauwenberghe - v1.5.1" label
         let versionLabel = UILabel()
         versionLabel.translatesAutoresizingMaskIntoConstraints = false
-        versionLabel.text = "© Dave Van Cauwenberghe - v1.6"
+        versionLabel.text = "© Dave Van Cauwenberghe - v1.6.2"
         versionLabel.textAlignment = .center
         versionLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         versionLabel.textColor = .darkGray
