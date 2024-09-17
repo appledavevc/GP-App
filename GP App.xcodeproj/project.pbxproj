@@ -540,7 +540,6 @@
 			mainGroup = 557B966B2A59D9CC0032FDFD;
 			packageReferences = (
 				5501C3922A68C5E5009B86F6 /* XCRemoteSwiftPackageReference "OneSignal-XCFramework" */,
-				55BE2EA62B6FED9E00C7EE8F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = 557B96752A59D9CC0032FDFD /* Products */;
 			projectDirPath = "";
@@ -1092,14 +1091,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 3.0.0;
-			};
-		};
-		55BE2EA62B6FED9E00C7EE8F /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 14.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

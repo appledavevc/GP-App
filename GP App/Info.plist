@@ -63,18 +63,14 @@
 		<key>UIContentSizeCategorySmall</key>
 		<string>14</string>
 	</dict>
-    <key>CFBundleURLTypes</key>
-    <array>
-      <dict>
-      <key>CFBundleURLSchemes</key>
-      <array>
-        <string>fb3551446771739000</string>
-      </array>
-      </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>3551446771739000</string>
-    <key>FacebookDisplayName</key>
-    <string>GP | Ghent Photography</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb3551446771739000</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
