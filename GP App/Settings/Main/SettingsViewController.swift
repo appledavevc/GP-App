@@ -34,7 +34,6 @@ class SettingsViewController: UITableViewController {
         appIconImageView.clipsToBounds = true
         headerView.addSubview(appIconImageView)
 
-        // Add the "Dave Van Cauwenberghe - v1.5.1" label
         let versionLabel = UILabel()
         versionLabel.translatesAutoresizingMaskIntoConstraints = false
         versionLabel.text = "© Dave Van Cauwenberghe - v1.6.2"

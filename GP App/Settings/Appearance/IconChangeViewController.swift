@@ -63,7 +63,7 @@ class IconChangeViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     private func setupRevertButton() {
-        revertButton.setTitle("Revert to Default App Icon", for: .normal)
+        revertButton.setTitle("Revert to default app icon", for: .normal)
         revertButton.setTitleColor(.red, for: .normal)  // Text color to red
         revertButton.addTarget(self, action: #selector(revertIcon), for: .touchUpInside)
         revertButton.translatesAutoresizingMaskIntoConstraints = false
