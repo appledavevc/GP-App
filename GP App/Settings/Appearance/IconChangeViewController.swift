@@ -9,7 +9,7 @@ import UIKit
 
 class IconChangeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
-    let iconNames: [String?] = [nil, "AppIcon1", "AppIcon2"]
+    let iconNames: [String?] = [nil, "AppIcon1", "AppIcon2", "AppIcon3"]
 
     let iconImageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: "AppIcon"))
