@@ -1,3 +1,5 @@
+Effective date: 11/07/2023
+
 All photos appearing on this app, unless noted otherwise, are the exclusive property of Ghent Photography and are protected under Belgian and International Copyright laws.
 
 Duplication, processing, distribution, manipulated or any form of commercialisation of such material shall require the prior written consent of Ghent Photography. These copyright laws impose substantial penalties for infringement, and violators will be prosecuted to the full extent of the law.
