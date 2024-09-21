@@ -5,10 +5,11 @@
 Use this section to tell people about which versions of your project are
 currently being supported with security updates.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 1.4.1   | :white_check_mark: |
-| < 1.4   | :x:                |
+| Version  | Supported          |
+| -------- | ------------------ |
+| 1.6.2    | :white_check_mark: |
+| 1.6.1    | :white_check_mark: |
+| < 1.6.1  | :x:                |
 
 # Security Policy
 
@@ -18,7 +19,7 @@ At Ghent Photography, we take security seriously and appreciate the efforts of s
 
 **Please do not disclose or publish the vulnerability until it has been fully resolved.**
 
-To report a security vulnerability:
+## To report a security vulnerability:
 
 1. **Submit an Issue**: Create a new issue in the [GitHub repository](https://github.com/appledavevc/ghent-photography-app/issues) with the "Security Vulnerability" label. Provide a detailed description of the vulnerability, including steps to reproduce if possible.
 
