@@ -1,3 +1,5 @@
+# Privacy policy
+
 Effective date: 11/07/2023
 
 All photos appearing on this app, unless noted otherwise, are the exclusive property of Ghent Photography and are protected under Belgian and International Copyright laws.
