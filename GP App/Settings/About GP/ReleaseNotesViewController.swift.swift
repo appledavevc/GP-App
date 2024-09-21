@@ -29,7 +29,11 @@ class ReleaseNotesViewController: UIViewController {
 
     private let releaseNotesText = """
     
-    v1.6.2 (19/09/2024 - Build 46-49)
+    v1.7 (xx/xx/xxxx - Build 49 - xx)
+
+    - x
+    
+    v1.6.2 (19/09/2024 - Build 46-48)
 
     - iOS 18 support added
     - Minor UI improvements

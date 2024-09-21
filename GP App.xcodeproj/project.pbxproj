@@ -18,7 +18,6 @@
 		550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0AB62A6DFB02001BB700 /* Featured.swift */; };
 		550B0ABB2A6E0378001BB700 /* FeaturedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */; };
 		551A7E2F2A88611B005D5F39 /* SettingsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551A7E2E2A88611B005D5F39 /* SettingsTabBarController.swift */; };
-		552137762AC0C42D00DDE9E3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552137752AC0C42D00DDE9E3 /* SearchViewController.swift */; };
 		5522079A2A7AF6C600675CC4 /* CopyrightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552207992A7AF6C600675CC4 /* CopyrightViewController.swift */; };
 		5522079C2A7AF79A00675CC4 /* PhotoQualityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522079B2A7AF79A00675CC4 /* PhotoQualityViewController.swift */; };
 		5522079F2A7AF97A00675CC4 /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522079E2A7AF97A00675CC4 /* ThankYouViewController.swift */; };
@@ -113,7 +112,6 @@
 		550B0AB62A6DFB02001BB700 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
 		550B0ABA2A6E0378001BB700 /* FeaturedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedDetailViewController.swift; sourceTree = "<group>"; };
 		551A7E2E2A88611B005D5F39 /* SettingsTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabBarController.swift; sourceTree = "<group>"; };
-		552137752AC0C42D00DDE9E3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		552207992A7AF6C600675CC4 /* CopyrightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyrightViewController.swift; sourceTree = "<group>"; };
 		5522079B2A7AF79A00675CC4 /* PhotoQualityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoQualityViewController.swift; sourceTree = "<group>"; };
 		5522079E2A7AF97A00675CC4 /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
@@ -331,7 +329,6 @@
 				5580E8552A6C016300072284 /* Portfolio */,
 				5501C3812A68C54A009B86F6 /* GP App.entitlements */,
 				557B967B2A59D9CC0032FDFD /* Home.swift */,
-				552137752AC0C42D00DDE9E3 /* SearchViewController.swift */,
 				557B967D2A59D9CC0032FDFD /* Main.storyboard */,
 				557B96822A59D9CD0032FDFD /* LaunchScreen.storyboard */,
 				557B96802A59D9CD0032FDFD /* Assets.xcassets */,
@@ -637,7 +634,6 @@
 				5586A7A62A7D2B96003A8AEA /* DarkModeViewController.swift in Sources */,
 				5558BE4E2A733F78006CB7BD /* PortraitDetailViewController.swift in Sources */,
 				55F105802A72AB9700A64AD1 /* NewViewCell.swift in Sources */,
-				552137762AC0C42D00DDE9E3 /* SearchViewController.swift in Sources */,
 				55DF165E2A731973000D7681 /* LandscapeDetailViewController.swift in Sources */,
 				550B0AB72A6DFB02001BB700 /* Featured.swift in Sources */,
 				5522079C2A7AF79A00675CC4 /* PhotoQualityViewController.swift in Sources */,
@@ -709,7 +705,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 48;
+				CURRENT_PROJECT_VERSION = 49;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -722,7 +718,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.6.2;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App.OneSignalNotificationServiceExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -738,7 +734,7 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 48;
+				CURRENT_PROJECT_VERSION = 49;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
@@ -751,7 +747,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.6.2;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App.OneSignalNotificationServiceExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -888,7 +884,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 48;
+				CURRENT_PROJECT_VERSION = 49;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";
@@ -905,7 +901,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.2;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -926,7 +922,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "GP App/GP App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 48;
+				CURRENT_PROJECT_VERSION = 49;
 				DEVELOPMENT_TEAM = KMS556J2F8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "GP App/Info.plist";
@@ -943,7 +939,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.6.2;
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ghentphotography.www.GP-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
