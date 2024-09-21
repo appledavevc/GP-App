@@ -9,7 +9,7 @@ Welcome to the Ghent Photography app repository! This iOS app is designed to sho
 
 - **Community Engagement**: Connect with fellow photography enthusiasts in our thriving community. Share your own work, gain inspiration, and participate in meaningful discussions.
 
-- **The Vault: Discover photographs that haven't been released and will remain available in The Vault only.
+- **The Vault**: Discover photographs that haven't been released and will remain available in The Vault only.
 
 - **Event Updates**: Stay informed about upcoming photography exhibitions, workshops, and events happening in Ghent. Never miss an opportunity to expand your skills and explore new artistic horizons.
 
