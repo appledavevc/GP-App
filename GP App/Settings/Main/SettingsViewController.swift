@@ -4,6 +4,8 @@
 //
 //  Created by Dave Van Cauwenberghe on 02/08/2023.
 //
+//  Staying alive on the Git connection - 30/11/2024
+//
 
 import UIKit
 
